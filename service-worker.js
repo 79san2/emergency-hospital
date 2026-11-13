@@ -1,4 +1,4 @@
-const CACHE='emergency-hospital-v5';
+const CACHE='emergency-hospital-v6';
 const FILES=['./','./index.html','./manifest.json','./icon.svg'];
 
 self.addEventListener('install',event=>{
