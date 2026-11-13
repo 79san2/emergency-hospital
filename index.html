@@ -35,6 +35,25 @@ const hs=[
 {d:'영등포구',n:'영등포병원',a:'서울 영등포구 당산로31길 10',rep:'02-2635-2809',er:'02-2635-2809',source:'https://www.ydphospital.com/'}
 ];
 function render(){let d=document.getElementById('district').value;document.getElementById('hospitals').innerHTML=hs.filter(h=>d==='all'||h.d===d).map(h=>'<div class="card"><b>'+h.n+'</b><div class="muted">'+h.d+' · '+h.a+'</div><div class="actions"><a class="tel" href="tel:'+h.rep.replace(/[^0-9]/g,'')+'">대표번호 '+h.rep+'</a>'+(h.er?'<a class="tel" href="tel:'+h.er.replace(/[^0-9]/g,'')+'">응급실 '+h.er+'</a>':'<span class="muted">응급실 직통번호 미확인 · 대표번호로 문의</span>')+'</div><div class="actions"><a href="https://map.kakao.com/link/search/'+encodeURIComponent(h.n)+'" target="_blank" rel="noopener">길찾기</a><a href="'+h.source+'" target="_blank" rel="noopener">전화번호 출처 확인</a></div></div>').join('')}
-function show(id){document.querySelectorAll('.detail').forEach(x=>x.classList.remove('show'));let e=document.getElementById(id);e.classList.add('show');e.scrollIntoView({behavior:'smooth',block:'nearest'})}render();
+const situationHospitals={
+ fracture:['이대서울병원','서울부민병원','이대목동병원','여의도성모병원','강남성심병원','성애병원'],
+ cut:['이대서울병원','이대목동병원','한강성심병원','여의도성모병원','강남성심병원','성애병원'],
+ choke:['이대서울병원','이대목동병원','여의도성모병원','강남성심병원','성애병원'],
+ fever:['이대서울병원','이대목동병원','여의도성모병원','강남성심병원','성애병원','서울부민병원'],
+ head:['이대서울병원','이대목동병원','여의도성모병원','강남성심병원','성애병원'],
+ breath:['이대서울병원','이대목동병원','여의도성모병원','강남성심병원','성애병원'],
+ burn:['한강성심병원','이대서울병원','이대목동병원','여의도성모병원','강남성심병원'],
+ poison:['이대서울병원','이대목동병원','여의도성모병원','강남성심병원','성애병원'],
+ eye:['이대서울병원','이대목동병원','여의도성모병원','강남성심병원','성애병원']
+};
+function renderSituationHospitals(id){
+ const detail=document.getElementById(id);
+ let panel=detail.querySelector('.situation-hospitals');
+ if(!panel){panel=document.createElement('div');panel.className='situation-hospitals';detail.appendChild(panel)}
+ const names=situationHospitals[id]||[];
+ const matches=names.map(name=>hs.find(h=>h.n.includes(name))).filter(Boolean);
+ panel.innerHTML='<h3 style="font-size:15px;margin:16px 0 8px">관련 병원</h3><p class="muted">증상과 진료 분야를 고려한 우선 문의 병원입니다. 응급실 수용 여부와 진료 가능 여부는 전화로 먼저 확인하세요.</p>'+matches.map(h=>'<div style="border-top:1px solid #e5e9f0;padding:9px 0"><b>'+h.n+'</b><div class="muted">'+h.d+' · '+h.a+'</div><div class="actions"><a class="tel" href="tel:'+h.rep.replace(/[^0-9]/g,'')+'">대표번호 '+h.rep+'</a>'+(h.er?'<a class="tel" href="tel:'+h.er.replace(/[^0-9]/g,'')+'">응급실 '+h.er+'</a>':'')+'<a href="https://map.kakao.com/link/search/'+encodeURIComponent(h.n)+'" target="_blank" rel="noopener">길찾기</a></div></div>').join('');
+}
+function show(id){document.querySelectorAll('.detail').forEach(x=>x.classList.remove('show'));let e=document.getElementById(id);e.classList.add('show');renderSituationHospitals(id);e.scrollIntoView({behavior:'smooth',block:'nearest'})}render();
 if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
 </script></body></html>
