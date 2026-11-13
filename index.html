@@ -23,6 +23,7 @@ const hs=[
 {d:'양천구',n:'홍익병원',a:'서울 양천구 목동로 225',rep:'02-2693-5555',er:'02-2600-0777',source:'https://pf.kakao.com/_lTFxoxb/posts'},
 {d:'양천구',n:'서울특별시 서남병원',a:'서울 양천구 신정이펜1로 20',rep:'1566-6688',er:'',source:'https://www.seoulnamhospital.or.kr'},
 {d:'영등포구',n:'한림대학교 한강성심병원',a:'서울 영등포구 버드나루로7길 12',rep:'02-2639-5114',er:'02-2639-5555',source:'https://hangang.hallym.or.kr/hallymuniv_sub.asp?left_menu=left_mguide&screen=ptm310'},
+{d:'영등포구',n:'한강수병원',a:'서울 영등포구 영등포로 83',rep:'1800-7119',er:'',source:'https://www.hangangsoo.co.kr/sub/sub5.php?view=mobile'},
 {d:'영등포구',n:'성애병원',a:'서울 영등포구 여의대방로53길 22',rep:'1811-8114',er:'02-840-7115',source:'https://www.sungae.co.kr/guide/phone.do'}
 ];
 function render(){let d=document.getElementById('district').value;document.getElementById('hospitals').innerHTML=hs.filter(h=>d==='all'||h.d===d).map(h=>'<div class="card"><b>'+h.n+'</b><div class="muted">'+h.d+' · '+h.a+'</div><div class="actions"><a class="tel" href="tel:'+h.rep.replace(/[^0-9]/g,'')+'">대표번호 '+h.rep+'</a>'+(h.er?'<a class="tel" href="tel:'+h.er.replace(/[^0-9]/g,'')+'">응급실 '+h.er+'</a>':'<span class="muted">응급실 직통번호 미확인 · 대표번호로 문의</span>')+'</div><div class="actions"><a href="https://map.kakao.com/link/search/'+encodeURIComponent(h.n)+'" target="_blank" rel="noopener">길찾기</a><a href="'+h.source+'" target="_blank" rel="noopener">전화번호 출처 확인</a></div></div>').join('')}
