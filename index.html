@@ -1,60 +1,23 @@
-<!doctype html>
-<html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#1456a0">
-<title>강서구 응급병원 안내</title>
-<style>
-:root{font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;color:#172033;background:#f3f6fa}
-*{box-sizing:border-box}body{margin:0}header{background:#1456a0;color:#fff;padding:24px 18px 22px;border-radius:0 0 22px 22px}
-h1{font-size:23px;margin:0 0 7px}header p{margin:0;font-size:14px;opacity:.92}
-main{max-width:760px;margin:auto;padding:16px}
-.alert{background:#fff2f0;border:1px solid #ffc8c1;border-radius:16px;padding:15px;margin-bottom:15px}
-.alert strong{display:block;font-size:17px;margin-bottom:5px;color:#a32118}
-.call119{display:block;text-align:center;background:#c62828;color:#fff;text-decoration:none;font-size:22px;font-weight:800;padding:16px;border-radius:14px;margin-top:12px}
-h2{font-size:18px;margin:22px 2px 10px}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-button{border:0;border-radius:14px;background:#fff;padding:15px 12px;text-align:left;font:inherit;box-shadow:0 2px 8px #14243a12;min-height:88px}
-button b{display:block;font-size:16px;margin-bottom:5px}button span{font-size:13px;color:#5d6878}
-.card{background:#fff;border-radius:15px;padding:15px;margin:10px 0;box-shadow:0 2px 8px #14243a10}
-.card h3{margin:0 0 5px;font-size:17px}.muted{color:#667085;font-size:13px;line-height:1.5}
-.actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
-.actions a{flex:1;min-width:120px;text-align:center;text-decoration:none;padding:11px 9px;border-radius:10px;background:#e9f1fc;color:#1456a0;font-weight:700}
-.actions a.tel{background:#1456a0;color:#fff}
-.detail{display:none}.detail.show{display:block}
-.note{font-size:12px;color:#687386;line-height:1.55;margin:16px 2px}
-footer{text-align:center;font-size:12px;color:#788397;padding:18px}
-@media(max-width:380px){.grid{grid-template-columns:1fr}h1{font-size:21px}}
-</style>
-</head>
-<body>
-<header><h1>강서구 응급병원 안내</h1><p>상황을 선택해 기본 대응과 병원 연락처를 확인하세요.</p></header>
-<main>
-<section class="alert"><strong>생명이 위급하거나 판단이 어려우면 즉시 119</strong><div>호흡곤란, 의식저하, 심한 출혈, 기도 막힘, 경련 지속 등은 병원을 직접 찾아가기보다 119에 신고하세요.</div><a class="call119" href="tel:119">119 바로 전화</a></section>
-<h2>상황별 응급 대응</h2>
-<div class="grid">
-<button onclick="show('fracture')"><b>골절·낙상</b><span>변형, 심한 통증, 움직임 제한</span></button>
-<button onclick="show('cut')"><b>열상·출혈</b><span>찢어짐, 지속되는 출혈</span></button>
-<button onclick="show('choke')"><b>삼킴·기도 막힘</b><span>사레, 이물질, 호흡곤란</span></button>
-<button onclick="show('fever')"><b>고열·경련</b><span>고열, 의식 변화, 경련</span></button>
-<button onclick="show('head')"><b>머리 부딪힘</b><span>구토, 심한 두통, 졸림</span></button>
-<button onclick="show('breath')"><b>호흡·의식 이상</b><span>숨참, 청색증, 반응 저하</span></button>
-</div>
-<div id="fracture" class="card detail"><h3>골절·낙상</h3><p>다친 부위를 억지로 움직이거나 맞추지 말고, 가능한 자세 그대로 고정하세요. 심한 변형·개방성 골절·머리나 목 손상이 의심되면 119를 부르세요.</p></div>
-<div id="cut" class="card detail"><h3>열상·출혈</h3><p>깨끗한 거즈나 천으로 상처를 직접 압박하세요. 피가 많이 나거나 압박해도 멈추지 않으면 119에 신고하세요. 깊거나 벌어진 상처는 응급실 평가가 필요합니다.</p></div>
-<div id="choke" class="card detail"><h3>삼킴·기도 막힘</h3><p>말하거나 기침하거나 숨을 쉬기 어렵다면 즉시 119에 신고하세요. 입 안에 보이지 않는 이물질을 손가락으로 훑어 꺼내려 하지 마세요. 의식이 떨어지면 신고자의 안내에 따라 응급처치를 받으세요.</p></div>
-<div id="fever" class="card detail"><h3>고열·경련</h3><p>경련 중에는 주변 위험물을 치우고 억지로 붙잡거나 입에 물건을 넣지 마세요. 첫 경련, 5분 이상 지속, 반복 경련, 호흡·의식 이상은 119 대상입니다.</p></div>
-<div id="head" class="card detail"><h3>머리 부딪힘</h3><p>구토 반복, 의식 변화, 심한 두통, 경련, 팔다리 힘 빠짐이 있으면 119에 신고하세요. 목 손상이 의심되면 불필요하게 이동시키지 마세요.</p></div>
-<div id="breath" class="card detail"><h3>호흡·의식 이상</h3><p>즉시 119에 신고하고 호흡과 반응을 확인하세요. 정상적으로 숨 쉬지 않으면 119 상황요원의 안내에 따라 심폐소생술과 자동심장충격기 사용을 시작하세요.</p></div>
-<h2>강서구 응급실 운영 병원</h2>
-<div class="card"><h3>이대서울병원 응급의료센터</h3><div class="muted">서울 강서구 공항대로 260 · 대표전화 기준</div><div class="actions"><a class="tel" href="tel:15227000">전화 1522-7000</a><a href="https://map.kakao.com/link/search/이대서울병원%20응급의료센터" target="_blank" rel="noopener">길찾기</a></div></div>
-<div class="card"><h3>서울부민병원</h3><div class="muted">서울 강서구 공항대로 389 · 대표전화 기준</div><div class="actions"><a class="tel" href="tel:15777582">전화 1577-7582</a><a href="https://map.kakao.com/link/search/서울부민병원%20응급실" target="_blank" rel="noopener">길찾기</a></div></div>
-<div class="note">※ 병원 대표전화와 응급실 수용 가능 여부는 다를 수 있습니다. 출발 전 전화로 진료 가능 여부를 확인하세요. 중증 응급상황은 직접 이동하지 말고 119에 신고하세요. 실시간 응급실 정보는 응급의료포털 E-Gen에서 확인할 수 있습니다.</div>
-<div class="actions"><a href="https://www.e-gen.or.kr" target="_blank" rel="noopener">응급의료포털 E-Gen</a></div>
-</main>
-<footer>개인 참고용 안내 · 실제 진료 및 이송 판단은 119와 의료기관 안내를 따르세요.</footer>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#1456a0"><meta name="description" content="강서구·양천구·영등포구 응급대응 및 응급실 안내"><link rel="manifest" href="./manifest.json"><link rel="icon" href="./icon.svg" type="image/svg+xml"><title>서남권 응급병원 안내</title><style>
+:root{font-family:system-ui,"Noto Sans KR",sans-serif;color:#172033;background:#f3f6fa}*{box-sizing:border-box}body{margin:0}header{background:#1456a0;color:white;padding:22px 18px;border-radius:0 0 22px 22px}h1{font-size:22px;margin:0 0 6px}header p{margin:0;font-size:13px}main{max-width:760px;margin:auto;padding:15px}.alert,.card{background:white;border-radius:14px;padding:14px;margin:10px 0;box-shadow:0 2px 8px #14243a12}.alert{background:#fff2f0;border:1px solid #ffc8c1}.alert strong{color:#a32118}.call119{display:block;text-align:center;background:#c62828;color:white;text-decoration:none;font-size:21px;font-weight:800;padding:14px;border-radius:12px;margin-top:10px}h2{font-size:18px;margin:21px 2px 10px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}button{border:0;border-radius:13px;background:white;padding:13px;text-align:left;font:inherit;min-height:75px;box-shadow:0 2px 8px #14243a12}button b{display:block;font-size:15px;margin-bottom:4px}button span,.muted,.note{font-size:12px;color:#667085;line-height:1.5}.detail{display:none}.detail.show{display:block}.actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}.actions a{flex:1;min-width:110px;text-align:center;padding:10px 7px;border-radius:10px;background:#e9f1fc;color:#1456a0;text-decoration:none;font-weight:700;font-size:13px}.actions a.tel{background:#1456a0;color:white}select{width:100%;padding:12px;border:1px solid #d4dbe5;border-radius:10px;background:white;font:inherit}.note{margin:14px 2px}footer{text-align:center;color:#788397;font-size:11px;padding:18px}@media(max-width:380px){.grid{grid-template-columns:1fr}}
+</style></head><body><header><h1>서남권 응급병원 안내</h1><p>강서구 · 양천구 · 영등포구 | 상황별 응급대응과 병원 연락</p></header><main>
+<section class="alert"><strong>생명이 위급하거나 판단이 어려우면 즉시 119</strong><div>호흡곤란, 의식저하, 심한 출혈, 기도 막힘, 경련 지속 등은 직접 이동보다 119 신고가 우선입니다.</div><a class="call119" href="tel:119">119 바로 전화</a></section>
+<h2>상황별 응급 대응</h2><div class="grid">
+<button onclick="show('fracture')"><b>골절·낙상</b><span>변형, 심한 통증, 움직임 제한</span></button><button onclick="show('cut')"><b>열상·출혈</b><span>찢어짐, 지속되는 출혈</span></button><button onclick="show('choke')"><b>삼킴·기도 막힘</b><span>사레, 이물질, 호흡곤란</span></button><button onclick="show('fever')"><b>고열·경련</b><span>고열, 의식 변화, 경련</span></button><button onclick="show('head')"><b>머리 부딪힘</b><span>구토, 심한 두통, 졸림</span></button><button onclick="show('breath')"><b>호흡·의식 이상</b><span>숨참, 청색증, 반응 저하</span></button><button onclick="show('burn')"><b>화상</b><span>열·화학물질·전기 화상</span></button><button onclick="show('poison')"><b>중독·이물질 섭취</b><span>약물, 세제, 유해물질</span></button><button onclick="show('eye')"><b>눈·얼굴 손상</b><span>이물질, 출혈, 시력 변화</span></button></div>
+<div id="fracture" class="card detail"><b>골절·낙상</b><p>다친 부위를 억지로 움직이거나 맞추지 말고 가능한 자세 그대로 고정하세요. 심한 변형·개방성 골절·머리나 목 손상이 의심되면 119를 부르세요.</p></div>
+<div id="cut" class="card detail"><b>열상·출혈</b><p>깨끗한 거즈나 천으로 상처를 직접 압박하세요. 출혈이 심하거나 멈추지 않으면 119에 신고하세요. 깊거나 벌어진 상처는 응급실 평가가 필요합니다.</p></div>
+<div id="choke" class="card detail"><b>삼킴·기도 막힘</b><p>말하거나 기침하거나 숨쉬기 어렵다면 즉시 119에 신고하세요. 입 안에 보이지 않는 이물질을 손가락으로 훑어 꺼내려 하지 마세요.</p></div>
+<div id="fever" class="card detail"><b>고열·경련</b><p>경련 중에는 주변 위험물을 치우고 억지로 붙잡거나 입에 물건을 넣지 마세요. 첫 경련, 5분 이상 지속, 반복 경련, 호흡·의식 이상은 119 대상입니다.</p></div>
+<div id="head" class="card detail"><b>머리 부딪힘</b><p>구토 반복, 의식 변화, 심한 두통, 경련, 팔다리 힘 빠짐이 있으면 119에 신고하세요. 목 손상이 의심되면 불필요하게 이동시키지 마세요.</p></div>
+<div id="breath" class="card detail"><b>호흡·의식 이상</b><p>즉시 119에 신고하고 호흡과 반응을 확인하세요. 정상적으로 숨 쉬지 않으면 119 상황요원의 안내에 따라 심폐소생술을 시작하세요.</p></div>
+<div id="burn" class="card detail"><b>화상</b><p>흐르는 시원한 물로 20분 정도 식히세요. 얼음·연고를 바르거나 물집을 터뜨리지 마세요. 넓은 화상, 얼굴·손 화상, 전기·화학 화상은 119 또는 응급실 평가가 필요합니다.</p></div>
+<div id="poison" class="card detail"><b>중독·이물질 섭취</b><p>억지로 토하게 하지 말고 제품명·섭취량·시간을 확인하세요. 의식저하, 호흡곤란, 경련이 있으면 즉시 119에 신고하세요.</p></div>
+<div id="eye" class="card detail"><b>눈·얼굴 손상</b><p>눈을 비비거나 누르지 마세요. 화학물질이 들어갔다면 흐르는 물로 씻으면서 119 또는 응급실에 연락하세요. 시력 저하나 안구 관통 의심은 즉시 응급평가가 필요합니다.</p></div>
+<h2>응급실 병원 찾기</h2><select id="district" onchange="render()"><option value="all">전체 지역</option><option>강서구</option><option>양천구</option><option>영등포구</option></select><div id="hospitals"></div>
+<div class="note">※ 전화번호는 대표번호 또는 응급실 문의번호입니다. 응급실 운영·진료 가능 여부는 실시간으로 달라지므로 방문 전 전화로 확인하세요. 중증 응급상황은 직접 이동하지 말고 119에 신고하세요.</div><div class="actions"><a href="https://www.e-gen.or.kr" target="_blank" rel="noopener">응급의료포털 E-Gen</a></div></main><footer>개인 참고용 안내 · 실제 이송 및 진료 판단은 119와 의료기관 안내를 따르세요.</footer>
 <script>
-function show(id){document.querySelectorAll('.detail').forEach(el=>el.classList.remove('show'));const el=document.getElementById(id);if(el){el.classList.add('show');el.scrollIntoView({behavior:'smooth',block:'nearest'});}}
-</script>
-</body></html>
+const hs=[['강서구','이대서울병원 응급의료센터','서울 강서구 공항대로 260','1522-7000'],['강서구','서울부민병원','서울 강서구 공항대로 389','1577-7582'],['양천구','이화여자대학교 목동병원 응급의료센터','서울 양천구 안양천로 1071','02-2650-5114'],['양천구','홍익병원','서울 양천구 목동로 225','02-2693-5555'],['양천구','서울특별시 서남병원','서울 양천구 신정이펜1로 20','1566-6688'],['영등포구','한림대학교 한강성심병원 응급실','서울 영등포구 버드나루로 7길 12','02-2639-5555'],['영등포구','성애병원 응급실','서울 영등포구 여의대방로 53길 22','02-840-7115']];
+function render(){let d=document.getElementById('district').value;document.getElementById('hospitals').innerHTML=hs.filter(h=>d==='all'||h[0]===d).map(h=>'<div class="card"><b>'+h[1]+'</b><div class="muted">'+h[0]+' · '+h[2]+'</div><div class="actions"><a class="tel" href="tel:'+h[3].replace(/[^0-9]/g,'')+'">전화 '+h[3]+'</a><a href="https://map.kakao.com/link/search/'+encodeURIComponent(h[1])+'" target="_blank" rel="noopener">길찾기</a></div></div>').join('')}
+function show(id){document.querySelectorAll('.detail').forEach(x=>x.classList.remove('show'));let e=document.getElementById(id);e.classList.add('show');e.scrollIntoView({behavior:'smooth',block:'nearest'})}render();
+if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
+</script></body></html>
