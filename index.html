@@ -14,7 +14,7 @@
 <div id="poison" class="card detail"><b>중독·이물질 섭취</b><p>억지로 토하게 하지 말고 제품명·섭취량·시간을 확인하세요. 의식저하, 호흡곤란, 경련이 있으면 즉시 119에 신고하세요.</p></div>
 <div id="eye" class="card detail"><b>눈·얼굴 손상</b><p>눈을 비비거나 누르지 마세요. 화학물질이 들어갔다면 흐르는 물로 씻으면서 119 또는 응급실에 연락하세요. 시력 저하나 안구 관통 의심은 즉시 응급평가가 필요합니다.</p></div>
 <h2>응급실 병원 찾기</h2><select id="district" onchange="render()"><option value="all">전체 지역</option><option>강서구</option><option>양천구</option><option>영등포구</option></select><div id="hospitals"></div>
-<div class="note">※ 전화번호는 병원 공식 안내를 기준으로 확인한 번호입니다(2026.11.13.). 서남병원은 별도 응급실 직통번호를 확인하지 못해 대표번호만 표시했습니다. 응급실 운영 및 진료 가능 여부는 방문 전 확인하세요. 중증 응급상황은 119에 신고하세요.</div><div class="actions"><a href="https://www.e-gen.or.kr" target="_blank" rel="noopener">응급의료포털 E-Gen</a></div></main><footer>개인 참고용 안내 · 실제 이송 및 진료 판단은 119와 의료기관 안내를 따르세요.</footer>
+<div class="note">※ 응급실 운영 병원과 응급의료기관 지정 병원이 함께 표시됩니다. 응급실 직통번호를 확인하지 못한 곳은 대표번호만 표시했습니다. 병원별 진료 가능 분야와 수용 여부는 방문 전 전화로 확인하세요. 중증 응급상황은 119에 신고하세요.</div><div class="actions"><a href="https://www.e-gen.or.kr" target="_blank" rel="noopener">응급의료포털 E-Gen</a></div></main><footer>개인 참고용 안내 · 실제 이송 및 진료 판단은 119와 의료기관 안내를 따르세요.</footer>
 <script>
 const hs=[
 {d:'강서구',n:'이대서울병원 응급의료센터',a:'서울 강서구 공항대로 260',rep:'1522-7000',er:'02-6986-5119',source:'https://seoul.eumc.ac.kr/m/guide/infoTel.do'},
@@ -24,7 +24,15 @@ const hs=[
 {d:'양천구',n:'서울특별시 서남병원',a:'서울 양천구 신정이펜1로 20',rep:'1566-6688',er:'',source:'https://www.seoulnamhospital.or.kr'},
 {d:'영등포구',n:'한림대학교 한강성심병원',a:'서울 영등포구 버드나루로7길 12',rep:'02-2639-5114',er:'02-2639-5555',source:'https://hangang.hallym.or.kr/hallymuniv_sub.asp?left_menu=left_mguide&screen=ptm310'},
 {d:'영등포구',n:'한강수병원',a:'서울 영등포구 영등포로 83',rep:'1800-7119',er:'',source:'https://www.hangangsoo.co.kr/sub/sub5.php?view=mobile'},
-{d:'영등포구',n:'성애병원',a:'서울 영등포구 여의대방로53길 22',rep:'1811-8114',er:'02-840-7115',source:'https://www.sungae.co.kr/guide/phone.do'}
+{d:'영등포구',n:'성애병원',a:'서울 영등포구 여의대방로53길 22',rep:'1811-8114',er:'02-840-7115',source:'https://www.sungae.co.kr/guide/phone.do'},
+{d:'강서구',n:'미즈메디병원',a:'서울 강서구 강서로 295',rep:'1588-2701',er:'02-2007-1118',source:'https://www.mizmedi.com/'},
+{d:'강서구',n:'우리들병원',a:'서울 강서구 하늘길 70',rep:'02-2660-7500',er:'02-2660-7057',source:'https://seoul.wooridul.co.kr/'},
+{d:'영등포구',n:'가톨릭대학교 여의도성모병원',a:'서울 영등포구 63로 10',rep:'1661-7575',er:'02-3779-1199',source:'https://www.cmcseoul.or.kr/page/main'},
+{d:'영등포구',n:'한림대학교 강남성심병원',a:'서울 영등포구 신길로 1',rep:'02-829-5114',er:'02-829-5114',source:'https://kangnam.hallym.or.kr/'},
+{d:'영등포구',n:'명지성모병원',a:'서울 영등포구 도림로 156',rep:'1899-1475',er:'',source:'https://www.myongji-sm.co.kr/index.php/html/118'},
+{d:'영등포구',n:'대림성모병원',a:'서울 영등포구 시흥대로 657',rep:'02-829-9000',er:'',source:'https://www.drh.co.kr/'},
+{d:'영등포구',n:'씨엠병원',a:'서울 영등포구 영등포로36길 13',rep:'02-2678-0001',er:'02-2678-0001',source:'https://www.cm-hospital.co.kr/'},
+{d:'영등포구',n:'영등포병원',a:'서울 영등포구 당산로31길 10',rep:'02-2635-2809',er:'02-2635-2809',source:'https://www.ydphospital.com/'}
 ];
 function render(){let d=document.getElementById('district').value;document.getElementById('hospitals').innerHTML=hs.filter(h=>d==='all'||h.d===d).map(h=>'<div class="card"><b>'+h.n+'</b><div class="muted">'+h.d+' · '+h.a+'</div><div class="actions"><a class="tel" href="tel:'+h.rep.replace(/[^0-9]/g,'')+'">대표번호 '+h.rep+'</a>'+(h.er?'<a class="tel" href="tel:'+h.er.replace(/[^0-9]/g,'')+'">응급실 '+h.er+'</a>':'<span class="muted">응급실 직통번호 미확인 · 대표번호로 문의</span>')+'</div><div class="actions"><a href="https://map.kakao.com/link/search/'+encodeURIComponent(h.n)+'" target="_blank" rel="noopener">길찾기</a><a href="'+h.source+'" target="_blank" rel="noopener">전화번호 출처 확인</a></div></div>').join('')}
 function show(id){document.querySelectorAll('.detail').forEach(x=>x.classList.remove('show'));let e=document.getElementById(id);e.classList.add('show');e.scrollIntoView({behavior:'smooth',block:'nearest'})}render();
