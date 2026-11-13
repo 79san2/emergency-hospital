@@ -1,0 +1,19 @@
+{
+  "name": "서남권 응급병원 안내",
+  "short_name": "응급병원",
+  "lang": "ko-KR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f6fa",
+  "theme_color": "#1456a0",
+  "description": "강서구·양천구·영등포구 응급대응 및 응급실 안내",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
