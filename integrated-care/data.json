@@ -607,11 +607,11 @@
   ],
   "officialSnapshot": {
     "reportedDate": "2025-05-31",
-    "providerCount": 47,
-    "serviceUsers": 166,
+    "providerCount": 18,
+    "serviceUsers": 54,
     "source": "서울시의회 제331회 정례회 업무보고",
     "sourceUrl": "https://mas.smc.seoul.kr/attach/record/SEOUL/appendix/a11/A0068313.pdf?time=20260624200153",
-    "note": "2025년 5월 말 기준 주간 개별형 18개소·이용자 54명. 2026년 현재 숫자나 명단으로 간주하지 않으며 비교 기준으로만 사용.",
+    "note": "2025년 5월 말 기준 주간 개별형 제공기관 18개소·이용자 54명. 서울시의회 업무보고의 주간 개별형 수치이며, 서울 전체 3개 유형 합계나 2026년 현재 수치로 해석하지 않음.",
     "weeklyIndividualProviders": 18,
     "weeklyIndividualUsers": 54
   },
@@ -731,7 +731,7 @@
   },
   "lastResearch": {
     "checkedDate": "2026-11-15",
-    "note": "서울시 공공데이터포털의 사회복지시설 구인정보에서 원광장애인종합복지관의 주간개별 1:1 사업관리자 및 보조인력 채용공고(2026-10-27 등록, 접수 마감 2026-12-24)를 확인하여 기존 근거를 최신화함. 서울시의회 2025-05-31 기준 주간 개별형 18개소는 과거 기준으로 유지하고 2026년 현행 전체 명단으로 간주하지 않음.",
+    "note": "서울시 공식 24시간형 제공기관 모집 공고(2026-09-14) 및 재공고 접수정보(2026-10-06~10-16)를 대조. 재공고 이후 선정기관명은 서울시 공식 결과 공고로 확인되지 않아 기존 기관 목록 유지. 2025-05-31 서울시의회 자료의 주간 개별형 18개소·이용자 54명과 2026-08-31 서울센터 발표의 서울 전체 47개소·166명(3개 유형 합계)을 별도 통계로 구분.",
     "sources": [
       "https://data.seoul.go.kr/dataList/OA-23027/S/1/datasetView.do",
       "https://www.broso.or.kr/seoul/hp/svc/selectAgencySeach.do",
@@ -750,11 +750,13 @@
       "checkedDate": "2026-11-15",
       "title": "2026년 최중증 발달장애인 통합돌봄 24시간 서비스 제공기관 모집 재공고",
       "applicationPeriod": "2026-10-06~2026-10-16",
-      "selectionNoticeDate": "2026-11-13",
+      "selectionNoticeDate": "2026-11-13 (공모정보상 안내일; 서울시 선정결과 공고 및 기관명 미확인)",
       "recruitment": "1~2개소",
       "contact": "서울시 장애인복지과 02-2133-7446",
       "sourceUrl": "https://plan.datainkorea.com/gov_main/gov_view?SEARCH_KEY=PBLANC_NM&SEARCH_VAL=&page=36&seq=1135635",
-      "officialResultStatus": "재공고 및 선정 통보일 정보는 공모정보에서 확인했으나, 선정기관명과 실제 지정 여부를 확인할 서울시 공식 결과 공고는 확보하지 못함. 기관명 확인 전까지 기존 24시간형 기관 목록은 변경하지 않음."
+      "officialResultStatus": "서울시 공식 모집 재공고는 확인. 2026-11-13 선정 통보일은 별도 공모정보에 기재되어 있으나, 서울시 공식 선정결과 공고와 선정기관명은 확인하지 못함. 공식 결과 확인 전까지 기존 24시간형 기관 목록을 변경하지 않음.",
+      "officialAnnouncementUrl": "https://www.seoul.go.kr/news/news_notice.do?nttNo=466288",
+      "note": "재공고 접수 2026-10-06~10-16, 모집 1~2개소. 서울시 공식 공고와 공모정보를 구분해 기록."
     },
     "publicDataRefresh": {
       "checkedDate": "2026-11-15",
