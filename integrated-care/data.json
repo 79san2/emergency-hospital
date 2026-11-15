@@ -256,9 +256,9 @@
       "type": "주간 개별 1:1",
       "district": "강남구",
       "phone": "02-2192-0600",
-      "source": "서울지역발달장애인지원센터 지원기관 검색",
+      "source": "서울지역발달장애인지원센터 지원기관 찾기",
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=212",
-      "status": "공식 서비스 유형·연락처 확인 / 강남구 소재 확인",
+      "status": "서울지역 발달장애인지원센터 지원기관 찾기에서 최중증 통합돌봄 주간 개별형 제공기관으로 표시됨. 2026년 현행 지정기간 및 정원·현원은 별도 확인 필요.",
       "manager": "",
       "direct": "",
       "userCapacity": "",
@@ -275,9 +275,9 @@
       "type": "주간 개별 1:1",
       "district": "종로구",
       "phone": "02-880-0525",
-      "source": "서울지역발달장애인지원센터 지원기관 검색",
+      "source": "서울지역발달장애인지원센터 지원기관 찾기",
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=212",
-      "status": "공식 서비스 유형·연락처 확인 / 종로구 소재 확인",
+      "status": "서울지역 발달장애인지원센터 지원기관 찾기에서 최중증 통합돌봄 주간 개별형 제공기관으로 표시됨. 2026년 현행 지정기간 및 정원·현원은 별도 확인 필요.",
       "manager": "",
       "direct": "",
       "userCapacity": "",
@@ -294,9 +294,9 @@
       "type": "주간 개별 1:1",
       "district": "동작구",
       "phone": "02-829-7158",
-      "source": "서울지역발달장애인지원센터 지원기관 검색",
+      "source": "서울지역발달장애인지원센터 지원기관 찾기",
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=212",
-      "status": "공식 서비스 유형·연락처 확인 / 기관 대표번호와 다를 수 있음",
+      "status": "서울지역 발달장애인지원센터 지원기관 찾기에서 최중증 통합돌봄 주간 개별형 제공기관으로 표시됨. 2026년 현행 지정기간 및 정원·현원은 별도 확인 필요.",
       "manager": "",
       "direct": "",
       "userCapacity": "",
@@ -313,9 +313,9 @@
       "type": "주간 개별 1:1",
       "district": "영등포구",
       "phone": "02-3667-7979",
-      "source": "서울지역발달장애인지원센터 지원기관 검색",
+      "source": "서울지역발달장애인지원센터 지원기관 찾기",
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=212",
-      "status": "공식 서비스 유형·연락처 확인",
+      "status": "서울지역 발달장애인지원센터 지원기관 찾기에서 최중증 통합돌봄 주간 개별형 제공기관으로 표시됨. 2026년 현행 지정기간 및 정원·현원은 별도 확인 필요.",
       "manager": "",
       "direct": "",
       "userCapacity": "",
@@ -767,7 +767,24 @@
     "publishedDate": "2026-10-23",
     "source": "한국장애인개발원 중앙장애아동·발달장애인지원센터 공지",
     "sourceUrl": "https://www.broso.or.kr/",
-    "status": "공지 게시 사실 확인. 첨부된 기관별 원문 목록은 웹 검색 결과에서 직접 열람되지 않아 기관별 지정 여부를 이 공지 제목만으로 확정하지 않음.",
-    "note": "2026.9.30 기준 최신 기관 목록 공지가 2026.10.23 게시된 사실을 확인. 기관별 유형·기관명 대조는 첨부 원문 확보 후 완료 필요."
-  }
+    "status": "한국장애인개발원 중앙센터 홈페이지에서 2026.9.30 기준 제공기관 목록 현황 공유 공지(2026.10.23 게시) 확인. 첨부 원문 파일의 기관별 행 데이터는 현재 직접 열람·대조하지 못함. 서울지역 지원기관 찾기에서는 일부 서울 주간 개별형 기관을 확인했으며, 기관별 최신 지정기간과 정원·현원은 별도 확인 필요.",
+    "note": "2026.9.30 기준 최신 기관 목록 공지가 2026.10.23 게시된 사실을 확인. 기관별 유형·기관명 대조는 첨부 원문 확보 후 완료 필요.",
+    "relatedDirectoryUrl": "https://www.broso.or.kr/seoul/hp/svc/selectAgencySeach.do"
+  },
+  "referenceDatasets": [
+    {
+      "name": "한국장애인개발원 발달장애인 지원 기관 및 제공서비스",
+      "referenceDate": "2025-09-30",
+      "source": "공공데이터포털",
+      "url": "https://www.data.go.kr/data/15072489/fileData.do",
+      "format": "CSV",
+      "updateCycle": "연간",
+      "fields": [
+        "시군구명",
+        "수행기관명",
+        "최중증 통합돌봄 제공 여부"
+      ],
+      "limitation": "기관의 최중증 통합돌봄 제공 여부를 확인하는 참고자료이며, 서비스 유형·지정 유효기간·이용인 정원/현원·종사자 정원/현원은 제공하지 않음. 2026년 최신 명단으로 간주하지 않음."
+    }
+  ]
 }
