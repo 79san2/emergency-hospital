@@ -603,6 +603,27 @@
       "sourceUrl": "https://ycsupport.or.kr/organization",
       "verified": "2026-11-15",
       "verificationLevel": "candidate"
+    },
+    {
+      "id": "seoul-032",
+      "name": "사회복지법인 한국재활재단",
+      "type": "24시간형",
+      "district": "서대문구",
+      "address": "서울특별시 서대문구 신촌로 285-1 무림빌딩 4층",
+      "phone": "02-365-5540",
+      "manager": "",
+      "direct": "",
+      "userCapacity": "",
+      "userCurrent": "",
+      "userWaiting": "",
+      "staffCapacity": "",
+      "staffCurrent": "",
+      "staffVacancy": "",
+      "verified": "2026-11-15",
+      "source": "한국장애인개발원 2024-07-12 제공기관 목록 및 한국재활재단 2026-10-26 24시간 일대일 대체인력 채용 공고",
+      "sourceUrl": "https://www.krfund.or.kr/sub/notice.asp?URL=%2Fsub%2Fnotice.asp&idx=1&num=394&page=1&page_code=3",
+      "status": "2024년 제공기관 목록에서 서울 24시간형 기관으로 확인. 재단의 2026-10-26 공고에서 최중증 통합돌봄 24시간 일대일 KRF센터 운영 및 주·야간 대체인력 채용 확인. 2026년 신규 선정 결과 및 현행 지정기간·이용인 정원·현원은 별도 확인 필요.",
+      "verificationLevel": "operating_evidence"
     }
   ],
   "officialSnapshot": {
@@ -731,7 +752,7 @@
   },
   "lastResearch": {
     "checkedDate": "2026-11-15",
-    "note": "서울시 공식 24시간형 제공기관 모집 공고(2026-09-14) 및 재공고 접수정보(2026-10-06~10-16)를 대조. 재공고 이후 선정기관명은 서울시 공식 결과 공고로 확인되지 않아 기존 기관 목록 유지. 2025-05-31 서울시의회 자료의 주간 개별형 18개소·이용자 54명과 2026-08-31 서울센터 발표의 서울 전체 47개소·166명(3개 유형 합계)을 별도 통계로 구분.",
+    "note": "서울시 공식 24시간형 제공기관 모집 공고(2026-09-14) 및 재공고 접수정보(2026-10-06~10-16)를 대조. 재공고 이후 선정기관명은 서울시 공식 결과 공고로 확인되지 않아 기존 기관 목록 유지. 2025-05-31 서울시의회 자료의 주간 개별형 18개소·이용자 54명과 2026-08-31 서울센터 발표의 서울 전체 47개소·166명(3개 유형 합계)을 별도 통계로 구분. 추가로 한국재활재단의 2026-10-26 24시간 일대일 KRF센터 주·야간 대체인력 채용 공고를 확인해 24시간형 운영근거 기관으로 앱에 추가함. 서울시 2026-11-13 수행기관 선정 결과 공고 게시 사실은 확인했으나 선정기관명은 본문 확보 전까지 미확정.",
     "sources": [
       "https://data.seoul.go.kr/dataList/OA-23027/S/1/datasetView.do",
       "https://www.broso.or.kr/seoul/hp/svc/selectAgencySeach.do",
@@ -754,9 +775,13 @@
       "recruitment": "1~2개소",
       "contact": "서울시 장애인복지과 02-2133-7446",
       "sourceUrl": "https://plan.datainkorea.com/gov_main/gov_view?SEARCH_KEY=PBLANC_NM&SEARCH_VAL=&page=36&seq=1135635",
-      "officialResultStatus": "서울시 공식 모집 재공고는 확인. 2026-11-13 선정 통보일은 별도 공모정보에 기재되어 있으나, 서울시 공식 선정결과 공고와 선정기관명은 확인하지 못함. 공식 결과 확인 전까지 기존 24시간형 기관 목록을 변경하지 않음.",
+      "officialResultStatus": "서울시 고시·공고 목록에서 2026-11-13자 수행기관 선정 결과 공고 게시 사실을 확인. 다만 공고 상세 본문과 선정기관명은 아직 확보하지 못해 신규 선정기관을 특정하지 않음. 상세 공고 원문 확인 후 기관 목록을 확정할 것.",
       "officialAnnouncementUrl": "https://www.seoul.go.kr/news/news_notice.do?nttNo=466288",
-      "note": "재공고 접수 2026-10-06~10-16, 모집 1~2개소. 서울시 공식 공고와 공모정보를 구분해 기록."
+      "note": "재공고 접수 2026-10-06~10-16, 모집 1~2개소. 서울시 공식 공고와 공모정보를 구분해 기록.",
+      "resultNoticePosted": true,
+      "resultNoticeDate": "2026-11-13",
+      "resultNoticeTitle": "’26년 최중증 발달장애인 통합돌봄(24시간 일대일) 사업 수행기관 선정 결과 공고",
+      "resultNoticeListingUrl": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277"
     },
     "publicDataRefresh": {
       "checkedDate": "2026-11-15",
@@ -872,6 +897,14 @@
         "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=219",
         "note": "중앙센터 지원기관 찾기 검색결과에서 서울 소재 주간 그룹형 6개 기관(파랑새아동발달센터, 서울시립발달장애인복지관, 재활상담복지 사회적협동조합(영등포지점), 정 심리발달센터(서대문점), 서부장애인종합복지관, 두리언어발달재활센터(묵동본점)) 확인. 검색결과는 동적 목록이며 서울 전체 지정기관 수·명단을 확정한 것은 아님."
       }
+    },
+    "twentyFourHourOperatingEvidence": {
+      "checkedDate": "2026-11-15",
+      "name": "사회복지법인 한국재활재단",
+      "district": "서대문구",
+      "phone": "02-365-5540",
+      "sourceUrl": "https://www.krfund.or.kr/sub/notice.asp?URL=%2Fsub%2Fnotice.asp&idx=1&num=394&page=1&page_code=3",
+      "note": "2024년 제공기관 목록과 2026-10-26 재단 자체 공고의 24시간 일대일 KRF센터 주·야간 대체인력 채용으로 운영 근거 확인. 최신 공식 지원기관 검색목록 등재 여부 및 2026 지정기간은 별도 확인 필요."
     }
   },
   "referenceDatasets": [
