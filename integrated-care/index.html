@@ -64,7 +64,7 @@ function sum(arr,key){return total(key,arr)}
 function tel(s){return String(s||'').replace(/[^0-9+]/g,'')}
 function mapUrl(r){return r.naverMapUrl||('https://map.naver.com/p/search/'+encodeURIComponent(r.name))}
 function level(r){return r.verificationLevel==='official_directory'?['공식 목록 확인','official']:r.verificationLevel==='candidate'?['추가 확인 필요','candidate']:r.verificationLevel==='operating_evidence'?['운영 근거 확인','']:['확인 수준 미분류','']}
-function setup(){['#district','#formDistrict'].forEach(sel=>districts.forEach(d=>$(sel).add(new Option(d,d))))}
+function setup(){['#district','#formDistrict'].forEach(sel=>{const el=$(sel);if(el)districts.forEach(d=>el.add(new Option(d,d)))})}
 function saveLocal(){localStorage.setItem('careSeoulRecords',JSON.stringify(records.map(cleanRecord)));render()}
 function switchView(id){document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));window.scrollTo({top:0,behavior:'smooth'})}
 document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>switchView(b.dataset.view)));
@@ -84,7 +84,7 @@ function render(){
 }
 ['#search','#type','#district','#sort'].forEach(s=>$(s).addEventListener('input',render));
 setup();
-(async()=>{try{const response=await fetch('./data.json?v=20261115k',{cache:'no-store'});if(!response.ok)throw Error('data');const data=await response.json();window.datasetLastChecked=data.lastChecked||'';officialSnapshot=data.officialSnapshot||null;latestOfficialStatus=data.latestOfficialStatus||null;latestProviderDirectory=data.latestProviderDirectory||null;supportContacts=data.seoulSupportContacts||[];baseRecords=(Array.isArray(data.records)?data.records:[]).map(cleanRecord);records=baseRecords;try{localStorage.removeItem('careSeoulRecords')}catch(e){}}catch(e){records=[]}render()})();
+(async()=>{try{const response=await fetch('./data.json?v=20261115m',{cache:'no-store'});if(!response.ok)throw Error('data');const data=await response.json();window.datasetLastChecked=data.lastChecked||'';officialSnapshot=data.officialSnapshot||null;latestOfficialStatus=data.latestOfficialStatus||null;latestProviderDirectory=data.latestProviderDirectory||null;supportContacts=data.seoulSupportContacts||[];baseRecords=(Array.isArray(data.records)?data.records:[]).map(cleanRecord);records=baseRecords;try{localStorage.removeItem('careSeoulRecords')}catch(e){}}catch(e){records=[]}render()})();
 </script>
 </body>
 </html>
