@@ -1,7 +1,7 @@
 {
   "app": "통합돌봄서비스(서울)",
   "lastChecked": "2026-11-15",
-  "basis": "개별 기관 records는 서울지역발달장애인지원센터 공개 지원기관 검색으로 확인한 기관이며, 전체 47개소 완성 목록은 아님. 2026-08-31 공식 발표 기준 서울 제공기관 47개소, 이용인 166명. 기관별 운영 인원은 별도 근거가 확인되지 않아 미확인으로 유지.",
+  "basis": "개별 기관 records는 서울지역발달장애인지원센터 공식 지원기관 검색에서 '최중증 통합돌봄'으로 표시된 기관을 기준으로 수록. 2026-08-31 서울센터 발표의 47개소·이용인 166명은 당시 집계값이며, 2026-09-30 기준 기관 목록 공지의 첨부자료와 대조가 완료되기 전까지 전체 목록 완성으로 간주하지 않음. 기관별 운영 인원은 별도 근거가 확인되지 않아 미확인으로 유지.",
   "records": [
     {
       "id": "seoul-001",
@@ -363,6 +363,25 @@
       "staffCurrent": "",
       "staffVacancy": "",
       "verified": "2026-11-15"
+    },
+    {
+      "id": "seoul-020",
+      "name": "정 심리발달센터(송파점)",
+      "type": "주간 그룹 1:1",
+      "district": "송파구",
+      "phone": "02-430-7570",
+      "manager": "",
+      "direct": "",
+      "userCapacity": "",
+      "userCurrent": "",
+      "userWaiting": "",
+      "staffCapacity": "",
+      "staffCurrent": "",
+      "staffVacancy": "",
+      "verified": "2026-11-15",
+      "source": "서울지역발달장애인지원센터 지원기관 검색",
+      "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=200",
+      "status": "공식 서비스 유형·기관명·연락처 확인 / 지점명 기준 자치구 표기"
     }
   ],
   "officialSnapshot": {
