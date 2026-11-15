@@ -1,4 +1,4 @@
-const CACHE='care-seoul-pwa-v1';
+const CACHE='care-seoul-pwa-v2';
 const FILES=['./','./index.html','./data.json','./manifest.json','./icon.svg'];
 self.addEventListener('install',event=>{
  event.waitUntil((async()=>{const cache=await caches.open(CACHE);await cache.addAll(FILES);await self.skipWaiting()})());
