@@ -683,6 +683,12 @@
       "evidence": "사업관리자 및 보조인력 채용공고",
       "sourceUrl": "https://data.seoul.go.kr/dataList/OA-23027/S/1/datasetView.do",
       "note": "2026년 운영 근거로 사용하되 채용공고만으로 지정기간·이용인 정원·현원·종사자 현원을 추정하지 않음."
+    },
+    "currentDirectoryReference": {
+      "checkedDate": "2026-11-15",
+      "title": "서울지역발달장애인지원센터 지원기관 찾기",
+      "url": "https://www.broso.or.kr/seoul/hp/svc/selectAgencySeach.do",
+      "note": "서비스 분야에 최중증 통합돌봄 필터가 제공됨. 검색 결과 전체 193건은 모든 서비스 합산이므로 최중증 제공기관 수로 사용하지 않음."
     }
   },
   "monitoring": {
@@ -754,5 +760,14 @@
       "phone": "070-5089-4259",
       "role": "서울지역발달장애인지원센터 최중증 통합돌봄 담당"
     }
-  ]
+  ],
+  "latestProviderDirectory": {
+    "checkedDate": "2026-11-15",
+    "sourceTitle": "2026년도 최중증 발달장애인 통합돌봄서비스 제공기관 목록 현황 공유(2026.9.30. 기준)",
+    "publishedDate": "2026-10-23",
+    "source": "한국장애인개발원 중앙장애아동·발달장애인지원센터 공지",
+    "sourceUrl": "https://www.broso.or.kr/",
+    "status": "공지 게시 사실 확인. 첨부된 기관별 원문 목록은 웹 검색 결과에서 직접 열람되지 않아 기관별 지정 여부를 이 공지 제목만으로 확정하지 않음.",
+    "note": "2026.9.30 기준 최신 기관 목록 공지가 2026.10.23 게시된 사실을 확인. 기관별 유형·기관명 대조는 첨부 원문 확보 후 완료 필요."
+  }
 }
