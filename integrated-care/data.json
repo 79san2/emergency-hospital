@@ -1,7 +1,7 @@
 {
   "app": "통합돌봄서비스(서울)",
   "lastChecked": "2026-11-15",
-  "basis": "개별 기관 records는 서울지역발달장애인지원센터 공식 지원기관 검색에서 '최중증 통합돌봄'으로 표시된 기관을 기준으로 수록. 2026-08-31 서울센터 발표의 47개소·이용인 166명은 당시 집계값이며, 현재 개별 확인되어 등록된 기관 수와는 별개임. 한국장애인개발원 공공데이터포털의 연간 데이터는 2025-09-30 기준 파일이 2026-11-15 확인 시에도 게시되어 있어 2026년 신규 파일 반영 여부를 확인할 수 없음. 기관별 운영 인원은 별도 근거가 확인되지 않아 미확인으로 유지.",
+  "basis": "현재 앱은 공식 지원기관 검색에서 확인된 기관을 순차 등록 중인 부분 목록이며, 전체 서울 제공기관 목록으로 간주하지 않음. 주간 개별 1:1은 기존 4개에 성북장애인복지관을 추가해 현재 5개가 확인되었으나, 사용자가 제시한 18개 이상과 차이가 있어 공식 검색 결과의 전체 페이지를 계속 대조해야 함. 기관별 이용인·종사자 운영 현황은 별도 근거가 확인되지 않아 미확인으로 유지.",
   "records": [
     {
       "id": "seoul-001",
@@ -382,6 +382,25 @@
       "source": "서울지역발달장애인지원센터 지원기관 검색",
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=200",
       "status": "공식 서비스 유형·기관명·연락처 확인 / 지점명 기준 자치구 표기"
+    },
+    {
+      "id": "seoul-021",
+      "name": "성북장애인복지관",
+      "type": "주간 개별 1:1",
+      "district": "성북구",
+      "phone": "02-915-9200",
+      "manager": "",
+      "direct": "",
+      "userCapacity": null,
+      "userCurrent": null,
+      "userWaiting": null,
+      "staffCapacity": null,
+      "staffCurrent": null,
+      "staffVacancy": null,
+      "verified": "2026-11-15",
+      "status": "공식 지원기관 검색에서 주간 개별형 확인",
+      "source": "한국장애인개발원 발달장애인지원센터 지원기관 검색",
+      "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=214"
     }
   ],
   "officialSnapshot": {
