@@ -534,6 +534,30 @@
       "source": "2024년 보건복지부 공모 선정 및 주간 개별형 통합돌봄서비스 운영 보도 / 기관 기본정보",
       "sourceUrl": "https://www.yna.co.kr/view/AKR20241018107200004",
       "status": "주간 개별형 운영 근거 확인 / 대표번호 기관 기본정보 확인"
+    },
+    {
+      "name": "구립용산장애인복지관",
+      "type": "주간 개별 1:1",
+      "district": "용산구",
+      "address": "서울특별시 용산구 효창원로93길 49",
+      "phone": "02-707-1970",
+      "status": "주간 개인별 맞춤형 낮활동 서비스 운영 근거 확인. 2025년 통합돌봄 활동지원 모집자료 확인; 2026 현행 지정 여부 추가 확인 필요",
+      "source": "기관 프로그램 사례집 및 서울시50플러스재단 2025 장애인동행 모집자료",
+      "sourceUrl": "https://www.50plus.or.kr/appView.do?ANN_NO=1293&setPageIndex=1",
+      "verified": "2026-11-15",
+      "id": "candidate-yongsan"
+    },
+    {
+      "name": "성민복지관",
+      "type": "주간 개별 1:1",
+      "district": "노원구",
+      "address": "서울특별시 노원구",
+      "phone": "02-933-0401",
+      "status": "2023년 최중증 통합돌봄서비스 사업 시작 및 2025년 가족지원 프로그램 확인. 2026년 현행 주간 개별형 제공기관 여부 추가 확인 필요",
+      "source": "기관 연혁 및 2025 서울시 장애인 프로그램 자료",
+      "sourceUrl": "https://xn--o39a94xuxfdrev3b02a7il0df4ec51a07g.kr/post_file_download.cm?c=YTo1OntzOjEwOiJib2FyZF9jb2RlIjtzOjIyOiJiMjAyMDA0MDZiNTQxNmY2YzYzODVmIjtzOjk6InBvc3RfY29kZSI7czoyMjoicDIwMjUwMzI0MWY0OTJiZDMxNmIyZSI7czo5OiJmaWxlX2NvZGUiO3M6MjI6InAyMDI1MDMyNDExNjFkOGU2YTVmNjUiO3M6MTk6InBvc3RfZG93bmxvYWRfdG9rZW4iO3M6MTM6IjY5YzFjYmE2MTIwNTIiO3M6MTE6Im1lbWJlcl9jb2RlIjtOO30%3D",
+      "verified": "2026-11-15",
+      "id": "candidate-sungmin"
     }
   ],
   "officialSnapshot": {
@@ -575,7 +599,9 @@
       {
         "name": "성민복지관",
         "type": "주간 개별 1:1",
-        "status": "공식 현행 제공기관 여부 및 연락처 확인 필요"
+        "status": "2023년 최중증 통합돌봄서비스 사업 시작 및 2025년 가족지원 프로그램 확인. 2026년 현행 주간 개별형 제공기관 여부 추가 확인 필요",
+        "sourceUrl": "https://xn--o39a94xuxfdrev3b02a7il0df4ec51a07g.kr/post_file_download.cm?c=YTo1OntzOjEwOiJib2FyZF9jb2RlIjtzOjIyOiJiMjAyMDA0MDZiNTQxNmY2YzYzODVmIjtzOjk6InBvc3RfY29kZSI7czoyMjoicDIwMjUwMzI0MWY0OTJiZDMxNmIyZSI7czo5OiJmaWxlX2NvZGUiO3M6MjI6InAyMDI1MDMyNDExNjFkOGU2YTVmNjUiO3M6MTk6InBvc3RfZG93bmxvYWRfdG9rZW4iO3M6MTM6IjY5YzFjYmE2MTIwNTIiO3M6MTE6Im1lbWJlcl9jb2RlIjtOO30%3D",
+        "note": "기관·공공자료로 운영 이력은 확인했으나 2026년 현행 지정 여부는 추가 확인 필요."
       },
       {
         "name": "성분도복지관",
@@ -587,7 +613,8 @@
       {
         "name": "양천해누리복지관",
         "type": "주간 개별 1:1",
-        "status": "공식 현행 제공기관 여부 및 연락처 확인 필요"
+        "status": "2025년 1월 최중증 발달장애인 통합돌봄 지원사업 실시를 기관 연혁에서 확인. 주간 개별형 유형 및 2026 현행 지정 여부는 추가 확인 필요",
+        "sourceUrl": "https://ycsupport.or.kr/history"
       },
       {
         "name": "용산장애인복지관",
@@ -639,5 +666,14 @@
     "source": "서울시의회 제331회 정례회 업무보고",
     "sourceUrl": "https://mas.smc.seoul.kr/attach/record/SEOUL/appendix/a11/A0068313.pdf?time=20260624200153",
     "note": "서울시는 주간 개별형 종사자 채용현황 모니터링 및 이용자 배치를 매월 추진한다고 보고함."
+  },
+  "lastResearch": {
+    "checkedDate": "2026-11-15",
+    "note": "서울지역발달장애인지원센터 기관검색 및 기관 공식 연혁·서울시50플러스재단 자료를 대조. 주간 개별형 2025 운영 이력 후보 2곳(성민, 용산)을 임시 표시하고 2026 현행 지정은 미확인으로 남김. 양천해누리는 사업 시작 이력만 확인되어 서비스 유형을 확정하지 않음.",
+    "sources": [
+      "https://www.broso.or.kr/seoul/hp/svc/selectAgencySeach.do",
+      "https://ycsupport.or.kr/history",
+      "https://www.50plus.or.kr/appView.do?ANN_NO=1293&setPageIndex=1"
+    ]
   }
 }
