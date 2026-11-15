@@ -474,9 +474,9 @@
       "staffCurrent": "",
       "staffVacancy": "",
       "verified": "2026-11-15",
-      "source": "2026년 9월 최중증 통합돌봄 주간 개별형 보조인력 채용공고 및 기관 공개정보",
-      "sourceUrl": "https://zighang.com/recruitment/326b40dc-3208-44e6-9f44-8178d359e5a0",
-      "status": "2026년 주간 개별형 1:1 운영 근거 확인 / 대표번호 공개"
+      "source": "서울시 사회복지시설 구인정보(한국사회보장정보원), 2026-10-27 사업관리자·보조인력 채용공고",
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-23027/S/1/datasetView.do",
+      "status": "2026-10-27 주간 개별 1:1 사업관리자 및 보조인력 채용공고 확인. 2026년 운영 근거 확인(채용공고 기준); 이용인·종사자 정원 및 현원은 미확인"
     },
     {
       "id": "seoul-026",
@@ -596,7 +596,7 @@
   },
   "verificationQueue": {
     "checkedDate": "2026-11-15",
-    "description": "사용자가 제시한 주간 개별 1:1 후보와 공식·기관 공개자료 대조 결과. 확인된 기관은 records에 반영하고, 현행 운영근거가 부족한 기관은 후보로 유지.",
+    "description": "주간 개별 1:1 후보 기관을 공식 지원기관 검색, 서울시 공공데이터 구인정보, 기관 공개자료와 대조. 2026년 현행 지정 명단 전체가 공식 파일로 확인되지 않아 개별 근거 수준에 따라 기록.",
     "source": "사용자 제공 후보 + 서울시의회 공개자료",
     "sourceUrl": "https://mas.smc.seoul.kr/attach/record/SEOUL/appendix/a11/A0068313.pdf?time=20260624200153",
     "expectedCountFromOfficialHistoricalSource": 18,
@@ -674,7 +674,16 @@
         "status": "2024년 보건복지부 공모 선정 및 주간 개별형 운영 근거 확인",
         "sourceUrl": "https://www.yna.co.kr/view/AKR20241018107200004"
       }
-    ]
+    ],
+    "latestEvidence": {
+      "name": "원광장애인종합복지관",
+      "type": "주간 개별 1:1",
+      "registrationDate": "2026-10-27",
+      "applicationDeadline": "2026-12-24",
+      "evidence": "사업관리자 및 보조인력 채용공고",
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-23027/S/1/datasetView.do",
+      "note": "2026년 운영 근거로 사용하되 채용공고만으로 지정기간·이용인 정원·현원·종사자 현원을 추정하지 않음."
+    }
   },
   "monitoring": {
     "checkedDate": "2026-11-15",
@@ -685,11 +694,11 @@
   },
   "lastResearch": {
     "checkedDate": "2026-11-15",
-    "note": "양천해누리복지관 공식 조직도에서 최중증 통합돌봄 전담 함께돌봄팀, 팀장 및 담당자 연락처 확인. 2025-01-09 통합돌봄서비스 팀원 채용공고 확인. 다만 2026년 주간 개별형 지정 여부는 미확인으로 후보 유지.",
+    "note": "서울시 공공데이터포털의 사회복지시설 구인정보에서 원광장애인종합복지관의 주간개별 1:1 사업관리자 및 보조인력 채용공고(2026-10-27 등록, 접수 마감 2026-12-24)를 확인하여 기존 근거를 최신화함. 서울시의회 2025-05-31 기준 주간 개별형 18개소는 과거 기준으로 유지하고 2026년 현행 전체 명단으로 간주하지 않음.",
     "sources": [
-      "https://ycsupport.or.kr/organization",
-      "https://ycsupport.or.kr/bbs/board.php?bo_table=recruitment&page=2&wr_id=906",
-      "https://www.broso.or.kr/seoul/hp/svc/selectAgencySeach.do"
+      "https://data.seoul.go.kr/dataList/OA-23027/S/1/datasetView.do",
+      "https://www.broso.or.kr/seoul/hp/svc/selectAgencySeach.do",
+      "https://www.mohw.go.kr/menu.es?mid=a10710041400"
     ]
   },
   "latestOfficialStatus": {
