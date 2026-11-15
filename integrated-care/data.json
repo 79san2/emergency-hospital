@@ -1,7 +1,7 @@
 {
   "app": "통합돌봄서비스(서울)",
   "lastChecked": "2026-11-15",
-  "basis": "공개 지원기관 검색으로 확인한 초기 조사자료. 전체 제공기관 목록 완성본이 아니며, 기관별 운영 인원은 미확인.",
+  "basis": "개별 기관 records는 공개 검색으로 확인한 초기 조사자료이며 전체 목록 완성본이 아님. 2026-08-31 공식 발표 기준 서울 제공기관 전체 47개소, 이용인 166명. 기관별 운영 인원은 별도 근거가 확인되지 않아 미확인으로 유지.",
   "records": [
     {
       "id": "seoul-001",
@@ -250,5 +250,13 @@
       "sourceUrl": "https://www.broso.or.kr/seoul/hp/svc/selectAgencySeach.do?pageIndex=30",
       "status": "공식 기관검색 확인"
     }
-  ]
+  ],
+  "officialSnapshot": {
+    "reportedDate": "2026-08-31",
+    "providerCount": 47,
+    "serviceUsers": 166,
+    "source": "한국장애인개발원 서울지역발달장애인지원센터 보도자료",
+    "sourceUrl": "https://www.koddi.or.kr/bbs/press_view.jsp?brdNum=7430145&brdTp=&searchParamUrl=",
+    "note": "서울 전체 제공기관 수에 대한 공식 발표값이며, 현재 앱에 개별 확인되어 등록된 기관 수와는 별개임."
+  }
 }
