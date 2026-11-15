@@ -1,7 +1,7 @@
 {
   "app": "통합돌봄서비스(서울)",
   "lastChecked": "2026-11-15",
-  "basis": "서울시의회 업무보고에서 2025-05-31 기준 주간 개별형 18개소·이용자 54명, 종사자 채용현황 및 이용자 배치 매월 모니터링을 확인. 2026년 현행 전체 명단은 별도 검증 중이며, 앱 등록기관 수와 2025년 기준 통계를 혼동하지 않음. 기관별 정원·현원·대기·종사자 현황은 근거가 확인되지 않으면 미확인으로 유지. 2026-08-31 한국장애인개발원 서울센터 발표 기준 서울 전체 제공기관 47개소·이용인 166명(3개 유형 합계)을 최신 공개 참고통계로 별도 기록.",
+  "basis": "서울시의회 업무보고에서 2025-05-31 기준 주간 개별형 18개소·이용자 54명, 종사자 채용현황 및 이용자 배치 매월 모니터링을 확인. 2026년 현행 전체 명단은 별도 검증 중이며, 앱 등록기관 수와 2025년 기준 통계를 혼동하지 않음. 기관별 정원·현원·대기·종사자 현황은 근거가 확인되지 않으면 미확인으로 유지. 2026-08-31 한국장애인개발원 서울센터 발표 기준 서울 전체 제공기관 47개소·이용인 166명(3개 유형 합계)을 최신 공개 참고통계로 별도 기록. 주소 공란 기관 10곳은 기관 공식 안내·지자체·공공기관 자료를 대조해 보완했으며, 즐거운동행 사회적협동조합은 확인자료 간 주소 일치 여부가 불명확해 주소 미등록으로 유지.",
   "records": [
     {
       "id": "seoul-001",
@@ -282,7 +282,10 @@
       "userCurrent": "",
       "verified": "2026-11-15",
       "verificationLevel": "official_directory",
-      "naverMapUrl": "https://map.naver.com/p/search/%EC%8B%A4%EB%A1%9C%EC%95%94%EC%8B%9C%EA%B0%81%EC%9E%A5%EC%95%A0%EC%9D%B8%EB%B3%B5%EC%A7%80%EA%B4%80(%EC%84%A4%EB%A6%AC%EB%B2%88%ED%95%99%EC%8A%B5%EC%A7%80%EC%9B%90%EC%84%BC%ED%84%B0)"
+      "naverMapUrl": "https://map.naver.com/p/search/%EC%8B%A4%EB%A1%9C%EC%95%94%EC%8B%9C%EA%B0%81%EC%9E%A5%EC%95%A0%EC%9D%B8%EB%B3%B5%EC%A7%80%EA%B4%80(%EC%84%A4%EB%A6%AC%EB%B2%88%ED%95%99%EC%8A%B5%EC%A7%80%EC%9B%90%EC%84%BC%ED%84%B0)",
+      "address": "서울특별시 종로구 자하문로 131-1",
+      "addressSource": "서울시 공개 안내 - 설리번학습지원센터 위치",
+      "addressSourceUrl": "https://mediahub.seoul.go.kr/archives/2009244"
     },
     {
       "id": "seoul-016",
@@ -299,7 +302,10 @@
       "userCurrent": "",
       "verified": "2026-11-15",
       "verificationLevel": "official_directory",
-      "naverMapUrl": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EC%8B%9C%EB%A6%BD%EB%82%A8%EB%B6%80%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80"
+      "naverMapUrl": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EC%8B%9C%EB%A6%BD%EB%82%A8%EB%B6%80%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80",
+      "address": "서울특별시 동작구 여의대방로 20나길 40",
+      "addressSource": "서울시립남부장애인종합복지관 공식 오시는 길",
+      "addressSourceUrl": "https://ilovenambu.or.kr/bbs/content.php?co_id=0509"
     },
     {
       "id": "seoul-017",
@@ -316,7 +322,10 @@
       "userCurrent": "",
       "verified": "2026-11-15",
       "verificationLevel": "official_directory",
-      "naverMapUrl": "https://map.naver.com/p/search/%EC%8B%9C%EB%A6%BD%EC%98%81%EB%93%B1%ED%8F%AC%EC%9E%A5%EC%95%A0%EC%9D%B8%EB%B3%B5%EC%A7%80%EA%B4%80"
+      "naverMapUrl": "https://map.naver.com/p/search/%EC%8B%9C%EB%A6%BD%EC%98%81%EB%93%B1%ED%8F%AC%EC%9E%A5%EC%95%A0%EC%9D%B8%EB%B3%B5%EC%A7%80%EA%B4%80",
+      "address": "서울특별시 영등포구 버드나루로 22",
+      "addressSource": "구로구청 장애인복지관 시설정보",
+      "addressSourceUrl": "https://www.guro.go.kr/www/contents.do?key=2315"
     },
     {
       "id": "seoul-018",
@@ -333,7 +342,10 @@
       "userCurrent": "",
       "verified": "2026-11-15",
       "verificationLevel": "operating_evidence",
-      "naverMapUrl": "https://map.naver.com/p/search/%EB%9B%B0%EC%96%B4%EB%86%80%EC%9E%90%EC%82%AC%ED%9A%8C%EC%84%9C%EB%B9%84%EC%8A%A4%EC%84%BC%ED%84%B0"
+      "naverMapUrl": "https://map.naver.com/p/search/%EB%9B%B0%EC%96%B4%EB%86%80%EC%9E%90%EC%82%AC%ED%9A%8C%EC%84%9C%EB%B9%84%EC%8A%A4%EC%84%BC%ED%84%B0",
+      "address": "서울특별시 강남구 개포로 109길 34, 2층 201호",
+      "addressSource": "한국장애인개발원 장애자녀 부모지원 종합시스템 기관정보",
+      "addressSourceUrl": "https://www.nise.go.kr/onmam/front/M0000101/agency/list.do?pageIndex=2"
     },
     {
       "id": "seoul-019",
@@ -350,7 +362,10 @@
       "userCurrent": "",
       "verified": "2026-11-15",
       "verificationLevel": "operating_evidence",
-      "naverMapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EA%B0%90%EB%B0%A9%EA%B3%BC%ED%9B%84%EC%84%BC%ED%84%B0"
+      "naverMapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EA%B0%90%EB%B0%A9%EA%B3%BC%ED%9B%84%EC%84%BC%ED%84%B0",
+      "address": "서울특별시 강남구 학동로50길 14, 1~2층",
+      "addressSource": "강남구 스마트 장애인복지포털 제공기관 정보",
+      "addressSourceUrl": "https://www.gangnam.go.kr/etc/information/disability_support/index1.html"
     },
     {
       "id": "seoul-020",
@@ -386,7 +401,10 @@
       "source": "한국장애인개발원 중앙센터 지원기관 찾기 - 최중증 통합돌봄 주간 개별형",
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=214",
       "verificationLevel": "official_directory",
-      "naverMapUrl": "https://map.naver.com/p/search/%EC%84%B1%EB%B6%81%EC%9E%A5%EC%95%A0%EC%9D%B8%EB%B3%B5%EC%A7%80%EA%B4%80"
+      "naverMapUrl": "https://map.naver.com/p/search/%EC%84%B1%EB%B6%81%EC%9E%A5%EC%95%A0%EC%9D%B8%EB%B3%B5%EC%A7%80%EA%B4%80",
+      "address": "서울특별시 성북구 화랑로 130",
+      "addressSource": "구로구청 장애인복지관 시설정보",
+      "addressSourceUrl": "https://www.guro.go.kr/www/contents.do?key=2315"
     },
     {
       "id": "seoul-022",
@@ -422,7 +440,10 @@
       "sourceUrl": "https://mapowelfare.or.kr/bbs/board.php?bo_table=notice&wr_id=2910",
       "status": "2026년 10~11월 주간개별 1:1 사업 운영 및 팀 연락처 확인",
       "verificationLevel": "operating_evidence",
-      "naverMapUrl": "https://map.naver.com/p/search/%EB%A7%88%ED%8F%AC%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80"
+      "naverMapUrl": "https://map.naver.com/p/search/%EB%A7%88%ED%8F%AC%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80",
+      "address": "서울특별시 마포구 성산로4길 35",
+      "addressSource": "마포장애인종합복지관 공식 찾아오시는 길",
+      "addressSourceUrl": "https://www.mapowelfare.or.kr/location"
     },
     {
       "id": "seoul-024",
@@ -458,7 +479,10 @@
       "sourceUrl": "https://data.seoul.go.kr/dataList/OA-23027/S/1/datasetView.do",
       "status": "2026-10-27 주간 개별 1:1 사업관리자 및 보조인력 채용공고 확인. 2026년 운영 근거 확인(채용공고 기준); 이용인·종사자 정원 및 현원은 미확인",
       "verificationLevel": "operating_evidence",
-      "naverMapUrl": "https://map.naver.com/p/search/%EC%9B%90%EA%B4%91%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80"
+      "naverMapUrl": "https://map.naver.com/p/search/%EC%9B%90%EA%B4%91%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80",
+      "address": "서울특별시 중랑구 신내로 56",
+      "addressSource": "서울시의회 공개자료 - 원광장애인종합복지관 주소",
+      "addressSourceUrl": "https://clik.nanet.go.kr/clikr-collection/policyinfo/77/313/2023/CLIKC7458999270797260_attach_2.pdf"
     },
     {
       "id": "seoul-026",
@@ -494,7 +518,10 @@
       "sourceUrl": "https://www.welfare-center.or.kr/organization",
       "status": "2026년 통합돌봄센터 운영 및 주간 개별 1:1 확인",
       "verificationLevel": "operating_evidence",
-      "naverMapUrl": "https://map.naver.com/p/search/%EC%84%9C%EB%8C%80%EB%AC%B8%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80"
+      "naverMapUrl": "https://map.naver.com/p/search/%EC%84%9C%EB%8C%80%EB%AC%B8%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80",
+      "address": "서울특별시 서대문구 북아현로 24",
+      "addressSource": "서대문장애인종합복지관 공식 오시는 길",
+      "addressSourceUrl": "https://www.welfare-center.or.kr/location"
     },
     {
       "id": "seoul-028",
@@ -511,7 +538,10 @@
       "sourceUrl": "https://www.yna.co.kr/view/AKR20241018107200004",
       "status": "주간 개별형 운영 근거 확인 / 대표번호 기관 기본정보 확인",
       "verificationLevel": "operating_evidence",
-      "naverMapUrl": "https://map.naver.com/p/search/%EC%A0%95%EB%A6%BD%ED%9A%8C%EA%B4%80"
+      "naverMapUrl": "https://map.naver.com/p/search/%EC%A0%95%EB%A6%BD%ED%9A%8C%EA%B4%80",
+      "address": "서울특별시 광진구 워커힐로 93",
+      "addressSource": "한국장애인개발원 중증장애인 직업재활 통합관리 시스템 기관정보",
+      "addressSourceUrl": "https://vr.koddi.or.kr/org/org_info_view.jsp?orgCd=123456789000048&seOrgKnd1=5&seSysType=vr"
     },
     {
       "name": "구립용산장애인복지관",
