@@ -745,7 +745,25 @@
     "seoulAllTypesServiceUsers": 166,
     "source": "한국장애인개발원 서울센터 보도자료",
     "sourceUrl": "https://www.koddi.or.kr/bbs/press_view.jsp?brdNum=7430145&brdTp=&searchParamUrl=",
-    "note": "서울지역 3개 서비스 유형 전체 합계. 유형별 기관 수·이용인 수로 분리하거나 2026-11-15 현재 수치로 간주하지 않음."
+    "note": "서울지역 3개 서비스 유형 전체 합계. 유형별 기관 수·이용인 수로 분리하거나 2026-11-15 현재 수치로 간주하지 않음.",
+    "reannouncement2026": {
+      "checkedDate": "2026-11-15",
+      "title": "2026년 최중증 발달장애인 통합돌봄 24시간 서비스 제공기관 모집 재공고",
+      "applicationPeriod": "2026-10-06~2026-10-16",
+      "selectionNoticeDate": "2026-11-13",
+      "recruitment": "1~2개소",
+      "contact": "서울시 장애인복지과 02-2133-7446",
+      "sourceUrl": "https://plan.datainkorea.com/gov_main/gov_view?SEARCH_KEY=PBLANC_NM&SEARCH_VAL=&page=36&seq=1135635",
+      "officialResultStatus": "재공고 및 선정 통보일 정보는 공모정보에서 확인했으나, 선정기관명과 실제 지정 여부를 확인할 서울시 공식 결과 공고는 확보하지 못함. 기관명 확인 전까지 기존 24시간형 기관 목록은 변경하지 않음."
+    },
+    "publicDataRefresh": {
+      "checkedDate": "2026-11-15",
+      "dataset": "한국장애인개발원_발달장애인 지원 기관 및 제공서비스",
+      "currentlyPublishedFile": "20250930",
+      "nextScheduledRegistration": "2026-10-30",
+      "sourceUrl": "https://www.data.go.kr/data/15072489/fileData.do",
+      "note": "차기 등록 예정일은 지났으나 검색 시점에 공개된 최신 파일은 2025-09-30 기준 자료로 확인됨. 이 자료는 서비스 제공 여부 확인용이며 정원·현원·대기인원·종사자 현원 데이터는 포함하지 않음."
+    }
   },
   "officialServiceGuide": {
     "title": "최중증 발달장애인 통합돌봄서비스",
