@@ -4,7 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#123f3b">
-<meta name="description" content="서울지역 최중증 발달장애인 통합돌봄서비스 기관 통합현황">\n<link rel="manifest" href="./manifest.json">\n<link rel="icon" href="./icon.svg" type="image/svg+xml">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-status-bar-style" content="default">\n<meta name="apple-mobile-web-app-title" content="통합돌봄(서울)">
+<meta name="description" content="서울지역 최중증 발달장애인 통합돌봄서비스 기관 통합현황">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="통합돌봄(서울)">
 <title>통합돌봄서비스(서울)</title>
 <style>
 :root{font-family:system-ui,"Noto Sans KR",sans-serif;color:#172d2a;background:#f4f7f6;font-synthesis:none;--green:#176b62;--deep:#123f3b;--mint:#e8f3f0;--line:#e4ebe8;--muted:#71817d;--shadow:0 8px 24px #153b3510}
@@ -85,6 +90,29 @@ function render(){
 ['#search','#type','#district','#sort'].forEach(s=>$(s).addEventListener('input',render));
 setup();
 (async()=>{let loaded=null,lastError=null;for(const url of ['./data.json?build=20261115n','/emergency-hospital/integrated-care/data.json?build=20261115n']){try{const response=await fetch(url,{cache:'reload'});if(!response.ok)throw Error('자료 요청 실패('+response.status+')');const data=await response.json();if(!Array.isArray(data.records)||data.records.length===0)throw Error('기관자료가 비어 있습니다.');loaded=data;break}catch(e){lastError=e}}if(!loaded)throw(lastError||Error('기관자료 연결 실패'));window.datasetLastChecked=loaded.lastChecked||'';officialSnapshot=loaded.officialSnapshot||null;latestOfficialStatus=loaded.latestOfficialStatus||null;latestProviderDirectory=loaded.latestProviderDirectory||null;supportContacts=loaded.seoulSupportContacts||[];baseRecords=loaded.records.map(cleanRecord);records=baseRecords;render();})().catch(error=>{records=[];render();$('#resultCount').textContent='기관정보 연결 확인 필요';$('#orgList').innerHTML='<div class="empty">기관정보를 불러오지 못했습니다. 인터넷 연결을 확인한 뒤 새로고침해 주세요. ('+esc(error&&error.message?error.message:'자료 연결 오류')+')</div>'});
+ // 앱 설치 및 오프라인 실행 지원
+ let careSeoulInstallPrompt=null;
+ const installButton=document.getElementById('installApp');
+ window.addEventListener('beforeinstallprompt',event=>{
+  event.preventDefault();
+  careSeoulInstallPrompt=event;
+  if(installButton)installButton.hidden=false;
+ });
+ if(installButton)installButton.addEventListener('click',async()=>{
+  if(!careSeoulInstallPrompt){
+   alert('크롬 오른쪽 위 ⋮ 메뉴에서 “앱 설치” 또는 “홈 화면에 추가”를 선택해 주세요.');
+   return;
+  }
+  careSeoulInstallPrompt.prompt();
+  await careSeoulInstallPrompt.userChoice;
+  careSeoulInstallPrompt=null;
+  installButton.hidden=true;
+ });
+ window.addEventListener('appinstalled',()=>{if(installButton)installButton.hidden=true});
+ if('serviceWorker' in navigator){
+  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js',{scope:'./'}).catch(()=>{}));
+ }
+
 </script>
 </body>
 </html>
