@@ -1,98 +1,141 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#176b62"><meta name="description" content="서울지역 최중증 발달장애인 통합돌봄서비스 기관·연락처·운영현황">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#123f3b">
+<meta name="description" content="서울지역 최중증 발달장애인 통합돌봄서비스 기관 통합현황">
 <title>통합돌봄서비스(서울)</title>
 <style>
-:root{font-family:system-ui,"Noto Sans KR",sans-serif;color:#172b2a;background:#f3f7f6}*{box-sizing:border-box}body{margin:0}header{background:#176b62;color:#fff;padding:24px 18px 22px;border-radius:0 0 24px 24px}header h1{font-size:23px;margin:0 0 6px}header p{font-size:12px;margin:0;opacity:.88}main{max-width:900px;margin:auto;padding:15px}.topline{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:4px 0 14px}.muted{color:#687b79;font-size:12px}.pill{font-size:11px;border-radius:20px;padding:5px 9px;background:#e4f2ef;color:#176b62;font-weight:700}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.stat,.panel,.record{background:#fff;border:1px solid #e5ecea;border-radius:15px;padding:14px;box-shadow:0 2px 8px #193d3910}.stat small{display:block;color:#71817f;font-size:11px}.stat strong{display:block;font-size:23px;margin-top:5px}.stat em{font-style:normal;font-size:11px;color:#72817f}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:16px 0}.tab,button{font:inherit;border:0;border-radius:11px;padding:11px;background:#fff;color:#24413e;font-weight:700}.tab.active,button.primary{background:#176b62;color:#fff}.section{display:none}.section.active{display:block}h2{font-size:17px;margin:19px 2px 10px}.filters{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}input,select{width:100%;border:1px solid #d7e2df;border-radius:10px;background:white;padding:11px;font:inherit;font-size:14px;color:#203936}button{cursor:pointer;border:1px solid #e0e9e6}button.primary{border:0}.list{display:grid;gap:9px}.record h3{font-size:15px;margin:0 0 5px}.record p{font-size:12px;color:#687b79;margin:4px 0}.record .numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:10px 0}.number{background:#f3f7f6;border-radius:9px;padding:8px}.number b{display:block;font-size:17px}.number span{font-size:10px;color:#6b7b79}.actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.actions a{background:#e7f2f0;color:#176b62;text-decoration:none;border-radius:9px;padding:9px 11px;font-size:12px;font-weight:700}.empty{text-align:center;padding:25px 12px;color:#74827f;font-size:13px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.field label{display:block;font-size:11px;color:#60716e;margin:0 0 5px}.field.full{grid-column:1/-1}.btnrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.btnrow button{flex:1}.notice{background:#fff8e9;border:1px solid #f2dfb5;color:#76591b;border-radius:12px;padding:11px;font-size:12px;line-height:1.55;margin:12px 0}.small{font-size:11px;color:#778581;line-height:1.6}footer{text-align:center;padding:25px;color:#84918e;font-size:11px}
-@media(max-width:520px){.stats{grid-template-columns:repeat(3,1fr)}.stat{padding:10px}.stat strong{font-size:19px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.filters{grid-template-columns:1fr}}
-</style></head>
+:root{font-family:system-ui,"Noto Sans KR",sans-serif;color:#172d2a;background:#f4f7f6;font-synthesis:none;--green:#176b62;--deep:#123f3b;--mint:#e8f3f0;--line:#e4ebe8;--muted:#71817d;--shadow:0 8px 24px #153b3510}
+*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button{cursor:pointer}
+.hero{background:linear-gradient(125deg,#123f3b,#1b7569);color:white;padding:27px max(20px,calc((100vw - 1120px)/2)) 25px}
+.hero-inner{max-width:1120px;margin:auto}.brandline{display:flex;align-items:center;gap:10px}.brandmark{width:38px;height:38px;border-radius:13px;background:#ffffff20;display:grid;place-items:center;font-size:20px}.hero h1{font-size:23px;letter-spacing:-.7px;margin:0}.hero p{margin:8px 0 0;color:#d9e9e5;font-size:13px}
+main{max-width:1120px;margin:auto;padding:20px 18px 44px}.topmeta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 0 15px}.tag{display:inline-flex;align-items:center;border-radius:30px;background:var(--mint);color:var(--green);padding:6px 11px;font-size:11px;font-weight:750}.updated{font-size:11px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{background:white;border:1px solid var(--line);border-radius:17px;padding:16px 18px;box-shadow:var(--shadow)}.stat-label{font-size:12px;color:var(--muted)}.stat-value{font-size:27px;font-weight:800;letter-spacing:-1px;margin:5px 0 1px}.stat-foot{font-size:11px;color:#8b9995}
+.nav{display:flex;gap:8px;margin:19px 0 20px;padding:5px;background:#e9efed;border-radius:14px}.nav button{flex:1;border:0;background:transparent;color:#61716d;border-radius:10px;padding:11px 8px;font-size:13px;font-weight:750}.nav button.active{background:white;color:var(--deep);box-shadow:0 2px 8px #173b3512}
+.view{display:none}.view.active{display:block}.section-head{display:flex;justify-content:space-between;align-items:end;gap:10px;margin:22px 2px 12px}.section-head h2{font-size:18px;margin:0;letter-spacing:-.4px}.section-head p{font-size:11px;color:var(--muted);margin:5px 0 0}
+.panel{background:white;border:1px solid var(--line);border-radius:17px;padding:17px;box-shadow:var(--shadow)}.notice{background:#f0f6f4;border:1px solid #deebe6;border-radius:13px;padding:12px 14px;color:#526762;font-size:12px;line-height:1.65;margin:13px 0}.notice strong{color:var(--deep)}
+.quickgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.typecard{background:white;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}.typecard .eyebrow{font-size:11px;color:var(--muted)}.typecard strong{display:block;font-size:24px;margin:6px 0 3px}.typecard small{font-size:11px;color:#81908b}
+.filters{display:grid;grid-template-columns:minmax(180px,1.5fr) repeat(3,minmax(120px,1fr));gap:8px;margin:12px 0}
+input,select{width:100%;border:1px solid #dce5e1;background:white;border-radius:11px;padding:11px 12px;color:#203b36;font-size:13px;outline:none}input:focus,select:focus{border-color:#4b9688;box-shadow:0 0 0 3px #176b6215}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.orgcard{background:white;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow);min-width:0}.orgtop{display:flex;justify-content:space-between;align-items:start;gap:8px}.orgcard h3{font-size:15px;line-height:1.45;margin:0 0 5px;letter-spacing:-.25px}.status{font-size:10px;font-weight:750;padding:5px 8px;border-radius:20px;white-space:nowrap;background:#edf3f1;color:#526761}.status.official{background:#e4f3ec;color:#23734d}.status.candidate{background:#fff3df;color:#94641e}.orgmeta{font-size:11px;color:var(--muted);line-height:1.6;margin:6px 0 12px;overflow-wrap:anywhere}.numbers{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}.number{background:#f5f8f7;border-radius:11px;padding:10px}.number b{display:block;font-size:18px;letter-spacing:-.4px}.number span{font-size:10px;color:var(--muted)}.orgfoot{font-size:11px;color:#75847f;margin:10px 0 0;line-height:1.5}.actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.actions a,.actions button,.softbtn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border:1px solid #dce9e5;background:#f0f6f4;color:#176b62;border-radius:9px;padding:8px 10px;font-size:11px;font-weight:750}.actions button{font-family:inherit}.empty{grid-column:1/-1;text-align:center;padding:34px 12px;color:var(--muted);background:white;border:1px dashed #d8e2de;border-radius:14px;font-size:13px}
+.gridstats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.mini{background:white;border:1px solid var(--line);border-radius:14px;padding:14px}.mini h3{font-size:13px;margin:0 0 8px}.mini strong{font-size:22px}.mini p{font-size:11px;color:var(--muted);line-height:1.6;margin:5px 0 0}
+.formsection{margin:0 0 17px}.formsection h3{font-size:13px;margin:0 0 10px;color:#31534d}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.field label{display:block;font-size:11px;color:#61716c;margin:0 0 6px;font-weight:650}.field.full{grid-column:1/-1}.btnrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.btn{border:1px solid #dce5e1;border-radius:10px;padding:10px 13px;background:white;color:#35524c;font-size:12px;font-weight:750}.btn.primary{background:var(--green);border-color:var(--green);color:white}.btn.danger{color:#a13e3e}.manageitem{display:flex;justify-content:space-between;align-items:center;gap:10px;background:white;border:1px solid var(--line);border-radius:12px;padding:12px}.manageitem h4{font-size:13px;margin:0 0 4px}.manageitem p{font-size:11px;color:var(--muted);margin:0}.manageitem .actions{margin:0}
+.small{font-size:11px;color:var(--muted);line-height:1.65}.hidden{display:none!important}footer{text-align:center;padding:25px 10px 0;color:#899691;font-size:10px}
+@media(max-width:760px){main{padding:15px 13px 35px}.hero{padding:22px 17px}.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}.cards{grid-template-columns:1fr}.quickgrid{gap:8px}.typecard{padding:12px}.typecard strong{font-size:21px}.stat{padding:13px}.stat-value{font-size:23px}.gridstats{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.stats{gap:7px}.stat{padding:11px 9px}.stat-label{font-size:10px}.stat-value{font-size:20px}.stat-foot{font-size:9px}.nav button{font-size:11px;padding:10px 3px}.filters{grid-template-columns:1fr}.filters input{grid-column:auto}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.topmeta{align-items:start;flex-direction:column}}
+</style>
+</head>
 <body>
-<header><h1>통합돌봄서비스(서울)</h1><p>서울지역 최중증 발달장애인 통합돌봄서비스 기관 네트워크</p></header>
+<header class="hero"><div class="hero-inner"><div class="brandline"><div class="brandmark">⌂</div><h1>통합돌봄서비스(서울)</h1></div><p>서울지역 최중증 발달장애인 통합돌봄서비스 기관 정보와 운영현황</p></div></header>
 <main>
-<div class="topline"><span class="pill">기관·연락처·운영현황</span><span class="muted" id="updated">자료 확인일: 미등록</span></div>
+<div class="topmeta"><span class="tag">서울 제공기관 통합현황</span><span class="updated" id="updated">자료 확인일 확인 중</span></div>
 <div class="stats">
- <div class="stat"><small>기관 정보</small><strong id="totalOrg">0</strong><em>개소</em></div>
- <div class="stat"><small>이용인 현원</small><strong id="totalUsers">—</strong><em>명 · 확인자료 기준</em></div>
- <div class="stat"><small>종사자 현원</small><strong id="totalStaff">—</strong><em>명 · 확인자료 기준</em></div>
+ <div class="stat"><div class="stat-label">등록 기관</div><div class="stat-value" id="totalOrg">0</div><div class="stat-foot">개소 · 앱 등록 기준</div></div>
+ <div class="stat"><div class="stat-label">이용인 정원</div><div class="stat-value" id="totalCapacity">—</div><div class="stat-foot">명 · 확인된 수치 합계</div></div>
+ <div class="stat"><div class="stat-label">이용인 현원</div><div class="stat-value" id="totalUsers">—</div><div class="stat-foot">명 · 확인된 수치 합계</div></div>
 </div>
-<div class="tabs">
- <button class="tab active" data-tab="directory">기관 찾기</button><button class="tab" data-tab="stats">현황 통계</button><button class="tab" data-tab="manage">자료 관리</button>
-</div>
-<section class="section active" id="directory">
- <h2>기관 및 연락처</h2>
- <div class="filters"><input id="search" placeholder="기관명·자치구 검색"><select id="type"><option value="">전체 서비스 유형</option><option>24시간형</option><option>주간 개별 1:1</option><option>주간 그룹 1:1</option></select></div>
- <div class="filters"><select id="district"><option value="">서울 전체 자치구</option></select><select id="sort"><option value="name">기관명순</option><option value="district">자치구순</option></select></div>
- <div class="notice">등록 기관 수는 조사·수집된 기관 정보의 수이며, 서울시 현행 지정기관 확정 수와 다를 수 있습니다. 기관별 확인 상태와 원문 출처를 확인하세요. 이용인 정원·현원과 종사자 정원·현원은 공개 근거가 없으면 미확인으로 표시합니다.</div>
- <div class="list" id="orgList"><div class="empty">등록된 기관 정보가 없습니다.<br>자료 관리에서 확인된 기관 정보를 추가할 수 있습니다.</div></div>
+<nav class="nav" aria-label="주요 메뉴">
+ <button class="active" data-view="home">요약</button><button data-view="directory">기관 찾기</button><button data-view="statistics">통계</button><button data-view="manage">자료 관리</button>
+</nav>
+<section class="view active" id="home">
+ <div class="section-head"><div><h2>서비스 유형별 기관 현황</h2><p>현재 앱에 등록된 기관 기준</p></div></div>
+ <div class="quickgrid" id="homeTypes"></div>
+ <div class="section-head"><div><h2>기관 빠른 검색</h2><p>기관명 또는 자치구로 찾아보세요</p></div><button class="btn" data-goto="directory">전체 기관 보기 →</button></div>
+ <div class="panel"><input id="homeSearch" placeholder="예: 강서구, 늘푸른나무복지관"><div id="homeResults" class="cards" style="margin-top:12px"></div></div>
+ <div class="notice"><strong>자료 해석 안내</strong><br>등록 기관 수는 조사·수집된 기관 정보의 수이며, 서울시의 현행 지정기관 확정 수와 다를 수 있습니다. 이용인 정원·현원은 출처가 확인된 수치만 집계하며, 미확인 값은 0명으로 계산하지 않습니다.</div>
+ <div class="section-head"><div><h2>최근 공개 기준자료</h2><p>과거 기준 통계와 최신 공지 확인 정보</p></div></div>
+ <div id="homeSources" class="panel small">공식 자료를 불러오는 중입니다.</div>
 </section>
-<section class="section" id="stats">
- <h2>서비스 유형별 운영현황</h2><div id="typeStats" class="list"></div><div id="officialBaseline" class="notice">공식 기준자료를 불러오는 중입니다.</div><div id="latestOfficial" class="notice">최신 공개 참고통계를 불러오는 중입니다.</div><div id="directoryNotice" class="notice">최신 제공기관 목록 기준을 불러오는 중입니다.</div><h2>자치구별 담당 연락처</h2><div id="supportContacts" class="list"></div>
- <h2>자치구별 현황</h2><div id="districtStats" class="list"></div>
- <div class="notice">합계는 기관별 현황 중 수치가 입력된 항목만 집계합니다. 미확인 기관을 0명으로 간주하지 않습니다.</div>
+<section class="view" id="directory">
+ <div class="section-head"><div><h2>기관 찾기</h2><p id="resultCount">기관 정보를 검색하고 연락처와 위치를 확인합니다.</p></div></div>
+ <div class="filters"><input id="search" placeholder="기관명·주소·자치구 검색"><select id="type"><option value="">전체 서비스 유형</option><option>24시간형</option><option>주간 개별 1:1</option><option>주간 그룹 1:1</option></select><select id="district"><option value="">서울 전체 자치구</option></select><select id="sort"><option value="name">기관명순</option><option value="district">자치구순</option></select></div>
+ <div class="cards" id="orgList"></div>
 </section>
-<section class="section" id="manage">
- <h2>기관 정보 등록·수정</h2>
- <div class="notice">기관별 이용인 정원·현원과 종사자 정원·현원을 확인·관리합니다. 월별 이력은 저장하지 않습니다. 담당자 직통번호는 공개되었거나 기관이 업무용으로 확인해 준 번호만 입력하세요.</div>
- <form id="orgForm">
- <div class="formgrid">
-  <div class="field"><label>기관명 *</label><input name="name" required placeholder="기관 정식 명칭"></div>
-  <div class="field"><label>서비스 유형 *</label><select name="type" required><option value="">선택</option><option>24시간형</option><option>주간 개별 1:1</option><option>주간 그룹 1:1</option></select></div>
-  <div class="field"><label>자치구 *</label><select name="district" required id="formDistrict"></select></div>
-  <div class="field"><label>주소</label><input name="address" placeholder="서울시 자치구 주소"></div>
-  <div class="field"><label>대표번호</label><input name="phone" inputmode="tel" placeholder="02-0000-0000"></div>
-  <div class="field"><label>담당자·팀장 직책/성명</label><input name="manager" placeholder="팀장 / 담당자"></div>
-  <div class="field"><label>담당자 직통번호</label><input name="direct" inputmode="tel" placeholder="공개·기관 확인 번호"></div>
-  <div class="field"><label>이용인 정원</label><input name="userCapacity" type="number" min="0" placeholder="미확인 시 공란"></div>
-  <div class="field"><label>이용인 현원</label><input name="userCurrent" type="number" min="0" placeholder="미확인 시 공란"></div>
-  <div class="field"><label>이용인 대기인원</label><input name="userWaiting" type="number" min="0" placeholder="미확인 시 공란"></div>
-  <div class="field"><label>종사자 정원</label><input name="staffCapacity" type="number" min="0" placeholder="미확인 시 공란"></div>
-  <div class="field"><label>종사자 현원</label><input name="staffCurrent" type="number" min="0" placeholder="미확인 시 공란"></div>
-  <div class="field"><label>종사자 결원</label><input name="staffVacancy" type="number" min="0" placeholder="미확인 시 공란"></div>
-  <div class="field"><label>정보 확인일</label><input name="verified" type="date"></div>
-  <div class="field"><label>운영 확인 상태</label><input name="status" placeholder="예: 2026년 운영 확인 / 지정 여부 확인 중"></div><div class="field"><label>출처명·비고</label><input name="source" placeholder="공식 홈페이지, 기관 확인 등"></div><div class="field full"><label>출처 URL</label><input name="sourceUrl" type="url" placeholder="https://..."></div>
- </div>
- <div class="btnrow"><button class="primary" type="submit">기관 정보 저장</button><button type="reset" id="resetForm">입력 초기화</button></div>
+<section class="view" id="statistics">
+ <div class="section-head"><div><h2>운영현황 통계</h2><p>앱 등록자료와 공식 발표자료를 구분해 표시합니다.</p></div></div>
+ <div class="gridstats" id="typeStats"></div>
+ <div class="section-head"><div><h2>자치구별 등록 현황</h2><p>기관 등록 수와 확인된 이용인 수치</p></div></div>
+ <div class="gridstats" id="districtStats"></div>
+ <div class="section-head"><div><h2>공식 참고자료</h2><p>기준일이 다른 자료는 별도로 확인하세요.</p></div></div>
+ <div id="officialSources" class="panel small"></div>
+ <div class="section-head"><div><h2>서울지역센터 담당 연락처</h2><p>서비스 문의 권역별 연락처</p></div></div>
+ <div id="supportContacts" class="cards"></div>
+</section>
+<section class="view" id="manage">
+ <div class="section-head"><div><h2>기관 정보 등록·수정</h2><p>기관 기본정보와 이용인 현황을 관리합니다.</p></div></div>
+ <div class="notice">관리 항목은 기관 기본정보, 연락처, 이용인 정원·현원, 확인일과 출처입니다. 종사자 현황과 대기인원은 관리하지 않습니다. 저장 자료는 현재 사용 중인 기기의 브라우저에 보관됩니다.</div>
+ <form id="orgForm" class="panel">
+  <div class="formsection"><h3>01 · 기관 기본정보</h3><div class="formgrid">
+   <div class="field"><label>기관명 *</label><input name="name" required placeholder="기관 정식 명칭"></div>
+   <div class="field"><label>서비스 유형 *</label><select name="type" required><option value="">선택</option><option>24시간형</option><option>주간 개별 1:1</option><option>주간 그룹 1:1</option></select></div>
+   <div class="field"><label>자치구 *</label><select name="district" required id="formDistrict"></select></div>
+   <div class="field"><label>주소</label><input name="address" placeholder="도로명주소"></div>
+   <div class="field"><label>대표번호</label><input name="phone" inputmode="tel" placeholder="02-0000-0000"></div>
+   <div class="field"><label>담당자·팀장 직책/성명</label><input name="manager" placeholder="팀장 / 담당자"></div>
+   <div class="field"><label>담당자 직통번호</label><input name="direct" inputmode="tel" placeholder="공개·기관 확인 번호"></div>
+  </div></div>
+  <div class="formsection"><h3>02 · 이용인 현황</h3><div class="formgrid">
+   <div class="field"><label>이용인 정원</label><input name="userCapacity" type="number" min="0" placeholder="미확인 시 공란"></div>
+   <div class="field"><label>이용인 현원</label><input name="userCurrent" type="number" min="0" placeholder="미확인 시 공란"></div>
+  </div></div>
+  <div class="formsection"><h3>03 · 확인 및 출처</h3><div class="formgrid">
+   <div class="field"><label>정보 확인일</label><input name="verified" type="date"></div>
+   <div class="field"><label>운영 확인 상태</label><input name="status" placeholder="예: 2026년 운영 확인"></div>
+   <div class="field"><label>출처명·비고</label><input name="source" placeholder="공식 홈페이지, 기관 확인 등"></div>
+   <div class="field"><label>출처 URL</label><input name="sourceUrl" type="url" placeholder="https://..."></div>
+  </div></div>
+  <div class="btnrow"><button class="btn primary" type="submit" id="saveButton">기관 정보 저장</button><button class="btn" type="reset" id="resetForm">입력 초기화</button><button class="btn hidden" type="button" id="cancelEdit">수정 취소</button></div>
  </form>
- <h2>자료 내보내기</h2>
- <div class="btnrow"><button id="export">자료 내보내기(JSON)</button><button id="importBtn">자료 가져오기(JSON)</button><input id="importFile" type="file" accept="application/json" hidden></div>
- <p class="small">기관별 최신 현황을 조회합니다. 공식 기본자료는 서버의 data.json에서 불러오며, 사용자가 추가·수정한 내용은 현재 기기의 브라우저에 저장됩니다. 월별 이력은 저장하지 않습니다.</p>
- <div class="btnrow"><button id="monthExport">현재 기관 현황 CSV 내려받기</button></div><p class="small">필요할 때 현재 기관 현황을 CSV로 내려받아 확인할 수 있습니다.</p>
- <h2>등록 기관 목록</h2><div id="manageList" class="list"></div>
+ <div class="section-head"><div><h2>자료 백업 및 복원</h2><p>기기 변경 또는 자료 보관 시 파일로 저장하세요.</p></div></div>
+ <div class="panel"><div class="btnrow" style="margin-top:0"><button class="btn primary" id="export">JSON 백업</button><button class="btn" id="importBtn">JSON 복원</button><button class="btn" id="csvExport">현재 현황 CSV</button><input id="importFile" type="file" accept="application/json" hidden></div><p class="small">개별 기기의 저장 자료는 다른 기기와 자동으로 동기화되지 않습니다. JSON 백업 파일을 이용해 자료를 옮길 수 있습니다.</p></div>
+ <div class="section-head"><div><h2>등록 기관 목록</h2><p>기본 데이터 및 현재 기기에서 추가한 기관</p></div></div><div id="manageList" class="cards"></div>
 </section>
-<footer>통합돌봄서비스(서울) · 기관별 정보는 확인일과 출처를 함께 관리하세요.</footer>
+<footer>통합돌봄서비스(서울) · 기관 정보는 확인일과 출처를 함께 관리합니다.</footer>
 </main>
 <script>
 const districts=['자치구 확인 필요','강남구','강동구','강북구','강서구','관악구','광진구','구로구','금천구','노원구','도봉구','동대문구','동작구','마포구','서대문구','서초구','성동구','성북구','송파구','양천구','영등포구','용산구','은평구','종로구','중구','중랑구'];
-const $=s=>document.querySelector(s);let records=[];let editing=null;let officialSnapshot=null;let latestOfficialStatus=null;let supportContacts=[];let latestProviderDirectory=null;
-function save(){localStorage.setItem('careSeoulRecords',JSON.stringify(records));render()}
-function val(v){return v===undefined||v===null||v===''?'미확인':v}
-function num(k){let a=records.map(r=>r[k]).filter(v=>v!==''&&v!==undefined&&v!==null);return a.length?a.reduce((s,v)=>s+Number(v),0).toLocaleString('ko-KR'):'—'}
-function setupDistricts(){['#district','#formDistrict'].forEach(sel=>{districts.forEach(d=>$(sel).add(new Option(d,d)))})}
-function render(){ $('#totalOrg').textContent=records.length;$('#totalUsers').textContent=num('userCurrent');$('#totalStaff').textContent=num('staffCurrent');let dates=records.map(r=>r.verified).filter(Boolean).sort();$('#updated').textContent='최근 확인일: '+(dates.at(-1)||'미등록');
- let q=$('#search').value.toLowerCase(),t=$('#type').value,d=$('#district').value,sort=$('#sort').value;
- let arr=records.filter(r=>(!q||(r.name+' '+r.district).toLowerCase().includes(q))&&(!t||r.type===t)&&(!d||r.district===d)).sort((a,b)=>String(a[sort]||'').localeCompare(String(b[sort]||''),'ko'));
- $('#orgList').innerHTML=arr.length?arr.map(r=>card(r,false)).join(''):'<div class="empty">조건에 맞는 기관이 없습니다.</div>';
- $('#manageList').innerHTML=records.length?records.map(r=>'<div class="record"><h3>'+esc(r.name)+'</h3><p>'+esc(r.district)+' · '+esc(r.type)+'</p><div class="actions"><button onclick="editRecord(\''+r.id+'\')">수정</button><button onclick="deleteRecord(\''+r.id+'\')">삭제</button></div></div>').join(''):'<div class="empty">등록된 기관이 없습니다.</div>';
- $('#typeStats').innerHTML=['24시간형','주간 개별 1:1','주간 그룹 1:1'].map(t=>{let a=records.filter(r=>r.type===t),official=a.filter(r=>r.verificationLevel==='official_directory').length,evidence=a.filter(r=>r.verificationLevel==='operating_evidence').length,candidate=a.filter(r=>r.verificationLevel==='candidate').length;return '<div class="record"><h3>'+t+'</h3><p>등록 '+a.length+'개소 · 공식 목록 확인 '+official+'개소 · 운영 근거 확인 '+evidence+'개소 · 추가 확인 '+candidate+'개소</p><p>이용인 현원 '+sum(a,'userCurrent')+'명 · 종사자 현원 '+sum(a,'staffCurrent')+'명</p></div>'}).join('');
- if(latestProviderDirectory){$('#directoryNotice').innerHTML=esc(latestProviderDirectory.publishedDate)+' 게시 · '+esc(latestProviderDirectory.sourceTitle)+' / '+esc(latestProviderDirectory.status)+(latestProviderDirectory.sourceUrl?' <a target="_blank" rel="noopener" href="'+esc(latestProviderDirectory.sourceUrl)+'">공식 기관 검색</a>':'');}if(latestOfficialStatus){$('#latestOfficial').textContent=latestOfficialStatus.reportedDate+' 발표 기준 서울 전체 제공기관 '+latestOfficialStatus.seoulAllTypesProviderCount+'개소, 이용인 '+latestOfficialStatus.seoulAllTypesServiceUsers+'명(3개 서비스 유형 합계). 현재 현행 수치나 유형별 통계로 해석하지 않습니다.';}$('#supportContacts').innerHTML=supportContacts.map(c=>'<div class="record"><h3>'+esc(c.districts.join(' · '))+'</h3><p>'+esc(c.role)+'</p><div class="actions"><a href="tel:'+tel(c.phone)+'">담당 연락처 '+esc(c.phone)+'</a></div></div>').join('');if(officialSnapshot&&officialSnapshot.weeklyIndividualProviders){$('#officialBaseline').textContent=(officialSnapshot.reportedDate||'과거 기준')+' 기준 서울시의회 자료: 주간 개별형 '+officialSnapshot.weeklyIndividualProviders+'개소, 이용자 '+(officialSnapshot.weeklyIndividualUsers??'미확인')+'명. 현재 앱 등록기관 수와는 별도 기준이며, 2026년 현행 전체 명단은 확인 중입니다.';}$('#districtStats').innerHTML=districts.filter(d=>d!=='자치구 확인 필요').map(d=>{let a=records.filter(r=>r.district===d);return '<div class="record"><h3>'+d+'</h3><p>등록 기관 '+a.length+'개소 · 이용인 현원 '+sum(a,'userCurrent')+'명 · 종사자 현원 '+sum(a,'staffCurrent')+'명</p></div>'}).join('');
-}
-function sum(a,k){let x=a.map(r=>r[k]).filter(v=>v!==''&&v!==undefined&&v!==null);return x.length?x.reduce((s,v)=>s+Number(v),0):'미확인'}
+const $=s=>document.querySelector(s);let records=[],baseRecords=[],editing=null,officialSnapshot=null,latestOfficialStatus=null,supportContacts=[],latestProviderDirectory=null;
+const cleanRecord=r=>{const x={...r};delete x.staffCapacity;delete x.staffCurrent;delete x.staffVacancy;delete x.userWaiting;return x};
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function levelLabel(r){return r.verificationLevel==='official_directory'?'공식 기관검색 확인':r.verificationLevel==='operating_evidence'?'운영 근거 확인':r.verificationLevel==='candidate'?'후보·추가 확인 필요':'확인 수준 미분류'}
-function card(r){return '<article class="record"><h3>'+esc(r.name)+'</h3><p class="small">확인 수준: '+levelLabel(r)+'</p><p>'+esc(r.district)+' · '+esc(r.type)+' · '+esc(r.address||'주소 미등록')+'</p><div class="numbers"><div class="number"><b>'+val(r.userCapacity)+'</b><span>이용인 정원</span></div><div class="number"><b>'+val(r.userCurrent)+'</b><span>이용인 현원</span></div></div><div class="numbers"><div class="number"><b>'+val(r.staffCapacity)+'</b><span>종사자 정원</span></div><div class="number"><b>'+val(r.staffCurrent)+'</b><span>종사자 현원</span></div></div><p>담당: '+esc(r.manager||'미등록')+' · 확인일: '+esc(r.verified||'미등록')+'</p><div class="actions">'+(r.phone?'<a href="tel:'+tel(r.phone)+'">대표번호 '+esc(r.phone)+'</a>':'')+(r.direct?'<a href="tel:'+tel(r.direct)+'">직통번호 '+esc(r.direct)+'</a>':'')+(r.naverMapUrl?'<a target="_blank" rel="noopener" href="'+esc(r.naverMapUrl)+'">네이버 지도</a>':'')+'</div><p class="small">확인 상태: '+esc(r.status||'확인 상태 미기재')+'</p><p class="small">출처: '+esc(r.source||'미기재')+(r.sourceUrl?' · <a target="_blank" rel="noopener" href="'+esc(r.sourceUrl)+'">원문 확인</a>':'')+'</p></article>'}
-function tel(s){return String(s).replace(/[^0-9+]/g,'')}
-function editRecord(id){let r=records.find(x=>x.id===id);if(!r)return;editing=id;let f=$('#orgForm');Object.keys(r).forEach(k=>{if(f.elements[k])f.elements[k].value=r[k]});document.querySelector('[data-tab="manage"]').click();f.scrollIntoView({behavior:'smooth'})}
-function deleteRecord(id){if(confirm('이 기관 정보를 삭제할까요?')){records=records.filter(r=>r.id!==id);save()}}
-$('#orgForm').addEventListener('submit',e=>{e.preventDefault();let o=Object.fromEntries(new FormData(e.target));o.id=editing||String(Date.now());if(editing)records=records.map(r=>r.id===editing?o:r);else records.push(o);editing=null;e.target.reset();save();alert('기관 정보를 이 기기에 저장했습니다.')});
-$('#resetForm').onclick=()=>editing=null;
-document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab,.section').forEach(x=>x.classList.remove('active'));b.classList.add('active');$('#'+b.dataset.tab).classList.add('active')});
-['#search','#type','#district','#sort'].forEach(s=>$(s).addEventListener('input',render));
-$('#export').onclick=()=>download('integrated-care-seoul.json',JSON.stringify({app:'통합돌봄서비스(서울)',exportedAt:new Date().toISOString(),records},null,2),'application/json');
-$('#importBtn').onclick=()=>$('#importFile').click();
-$('#importFile').onchange=async e=>{let f=e.target.files[0];if(!f)return;try{let x=JSON.parse(await f.text());let a=Array.isArray(x)?x:x.records;if(!Array.isArray(a))throw Error();if(confirm('현재 '+records.length+'개 기관 자료를 가져온 '+a.length+'개 자료로 교체할까요?')){records=a;save();alert('자료를 가져왔습니다.')}}catch(_){alert('올바른 JSON 자료 파일이 아닙니다.')}e.target.value=''};
-$('#monthExport').onclick=()=>{let rows=[['기관명','서비스 유형','자치구','이용인 정원','이용인 현원','종사자 정원','종사자 현원','확인일','출처'],...records.map(r=>[r.name,r.type,r.district,r.userCapacity,r.userCurrent,r.staffCapacity,r.staffCurrent,r.verified,r.source])];download('통합돌봄서비스_서울_현황.csv','\ufeff'+rows.map(row=>row.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\n'),'text/csv;charset=utf-8')};
-function download(name,data,type){let a=document.createElement('a'),u=URL.createObjectURL(new Blob([data],{type}));a.href=u;a.download=name;a.click();URL.revokeObjectURL(u)}
-setupDistricts();(async()=>{try{const response=await fetch('./data.json',{cache:'no-store'});if(response.ok){const data=await response.json();officialSnapshot=data.officialSnapshot||null;latestOfficialStatus=data.latestOfficialStatus||null;latestProviderDirectory=data.latestProviderDirectory||null;supportContacts=data.seoulSupportContacts||[];const base=Array.isArray(data.records)?data.records:[];const saved=JSON.parse(localStorage.getItem('careSeoulRecords')||'[]');const baseIds=new Set(base.map(x=>x.id));records=[...base,...saved.filter(x=>!baseIds.has(x.id))];}else{records=JSON.parse(localStorage.getItem('careSeoulRecords')||'[]')}}catch(e){records=JSON.parse(localStorage.getItem('careSeoulRecords')||'[]')}render()})();
-</script></body></html>
+function val(v){return v===undefined||v===null||v===''?'미확인':Number(v).toLocaleString('ko-KR')}
+function total(key,arr=records){const a=arr.map(r=>r[key]).filter(v=>v!==''&&v!==undefined&&v!==null);return a.length?a.reduce((s,v)=>s+Number(v),0).toLocaleString('ko-KR'):'—'}
+function sum(arr,key){return total(key,arr)}
+function tel(s){return String(s||'').replace(/[^0-9+]/g,'')}
+function mapUrl(r){return r.naverMapUrl||('https://map.naver.com/p/search/'+encodeURIComponent(r.name))}
+function level(r){return r.verificationLevel==='official_directory'?['공식 목록 확인','official']:r.verificationLevel==='candidate'?['추가 확인 필요','candidate']:r.verificationLevel==='operating_evidence'?['운영 근거 확인','']:['확인 수준 미분류','']}
+function setup(){['#district','#formDistrict'].forEach(sel=>districts.forEach(d=>$(sel).add(new Option(d,d))))}
+function saveLocal(){localStorage.setItem('careSeoulRecords',JSON.stringify(records.map(cleanRecord)));render()}
+function switchView(id){document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>switchView(b.dataset.view)));
+document.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click',()=>switchView(b.dataset.goto)));
+function card(r,manage=false){const lv=level(r),addr=r.address||'주소 미등록';return '<article class="orgcard"><div class="orgtop"><h3>'+esc(r.name)+'</h3><span class="status '+lv[1]+'">'+lv[0]+'</span></div><div class="orgmeta">'+esc(r.district||'자치구 미확인')+' · '+esc(r.type||'유형 미확인')+'<br>'+esc(addr)+'</div><div class="numbers"><div class="number"><b>'+val(r.userCapacity)+'</b><span>이용인 정원</span></div><div class="number"><b>'+val(r.userCurrent)+'</b><span>이용인 현원</span></div></div><p class="orgfoot">담당 '+esc(r.manager||'미등록')+' · 확인일 '+esc(r.verified||'미등록')+'</p><div class="actions">'+(r.phone?'<a href="tel:'+tel(r.phone)+'">대표번호 연결</a>':'')+(r.direct?'<a href="tel:'+tel(r.direct)+'">직통번호 연결</a>':'')+'<a target="_blank" rel="noopener" href="'+esc(mapUrl(r))+'">네이버 지도</a>'+(manage?'<button type="button" onclick="editRecord(\''+esc(r.id)+'\')">수정</button><button type="button" onclick="deleteRecord(\''+esc(r.id)+'\')">삭제</button>':'')+'</div><p class="orgfoot">'+esc(r.status||'운영 확인 상태 미기재')+(r.source?' · 출처 '+esc(r.source):'')+(r.sourceUrl?' · <a target="_blank" rel="noopener" href="'+esc(r.sourceUrl)+'">원문</a>':'')+'</p></article>'}
+function render(){ $('#totalOrg').textContent=records.length;$('#totalCapacity').textContent=total('userCapacity');$('#totalUsers').textContent=total('userCurrent');const dates=records.map(r=>r.verified).filter(Boolean).sort();$('#updated').textContent='최근 확인일 '+(dates.at(-1)||'미등록');
+ const types=['24시간형','주간 개별 1:1','주간 그룹 1:1'];$('#homeTypes').innerHTML=types.map(t=>{const a=records.filter(r=>r.type===t);return '<div class="typecard"><div class="eyebrow">'+t+'</div><strong>'+a.length+'개소</strong><small>이용인 정원 '+sum(a,'userCapacity')+'명 · 현원 '+sum(a,'userCurrent')+'명</small></div>'}).join('');
+ const q=($('#search')?.value||'').toLowerCase(),t=$('#type')?.value||'',d=$('#district')?.value||'',sort=$('#sort')?.value||'name';const arr=records.filter(r=>(!q||[r.name,r.district,r.address].join(' ').toLowerCase().includes(q))&&(!t||r.type===t)&&(!d||r.district===d)).sort((a,b)=>String(a[sort]||'').localeCompare(String(b[sort]||''),'ko'));$('#orgList').innerHTML=arr.length?arr.map(r=>card(r)).join(''):'<div class="empty">검색 조건에 맞는 기관이 없습니다.</div>';$('#resultCount').textContent='검색 결과 '+arr.length+'개 기관';
+ const hq=($('#homeSearch')?.value||'').toLowerCase();const home=records.filter(r=>!hq||[r.name,r.district].join(' ').toLowerCase().includes(hq)).slice(0,4);$('#homeResults').innerHTML=home.length?home.map(r=>card(r)).join(''):'<div class="empty">검색 결과가 없습니다.</div>';
+ $('#typeStats').innerHTML=types.map(t=>{const a=records.filter(r=>r.type===t);const official=a.filter(r=>r.verificationLevel==='official_directory').length,evidence=a.filter(r=>r.verificationLevel==='operating_evidence').length,candidate=a.filter(r=>r.verificationLevel==='candidate').length;return '<div class="mini"><h3>'+t+'</h3><strong>'+a.length+'개소</strong><p>공식 목록 확인 '+official+' · 운영 근거 확인 '+evidence+' · 추가 확인 '+candidate+'<br>이용인 정원 '+sum(a,'userCapacity')+'명 · 현원 '+sum(a,'userCurrent')+'명</p></div>'}).join('');
+ $('#districtStats').innerHTML=districts.filter(x=>x!=='자치구 확인 필요').map(d=>{const a=records.filter(r=>r.district===d);return a.length?'<div class="mini"><h3>'+d+'</h3><strong>'+a.length+'개소</strong><p>이용인 정원 '+sum(a,'userCapacity')+'명 · 현원 '+sum(a,'userCurrent')+'명</p></div>':''}).join('');
+ $('#manageList').innerHTML=records.length?records.map(r=>card(r,true)).join(''):'<div class="empty">등록된 기관이 없습니다.</div>';
+ const old=officialSnapshot&&officialSnapshot.weeklyIndividualProviders?'<p><strong>'+esc(officialSnapshot.reportedDate||'과거 기준')+' 서울시의회 자료</strong><br>주간 개별형 '+esc(officialSnapshot.weeklyIndividualProviders)+'개소 · 이용자 '+esc(officialSnapshot.weeklyIndividualUsers??'미확인')+'명</p>':'';
+ const latest=latestOfficialStatus?'<p><strong>'+esc(latestOfficialStatus.reportedDate||'최근 공개')+' 한국장애인개발원 발표</strong><br>서울 전체 3개 유형 합계 '+esc(latestOfficialStatus.seoulAllTypesProviderCount)+'개소 · 이용인 '+esc(latestOfficialStatus.seoulAllTypesServiceUsers)+'명</p>':'';
+ const directory=latestProviderDirectory?'<p><strong>'+esc(latestProviderDirectory.publishedDate||'제공기관 목록')+'</strong><br>'+esc(latestProviderDirectory.sourceTitle||'공식 제공기관 목록')+' · '+esc(latestProviderDirectory.status||'목록 확인 필요')+'</p>':'';
+ $('#homeSources').innerHTML=(old+latest+directory)||'공식 참고자료가 등록되어 있지 않습니다.';$('#officialSources').innerHTML=(old+latest+directory)||'공식 참고자료가 없습니다.';
+ $('#supportContacts').innerHTML=supportContacts.map(c=>'<article class="orgcard"><h3>'+esc((c.districts||[]).join(' · '))+'</h3><div class="orgmeta">'+esc(c.role||'서울지역센터 문의')+'</div><div class="actions"><a href="tel:'+tel(c.phone)+'">'+esc(c.phone)+'</a></div></article>').join('');
+}
+function editRecord(id){const r=records.find(x=>x.id===id);if(!r)return;editing=id;const f=$('#orgForm');f.reset();Object.keys(r).forEach(k=>{if(f.elements[k])f.elements[k].value=r[k]});$('#saveButton').textContent='수정 내용 저장';$('#cancelEdit').classList.remove('hidden');switchView('manage');f.scrollIntoView({behavior:'smooth',block:'start'})}
+function cancelEdit(){editing=null;$('#orgForm').reset();$('#saveButton').textContent='기관 정보 저장';$('#cancelEdit').classList.add('hidden')}
+function deleteRecord(id){const r=records.find(x=>x.id===id);if(!r||!confirm('「'+r.name+'」 기관 정보를 현재 기기에서 삭제할까요?'))return;records=records.filter(x=>x.id!==id);saveLocal()}
+$('#cancelEdit').onclick=cancelEdit;$('#resetForm').onclick=()=>{editing=null;$('#saveButton').textContent='기관 정보 저장';$('#cancelEdit').classList.add('hidden')};
+$('#orgForm').addEventListener('submit',e=>{e.preventDefault();const o=cleanRecord(Object.fromEntries(new FormData(e.target)));o.id=editing||('local-'+Date.now());if(editing){records=records.map(r=>r.id===editing?{...r,...o}:r)}else{records.push(o)}cancelEdit();saveLocal();alert('기관 정보를 현재 기기에 저장했습니다.')});
+['#search','#type','#district','#sort','#homeSearch'].forEach(s=>$(s).addEventListener('input',render));
+function download(name,data,type){const a=document.createElement('a'),u=URL.createObjectURL(new Blob([data],{type}));a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+$('#export').onclick=()=>download('통합돌봄서비스_서울_백업.json',JSON.stringify({app:'통합돌봄서비스(서울)',exportedAt:new Date().toISOString(),records:records.map(cleanRecord)},null,2),'application/json');
+$('#csvExport').onclick=()=>{const rows=[['기관명','서비스 유형','자치구','주소','대표번호','담당자','직통번호','이용인 정원','이용인 현원','확인일','출처'],...records.map(r=>[r.name,r.type,r.district,r.address,r.phone,r.manager,r.direct,r.userCapacity,r.userCurrent,r.verified,r.source])];download('통합돌봄서비스_서울_현황.csv','\ufeff'+rows.map(row=>row.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\r\n'),'text/csv;charset=utf-8')};
+$('#importBtn').onclick=()=>$('#importFile').click();$('#importFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const x=JSON.parse(await f.text()),a=Array.isArray(x)?x:x.records;if(!Array.isArray(a))throw Error('invalid');if(confirm('현재 '+records.length+'개 기관 자료를 가져온 '+a.length+'개 기관 자료로 교체할까요?')){records=a.map(cleanRecord);saveLocal();alert('자료를 복원했습니다.')}}catch(_){alert('올바른 JSON 백업 파일이 아닙니다.')}e.target.value=''};
+setup();
+(async()=>{try{const response=await fetch('./data.json',{cache:'no-store'});if(!response.ok)throw Error('data');const data=await response.json();officialSnapshot=data.officialSnapshot||null;latestOfficialStatus=data.latestOfficialStatus||null;latestProviderDirectory=data.latestProviderDirectory||null;supportContacts=data.seoulSupportContacts||[];baseRecords=(Array.isArray(data.records)?data.records:[]).map(cleanRecord);const saved=JSON.parse(localStorage.getItem('careSeoulRecords')||'[]').map(cleanRecord);const merged=new Map(baseRecords.map(x=>[x.id,x]));saved.forEach(x=>merged.set(x.id,{...(merged.get(x.id)||{}),...x}));records=[...merged.values()];localStorage.setItem('careSeoulRecords',JSON.stringify(saved));}catch(e){try{records=JSON.parse(localStorage.getItem('careSeoulRecords')||'[]').map(cleanRecord)}catch(_){records=[]}}render()})();
+</script>
+</body>
+</html>
