@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#176b62"><meta name="description" content="서울지역 최중증 발달장애인 통합돌봄서비스 기관·연락처·운영현황">
+<title>통합돌봄서비스(서울)</title>
+<style>
+:root{font-family:system-ui,"Noto Sans KR",sans-serif;color:#172b2a;background:#f3f7f6}*{box-sizing:border-box}body{margin:0}header{background:#176b62;color:#fff;padding:24px 18px 22px;border-radius:0 0 24px 24px}header h1{font-size:23px;margin:0 0 6px}header p{font-size:12px;margin:0;opacity:.88}main{max-width:900px;margin:auto;padding:15px}.topline{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:4px 0 14px}.muted{color:#687b79;font-size:12px}.pill{font-size:11px;border-radius:20px;padding:5px 9px;background:#e4f2ef;color:#176b62;font-weight:700}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.stat,.panel,.record{background:#fff;border:1px solid #e5ecea;border-radius:15px;padding:14px;box-shadow:0 2px 8px #193d3910}.stat small{display:block;color:#71817f;font-size:11px}.stat strong{display:block;font-size:23px;margin-top:5px}.stat em{font-style:normal;font-size:11px;color:#72817f}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:16px 0}.tab,button{font:inherit;border:0;border-radius:11px;padding:11px;background:#fff;color:#24413e;font-weight:700}.tab.active,button.primary{background:#176b62;color:#fff}.section{display:none}.section.active{display:block}h2{font-size:17px;margin:19px 2px 10px}.filters{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}input,select{width:100%;border:1px solid #d7e2df;border-radius:10px;background:white;padding:11px;font:inherit;font-size:14px;color:#203936}button{cursor:pointer;border:1px solid #e0e9e6}button.primary{border:0}.list{display:grid;gap:9px}.record h3{font-size:15px;margin:0 0 5px}.record p{font-size:12px;color:#687b79;margin:4px 0}.record .numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:10px 0}.number{background:#f3f7f6;border-radius:9px;padding:8px}.number b{display:block;font-size:17px}.number span{font-size:10px;color:#6b7b79}.actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.actions a{background:#e7f2f0;color:#176b62;text-decoration:none;border-radius:9px;padding:9px 11px;font-size:12px;font-weight:700}.empty{text-align:center;padding:25px 12px;color:#74827f;font-size:13px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.field label{display:block;font-size:11px;color:#60716e;margin:0 0 5px}.field.full{grid-column:1/-1}.btnrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.btnrow button{flex:1}.notice{background:#fff8e9;border:1px solid #f2dfb5;color:#76591b;border-radius:12px;padding:11px;font-size:12px;line-height:1.55;margin:12px 0}.small{font-size:11px;color:#778581;line-height:1.6}footer{text-align:center;padding:25px;color:#84918e;font-size:11px}
+@media(max-width:520px){.stats{grid-template-columns:repeat(3,1fr)}.stat{padding:10px}.stat strong{font-size:19px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.filters{grid-template-columns:1fr}}
+</style></head>
+<body>
+<header><h1>통합돌봄서비스(서울)</h1><p>서울지역 최중증 발달장애인 통합돌봄서비스 기관 네트워크</p></header>
+<main>
+<div class="topline"><span class="pill">기관·연락처·운영현황</span><span class="muted" id="updated">자료 확인일: 미등록</span></div>
+<div class="stats">
+ <div class="stat"><small>등록 기관</small><strong id="totalOrg">0</strong><em>개소</em></div>
+ <div class="stat"><small>이용인 현원</small><strong id="totalUsers">—</strong><em>명 · 확인자료 기준</em></div>
+ <div class="stat"><small>종사자 현원</small><strong id="totalStaff">—</strong><em>명 · 확인자료 기준</em></div>
+</div>
+<div class="tabs">
+ <button class="tab active" data-tab="directory">기관 찾기</button><button class="tab" data-tab="stats">현황 통계</button><button class="tab" data-tab="manage">자료 관리</button>
+</div>
+<section class="section active" id="directory">
+ <h2>기관 및 연락처</h2>
+ <div class="filters"><input id="search" placeholder="기관명·자치구 검색"><select id="type"><option value="">전체 서비스 유형</option><option>24시간형</option><option>주간 개별 1:1</option><option>주간 그룹 1:1</option></select></div>
+ <div class="filters"><select id="district"><option value="">서울 전체 자치구</option></select><select id="sort"><option value="name">기관명순</option><option value="district">자치구순</option></select></div>
+ <div class="notice">기관별 연락처와 인원은 공식 공개자료 또는 기관 확인을 거친 정보만 등록합니다. 현재는 검증된 기관별 데이터가 아직 등록되지 않았습니다.</div>
+ <div class="list" id="orgList"><div class="empty">등록된 기관 정보가 없습니다.<br>자료 관리에서 확인된 기관 정보를 추가할 수 있습니다.</div></div>
+</section>
+<section class="section" id="stats">
+ <h2>서비스 유형별 운영현황</h2><div id="typeStats" class="list"></div>
+ <h2>자치구별 현황</h2><div id="districtStats" class="list"></div>
+ <div class="notice">합계는 기관별 현황 중 수치가 입력된 항목만 집계합니다. 미확인 기관을 0명으로 간주하지 않습니다.</div>
+</section>
+<section class="section" id="manage">
+ <h2>기관 정보 등록·수정</h2>
+ <div class="notice">기관별 정원·현원·대기인원과 종사자 정원·현원·결원을 월별로 기록합니다. 담당자 직통번호는 공개되었거나 기관이 업무용으로 확인해 준 번호만 입력하세요.</div>
+ <form id="orgForm">
+ <div class="formgrid">
+  <div class="field"><label>기관명 *</label><input name="name" required placeholder="기관 정식 명칭"></div>
+  <div class="field"><label>서비스 유형 *</label><select name="type" required><option value="">선택</option><option>24시간형</option><option>주간 개별 1:1</option><option>주간 그룹 1:1</option></select></div>
+  <div class="field"><label>자치구 *</label><select name="district" required id="formDistrict"></select></div>
+  <div class="field"><label>주소</label><input name="address" placeholder="서울시 자치구 주소"></div>
+  <div class="field"><label>대표번호</label><input name="phone" inputmode="tel" placeholder="02-0000-0000"></div>
+  <div class="field"><label>담당자·팀장 직책/성명</label><input name="manager" placeholder="팀장 / 담당자"></div>
+  <div class="field"><label>담당자 직통번호</label><input name="direct" inputmode="tel" placeholder="공개·기관 확인 번호"></div>
+  <div class="field"><label>이용인 정원</label><input name="userCapacity" type="number" min="0" placeholder="미확인 시 공란"></div>
+  <div class="field"><label>이용인 현원</label><input name="userCurrent" type="number" min="0" placeholder="미확인 시 공란"></div>
+  <div class="field"><label>이용인 대기인원</label><input name="userWaiting" type="number" min="0" placeholder="미확인 시 공란"></div>
+  <div class="field"><label>종사자 정원</label><input name="staffCapacity" type="number" min="0" placeholder="미확인 시 공란"></div>
+  <div class="field"><label>종사자 현원</label><input name="staffCurrent" type="number" min="0" placeholder="미확인 시 공란"></div>
+  <div class="field"><label>종사자 결원</label><input name="staffVacancy" type="number" min="0" placeholder="미확인 시 공란"></div>
+  <div class="field"><label>정보 확인일</label><input name="verified" type="date"></div>
+  <div class="field full"><label>확인 출처·비고</label><input name="source" placeholder="공식 홈페이지 URL, 기관 확인 등"></div>
+ </div>
+ <div class="btnrow"><button class="primary" type="submit">기관 정보 저장</button><button type="reset" id="resetForm">입력 초기화</button></div>
+ </form>
+ <h2>월별 데이터 관리</h2>
+ <div class="btnrow"><button id="export">자료 내보내기(JSON)</button><button id="importBtn">자료 가져오기(JSON)</button><input id="importFile" type="file" accept="application/json" hidden></div>
+ <p class="small">현재 버전은 이 기기의 브라우저에 자료를 저장합니다. 여러 직원·기기 간 공동 사용을 위해서는 별도의 공유 데이터베이스 연결이 필요합니다. JSON 내보내기 파일을 정기적으로 백업하세요.</p>
+ <div class="btnrow"><button id="monthExport">월별 현황 CSV 내려받기</button></div>
+ <h2>등록 기관 목록</h2><div id="manageList" class="list"></div>
+</section>
+<footer>통합돌봄서비스(서울) · 기관별 정보는 확인일과 출처를 함께 관리하세요.</footer>
+</main>
+<script>
+const districts=['강남구','강동구','강북구','강서구','관악구','광진구','구로구','금천구','노원구','도봉구','동대문구','동작구','마포구','서대문구','서초구','성동구','성북구','송파구','양천구','영등포구','용산구','은평구','종로구','중구','중랑구'];
+const $=s=>document.querySelector(s);let records=JSON.parse(localStorage.getItem('careSeoulRecords')||'[]');let editing=null;
+function save(){localStorage.setItem('careSeoulRecords',JSON.stringify(records));render()}
+function val(v){return v===undefined||v===null||v===''?'미확인':v}
+function num(k){let a=records.map(r=>r[k]).filter(v=>v!==''&&v!==undefined&&v!==null);return a.length?a.reduce((s,v)=>s+Number(v),0).toLocaleString('ko-KR'):'—'}
+function setupDistricts(){['#district','#formDistrict'].forEach(sel=>{districts.forEach(d=>$(sel).add(new Option(d,d)))})}
+function render(){ $('#totalOrg').textContent=records.length;$('#totalUsers').textContent=num('userCurrent');$('#totalStaff').textContent=num('staffCurrent');let dates=records.map(r=>r.verified).filter(Boolean).sort();$('#updated').textContent='최근 확인일: '+(dates.at(-1)||'미등록');
+ let q=$('#search').value.toLowerCase(),t=$('#type').value,d=$('#district').value,sort=$('#sort').value;
+ let arr=records.filter(r=>(!q||(r.name+' '+r.district).toLowerCase().includes(q))&&(!t||r.type===t)&&(!d||r.district===d)).sort((a,b)=>String(a[sort]||'').localeCompare(String(b[sort]||''),'ko'));
+ $('#orgList').innerHTML=arr.length?arr.map(r=>card(r,false)).join(''):'<div class="empty">조건에 맞는 기관이 없습니다.</div>';
+ $('#manageList').innerHTML=records.length?records.map(r=>'<div class="record"><h3>'+esc(r.name)+'</h3><p>'+esc(r.district)+' · '+esc(r.type)+'</p><div class="actions"><button onclick="editRecord(\''+r.id+'\')">수정</button><button onclick="deleteRecord(\''+r.id+'\')">삭제</button></div></div>').join(''):'<div class="empty">등록된 기관이 없습니다.</div>';
+ $('#typeStats').innerHTML=['24시간형','주간 개별 1:1','주간 그룹 1:1'].map(t=>{let a=records.filter(r=>r.type===t);return '<div class="record"><h3>'+t+'</h3><p>기관 '+a.length+'개소 · 이용인 현원 '+sum(a,'userCurrent')+'명 · 종사자 현원 '+sum(a,'staffCurrent')+'명</p></div>'}).join('');
+ $('#districtStats').innerHTML=districts.map(d=>{let a=records.filter(r=>r.district===d);return a.length?'<div class="record"><h3>'+d+'</h3><p>기관 '+a.length+'개소 · 이용인 '+sum(a,'userCurrent')+'명 · 종사자 '+sum(a,'staffCurrent')+'명</p></div>':''}).join('')||'<div class="empty">자치구별 등록자료가 없습니다.</div>';
+}
+function sum(a,k){let x=a.map(r=>r[k]).filter(v=>v!==''&&v!==undefined&&v!==null);return x.length?x.reduce((s,v)=>s+Number(v),0):'미확인'}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function card(r){return '<article class="record"><h3>'+esc(r.name)+'</h3><p>'+esc(r.district)+' · '+esc(r.type)+' · '+esc(r.address||'주소 미등록')+'</p><div class="numbers"><div class="number"><b>'+val(r.userCapacity)+'</b><span>이용인 정원</span></div><div class="number"><b>'+val(r.userCurrent)+'</b><span>이용인 현원</span></div><div class="number"><b>'+val(r.userWaiting)+'</b><span>대기인원</span></div></div><div class="numbers"><div class="number"><b>'+val(r.staffCapacity)+'</b><span>종사자 정원</span></div><div class="number"><b>'+val(r.staffCurrent)+'</b><span>종사자 현원</span></div><div class="number"><b>'+val(r.staffVacancy)+'</b><span>종사자 결원</span></div></div><p>담당: '+esc(r.manager||'미등록')+' · 확인일: '+esc(r.verified||'미등록')+'</p><div class="actions">'+(r.phone?'<a href="tel:'+tel(r.phone)+'">대표번호 '+esc(r.phone)+'</a>':'')+(r.direct?'<a href="tel:'+tel(r.direct)+'">직통번호 '+esc(r.direct)+'</a>':'')+'</div><p class="small">출처: '+esc(r.source||'미기재')+'</p></article>'}
+function tel(s){return String(s).replace(/[^0-9+]/g,'')}
+function editRecord(id){let r=records.find(x=>x.id===id);if(!r)return;editing=id;let f=$('#orgForm');Object.keys(r).forEach(k=>{if(f.elements[k])f.elements[k].value=r[k]});document.querySelector('[data-tab="manage"]').click();f.scrollIntoView({behavior:'smooth'})}
+function deleteRecord(id){if(confirm('이 기관 정보를 삭제할까요?')){records=records.filter(r=>r.id!==id);save()}}
+$('#orgForm').addEventListener('submit',e=>{e.preventDefault();let o=Object.fromEntries(new FormData(e.target));o.id=editing||String(Date.now());if(editing)records=records.map(r=>r.id===editing?o:r);else records.push(o);editing=null;e.target.reset();save();alert('기관 정보를 이 기기에 저장했습니다.')});
+$('#resetForm').onclick=()=>editing=null;
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab,.section').forEach(x=>x.classList.remove('active'));b.classList.add('active');$('#'+b.dataset.tab).classList.add('active')});
+['#search','#type','#district','#sort'].forEach(s=>$(s).addEventListener('input',render));
+$('#export').onclick=()=>download('integrated-care-seoul.json',JSON.stringify({app:'통합돌봄서비스(서울)',exportedAt:new Date().toISOString(),records},null,2),'application/json');
+$('#importBtn').onclick=()=>$('#importFile').click();
+$('#importFile').onchange=async e=>{let f=e.target.files[0];if(!f)return;try{let x=JSON.parse(await f.text());let a=Array.isArray(x)?x:x.records;if(!Array.isArray(a))throw Error();if(confirm('현재 '+records.length+'개 기관 자료를 가져온 '+a.length+'개 자료로 교체할까요?')){records=a;save();alert('자료를 가져왔습니다.')}}catch(_){alert('올바른 JSON 자료 파일이 아닙니다.')}e.target.value=''};
+$('#monthExport').onclick=()=>{let rows=[['기관명','서비스 유형','자치구','이용인 정원','이용인 현원','이용인 대기','종사자 정원','종사자 현원','종사자 결원','확인일','출처'],...records.map(r=>[r.name,r.type,r.district,r.userCapacity,r.userCurrent,r.userWaiting,r.staffCapacity,r.staffCurrent,r.staffVacancy,r.verified,r.source])];download('통합돌봄서비스_서울_현황.csv','\ufeff'+rows.map(row=>row.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\n'),'text/csv;charset=utf-8')};
+function download(name,data,type){let a=document.createElement('a'),u=URL.createObjectURL(new Blob([data],{type}));a.href=u;a.download=name;a.click();URL.revokeObjectURL(u)}
+setupDistricts();render();
+</script></body></html>
