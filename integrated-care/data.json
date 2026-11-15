@@ -1,7 +1,7 @@
 {
   "app": "통합돌봄서비스(서울)",
   "lastChecked": "2026-11-15",
-  "basis": "공식·기관 공개자료 및 신뢰 가능한 보도에서 주간 개별형 운영 근거가 확인된 기관을 우선 등록하는 부분 목록. 서울시의회 2025년 5월 말 기준 주간 개별형 18개소라는 수치는 확인되었으나, 해당 자료에는 기관별 명단이 없어 2026년 전체 명단은 계속 대조 중. 기관별 이용인·종사자 운영현황은 별도 근거가 확인되지 않아 미확인으로 유지.",
+  "basis": "서울시의회 업무보고에서 2025-05-31 기준 주간 개별형 18개소·이용자 54명, 종사자 채용현황 및 이용자 배치 매월 모니터링을 확인. 2026년 현행 전체 명단은 별도 검증 중이며, 앱 등록기관 수와 2025년 기준 통계를 혼동하지 않음. 기관별 정원·현원·대기·종사자 현황은 근거가 확인되지 않으면 미확인으로 유지.",
   "records": [
     {
       "id": "seoul-001",
@@ -537,12 +537,14 @@
     }
   ],
   "officialSnapshot": {
-    "reportedDate": "2026-08-31",
+    "reportedDate": "2025-05-31",
     "providerCount": 47,
     "serviceUsers": 166,
-    "source": "한국장애인개발원 서울지역발달장애인지원센터 보도자료",
-    "sourceUrl": "https://www.koddi.or.kr/bbs/press_view.jsp?brdNum=7430145&brdTp=&searchParamUrl=",
-    "note": "서울 전체 제공기관 수에 대한 공식 발표값이며, 현재 앱에 개별 확인되어 등록된 기관 수와는 별개임."
+    "source": "서울시의회 제331회 정례회 업무보고",
+    "sourceUrl": "https://mas.smc.seoul.kr/attach/record/SEOUL/appendix/a11/A0068313.pdf?time=20260624200153",
+    "note": "2025년 5월 말 기준 주간 개별형 18개소·이용자 54명. 2026년 현재 숫자나 명단으로 간주하지 않으며 비교 기준으로만 사용.",
+    "weeklyIndividualProviders": 18,
+    "weeklyIndividualUsers": 54
   },
   "publicDataset": {
     "name": "한국장애인개발원_발달장애인 지원 기관 및 제공서비스_20250930",
@@ -578,7 +580,9 @@
       {
         "name": "성분도복지관",
         "type": "주간 개별 1:1",
-        "status": "서울 외 소재로 확인(경기도 광주시 소재 성분도복지관). 서울 기관 목록에서는 제외"
+        "status": "서울 외 기관으로 별도 분류. 2026-07-02 기관 공식 홈페이지에서 주간 개별 1:1 채용공고 확인",
+        "sourceUrl": "https://www.bundoreh.com/archive/1060_2/424",
+        "note": "운영 근거는 확인되나 서울시 기관목록 범위 밖이므로 서울 제공기관으로 등록하지 않음."
       },
       {
         "name": "양천해누리복지관",
@@ -628,5 +632,12 @@
         "sourceUrl": "https://www.yna.co.kr/view/AKR20241018107200004"
       }
     ]
+  },
+  "monitoring": {
+    "checkedDate": "2026-11-15",
+    "officialMonitoringCycle": "매월",
+    "source": "서울시의회 제331회 정례회 업무보고",
+    "sourceUrl": "https://mas.smc.seoul.kr/attach/record/SEOUL/appendix/a11/A0068313.pdf?time=20260624200153",
+    "note": "서울시는 주간 개별형 종사자 채용현황 모니터링 및 이용자 배치를 매월 추진한다고 보고함."
   }
 }
