@@ -21,7 +21,7 @@
       "status": "서울지역센터 공식 지원기관 검색결과에서 24시간 개별형 제공기관 확인. 기관별 정원·현원은 별도 확인 필요.",
       "verificationLevel": "official_directory",
       "address": "서울특별시 동작구 여의대방로20나길 39",
-      "addressSource": "최중증 통합돌봄 제공기관 공개목록(2024.7.12.)",
+      "addressSource": "2024년 최중증 통합돌봄 제공기관 공개목록",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EC%8B%9C%EB%A6%BD%EB%B0%9C%EB%8B%AC%EC%9E%A5%EC%95%A0%EC%9D%B8%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -40,7 +40,10 @@
       "source": "한국장애인개발원 중앙센터 지원기관 찾기 - 최중증 통합돌봄 주간 그룹형",
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=219",
       "status": "공식 지원기관 검색결과에서 서울 소재 주간 그룹형 제공기관 및 대표 문의번호 확인. 정원·현원은 별도 확인 필요.",
-      "verificationLevel": "official_directory"
+      "verificationLevel": "official_directory",
+      "address": "서울특별시 동작구 여의대방로20나길 39",
+      "addressSource": "2024년 최중증 통합돌봄 제공기관 공개목록",
+      "naverMapUrl": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EC%8B%9C%EB%A6%BD%EB%B0%9C%EB%8B%AC%EC%9E%A5%EC%95%A0%EC%9D%B8%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
       "id": "seoul-003",
@@ -60,7 +63,7 @@
       "status": "서울지역센터 공식 지원기관 검색결과에서 24시간 개별형 제공기관 확인. 기관별 정원·현원은 별도 확인 필요.",
       "verificationLevel": "official_directory",
       "address": "서울특별시 은평구 갈현로11길 30",
-      "addressSource": "지도 사업체 검색 결과 및 기관 소재지 자료",
+      "addressSource": "기관 소재지 공개정보",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%82%AC%ED%9A%8C%EB%B3%B5%EC%A7%80%EB%B2%95%EC%9D%B8%20%EC%97%94%EC%A0%A4%EC%8A%A4%ED%97%A4%EC%9D%B4%EB%B8%90%20%EC%B5%9C%EC%A4%91%EC%A6%9D%EB%B0%9C%EB%8B%AC%EC%9E%A5%EC%95%A0%EC%9D%B8%ED%86%B5%ED%95%A9%EB%8F%8C%EB%B4%84%EC%84%BC%ED%84%B0"
     },
     {
@@ -81,7 +84,7 @@
       "status": "서울지역센터 공식 지원기관 검색결과에서 24시간 개별형 제공기관 확인. 기관별 정원·현원은 별도 확인 필요.",
       "verificationLevel": "official_directory",
       "address": "서울특별시 도봉구 도봉동 636-22",
-      "addressSource": "지도 사업체 검색 결과",
+      "addressSource": "지도 사업체 위치정보",
       "naverMapUrl": "https://map.naver.com/p/search/%EB%8F%84%EB%B4%89%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -101,8 +104,8 @@
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=219",
       "status": "한국장애인개발원 중앙센터 지원기관 찾기 검색결과(pageIndex=219)에서 서울 소재 주간 그룹형 제공기관 및 문의번호 확인. 검색결과 페이지는 동적·변동형이며 자치구와 기관별 정원·현원은 별도 확인 필요.",
       "verificationLevel": "official_directory",
-      "address": "서울특별시 서대문구 신촌로 285-1 무림빌딩 4층",
-      "addressSource": "최중증 통합돌봄 제공기관 공개목록(2024.7.12.)",
+      "address": "서울특별시 동작구 상도로 301, 의암빌딩 3층",
+      "addressSource": "2024년 최중증 통합돌봄 제공기관 공개목록",
       "naverMapUrl": "https://map.naver.com/p/search/%ED%8C%8C%EB%9E%91%EC%83%88%EC%95%84%EB%8F%99%EB%B0%9C%EB%8B%AC%EC%84%BC%ED%84%B0"
     },
     {
@@ -122,8 +125,8 @@
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=219",
       "status": "공식 지원기관 검색결과에서 서울 소재 주간 그룹형 제공기관 및 대표 문의번호 확인. 정원·현원은 별도 확인 필요.",
       "verificationLevel": "official_directory",
-      "address": "서울특별시 강남구 논현로98길 16",
-      "addressSource": "강남구청 장애인복지시설 현황",
+      "address": "서울특별시 영등포구 도신로 69, 5층",
+      "addressSource": "2024년 최중증 통합돌봄 제공기관 공개목록",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%9E%AC%ED%99%9C%EC%83%81%EB%8B%B4%EB%B3%B5%EC%A7%80%20%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9(%EC%98%81%EB%93%B1%ED%8F%AC%EC%A7%80%EC%A0%90)"
     },
     {
@@ -143,8 +146,8 @@
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=219",
       "status": "공식 지원기관 검색결과에서 서울 소재 주간 그룹형 제공기관 및 대표 문의번호 확인. 정원·현원은 별도 확인 필요.",
       "verificationLevel": "official_directory",
-      "address": "서울특별시 종로구 세종대로23길 54, 세종대로 7층 7호",
-      "addressSource": "최중증 통합돌봄 제공기관 공개목록(2024.7.12.)",
+      "address": "서울특별시 서대문구 문화촌길 6, 4층",
+      "addressSource": "2024년 최중증 통합돌봄 제공기관 공개목록",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%A0%95%20%EC%8B%AC%EB%A6%AC%EB%B0%9C%EB%8B%AC%EC%84%BC%ED%84%B0(%EC%84%9C%EB%8C%80%EB%AC%B8%EC%A0%90)"
     },
     {
@@ -164,8 +167,8 @@
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=219",
       "status": "공식 지원기관 검색결과에서 서울 소재 주간 그룹형 제공기관 및 대표 문의번호 확인. 정원·현원은 별도 확인 필요.",
       "verificationLevel": "official_directory",
-      "address": "서울특별시 동작구 여의대방로20나길 39",
-      "addressSource": "최중증 통합돌봄 제공기관 공개목록(2024.7.12.)",
+      "address": "서울특별시 은평구 갈현로11길 30",
+      "addressSource": "2024년 최중증 통합돌봄 제공기관 공개목록",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%84%9C%EB%B6%80%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -185,8 +188,8 @@
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=219",
       "status": "공식 지원기관 검색결과에서 서울 소재 주간 그룹형 제공기관 및 대표 문의번호 확인. 정원·현원은 별도 확인 필요.",
       "verificationLevel": "official_directory",
-      "address": "서울특별시 영등포구 도신로 69, 5층",
-      "addressSource": "최중증 통합돌봄 제공기관 공개목록(2024.7.12.)",
+      "address": "서울특별시 중랑구 공릉로2길 13, 도림빌딩 4층",
+      "addressSource": "2024년 최중증 통합돌봄 제공기관 공개목록",
       "naverMapUrl": "https://map.naver.com/p/search/%EB%91%90%EB%A6%AC%EC%96%B8%EC%96%B4%EB%B0%9C%EB%8B%AC%EC%9E%AC%ED%99%9C%EC%84%BC%ED%84%B0(%EB%AC%B5%EB%8F%99%EB%B3%B8%EC%A0%90)"
     },
     {
@@ -206,8 +209,8 @@
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=197",
       "status": "기관·전화 확인 / 자치구 미확인 2026년 11월 공식 검색결과에서 개별 재확인 전으로 현행 지정 여부 확인 필요.",
       "verificationLevel": "operating_evidence",
-      "address": "서울특별시 성북구",
-      "addressSource": "정확한 도로명주소 추가 확인 필요",
+      "address": "서울특별시 종로구 세종대로23길 54, 세종대로 7층 7호",
+      "addressSource": "2024년 최중증 통합돌봄 제공기관 공개목록",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%9A%B0%EB%A6%AC%ED%95%98%EB%82%98%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9"
     },
     {
@@ -227,8 +230,8 @@
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=197",
       "status": "공식 기관검색 확인 2026년 11월 공식 검색결과에서 개별 재확인 전으로 현행 지정 여부 확인 필요.",
       "verificationLevel": "operating_evidence",
-      "address": "서울특별시 강서구 허준로5길 37",
-      "addressSource": "강서구청 장애인시설 안내",
+      "address": "서울특별시 금천구 시흥대로101길 17",
+      "addressSource": "2024년 최중증 통합돌봄 제공기관 공개목록",
       "naverMapUrl": "https://map.naver.com/p/search/%EA%B8%88%EC%B2%9C%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -248,8 +251,8 @@
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=200",
       "status": "공식 기관검색 확인 2026년 11월 공식 검색결과에서 개별 재확인 전으로 현행 지정 여부 확인 필요.",
       "verificationLevel": "operating_evidence",
-      "address": "서울특별시 마포구",
-      "addressSource": "정확한 도로명주소 추가 확인 필요",
+      "address": "서울특별시 관악구 남부순환로 1914",
+      "addressSource": "2024년 최중증 통합돌봄 제공기관 공개목록",
       "naverMapUrl": "https://map.naver.com/p/search/%EA%B4%80%EC%95%85%EA%B5%AC%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -269,8 +272,6 @@
       "sourceUrl": "https://www.broso.or.kr/seoul/hp/svc/selectAgencySeach.do?pageIndex=30",
       "status": "공식 기관검색 확인 2026년 11월 공식 검색결과에서 개별 재확인 전으로 현행 지정 여부 확인 필요.",
       "verificationLevel": "operating_evidence",
-      "address": "서울특별시 성동구 청계천로 506",
-      "addressSource": "성동구청 장애인복지시설 현황",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%A6%90%EA%B1%B0%EC%9A%B4%EB%8F%99%ED%96%89%20%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9"
     },
     {
@@ -290,8 +291,8 @@
       "staffCurrent": "",
       "verified": "2026-11-15",
       "verificationLevel": "official_directory",
-      "address": "서울특별시 중랑구 공릉로2길 13, 도림빌딩 4층",
-      "addressSource": "최중증 통합돌봄 제공기관 공개목록(2024.7.12.)",
+      "address": "서울특별시 강남구 논현로98길 16",
+      "addressSource": "강남구청 장애인복지시설 현황",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%B6%A9%ED%98%84%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -311,8 +312,6 @@
       "staffCurrent": "",
       "verified": "2026-11-15",
       "verificationLevel": "official_directory",
-      "address": "서울특별시 노원구 화랑로 478",
-      "addressSource": "행정안전부 공공데이터 기반 시설 위치 정보",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%8B%A4%EB%A1%9C%EC%95%94%EC%8B%9C%EA%B0%81%EC%9E%A5%EC%95%A0%EC%9D%B8%EB%B3%B5%EC%A7%80%EA%B4%80(%EC%84%A4%EB%A6%AC%EB%B2%88%ED%95%99%EC%8A%B5%EC%A7%80%EC%9B%90%EC%84%BC%ED%84%B0)"
     },
     {
@@ -332,8 +331,6 @@
       "staffCurrent": "",
       "verified": "2026-11-15",
       "verificationLevel": "official_directory",
-      "address": "서울특별시 서대문구",
-      "addressSource": "정확한 도로명주소 추가 확인 필요",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EC%8B%9C%EB%A6%BD%EB%82%A8%EB%B6%80%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -353,8 +350,6 @@
       "staffCurrent": "",
       "verified": "2026-11-15",
       "verificationLevel": "official_directory",
-      "address": "서울특별시 광진구",
-      "addressSource": "정확한 도로명주소 추가 확인 필요",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%8B%9C%EB%A6%BD%EC%98%81%EB%93%B1%ED%8F%AC%EC%9E%A5%EC%95%A0%EC%9D%B8%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -374,8 +369,6 @@
       "staffCurrent": "",
       "verified": "2026-11-15",
       "verificationLevel": "operating_evidence",
-      "address": "서울특별시 용산구",
-      "addressSource": "정확한 도로명주소 추가 확인 필요",
       "naverMapUrl": "https://map.naver.com/p/search/%EB%9B%B0%EC%96%B4%EB%86%80%EC%9E%90%EC%82%AC%ED%9A%8C%EC%84%9C%EB%B9%84%EC%8A%A4%EC%84%BC%ED%84%B0"
     },
     {
@@ -395,8 +388,8 @@
       "staffCurrent": "",
       "verified": "2026-11-15",
       "verificationLevel": "operating_evidence",
-      "address": "서울특별시 노원구 노원로32길 30-3",
-      "addressSource": "한국장애인개발원 직업재활수행기관 정보",
+      "address": "서울특별시 강남구 동남로 105, 2층",
+      "addressSource": "2024년 최중증 통합돌봄 제공기관 공개목록",
       "naverMapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EA%B0%90%EB%B0%A9%EA%B3%BC%ED%9B%84%EC%84%BC%ED%84%B0"
     },
     {
@@ -416,8 +409,8 @@
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=200",
       "status": "공식 서비스 유형·기관명·연락처 확인 / 지점명 기준 자치구 표기 2026년 11월 공식 검색결과에서 개별 재확인 전으로 현행 지정 여부 확인 필요.",
       "verificationLevel": "operating_evidence",
-      "address": "서울특별시 양천구 목동동로 159",
-      "addressSource": "기관 주소 공개정보",
+      "address": "서울특별시 송파구 동남로 105, 2층",
+      "addressSource": "2024년 최중증 통합돌봄 제공기관 공개목록",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%A0%95%20%EC%8B%AC%EB%A6%AC%EB%B0%9C%EB%8B%AC%EC%84%BC%ED%84%B0(%EC%86%A1%ED%8C%8C%EC%A0%90)"
     },
     {
@@ -437,8 +430,6 @@
       "source": "한국장애인개발원 중앙센터 지원기관 찾기 - 최중증 통합돌봄 주간 개별형",
       "sourceUrl": "https://www.broso.or.kr/hp/svc/selectAgencySeach.do?pageIndex=214",
       "verificationLevel": "official_directory",
-      "address": "서울특별시 동작구 상도로 301, 의암빌딩 3층",
-      "addressSource": "최중증 통합돌봄 제공기관 공개목록(2024.7.12.)",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%84%B1%EB%B6%81%EC%9E%A5%EC%95%A0%EC%9D%B8%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -458,8 +449,8 @@
       "sourceUrl": "https://s-win.or.kr/boarddata/view?board_data_seq=165754&board_seq=12",
       "status": "2026년 주간 개별 1:1 운영 근거 확인 / 대표번호 및 팀 연락처 공개",
       "verificationLevel": "operating_evidence",
-      "address": "서울특별시 서대문구 문화촌길 6, 4층",
-      "addressSource": "최중증 통합돌봄 제공기관 공개목록(2024.7.12.)",
+      "address": "서울특별시 강서구 허준로5길 37",
+      "addressSource": "강서구청 장애인시설 안내",
       "naverMapUrl": "https://map.naver.com/p/search/%EB%8A%98%ED%91%B8%EB%A5%B8%EB%82%98%EB%AC%B4%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -479,8 +470,6 @@
       "sourceUrl": "https://mapowelfare.or.kr/bbs/board.php?bo_table=notice&wr_id=2910",
       "status": "2026년 10~11월 주간개별 1:1 사업 운영 및 팀 연락처 확인",
       "verificationLevel": "operating_evidence",
-      "address": "서울특별시 은평구 갈현로11길 30",
-      "addressSource": "최중증 통합돌봄 제공기관 공개목록(2024.7.12.)",
       "naverMapUrl": "https://map.naver.com/p/search/%EB%A7%88%ED%8F%AC%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -500,8 +489,8 @@
       "sourceUrl": "https://www.omni.or.kr/history",
       "status": "주간개별 1:1 제공기관 선정 확인 / 지정기간 2024-11-04~2027-11-03",
       "verificationLevel": "operating_evidence",
-      "address": "서울특별시 중랑구 공릉로2길 13, 도림빌딩 4층",
-      "addressSource": "최중증 통합돌봄 제공기관 공개목록(2024.7.12.)",
+      "address": "서울특별시 성동구 청계천로 506",
+      "addressSource": "성동구청 장애인복지시설 현황",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%84%B1%EB%8F%99%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -521,8 +510,6 @@
       "sourceUrl": "https://data.seoul.go.kr/dataList/OA-23027/S/1/datasetView.do",
       "status": "2026-10-27 주간 개별 1:1 사업관리자 및 보조인력 채용공고 확인. 2026년 운영 근거 확인(채용공고 기준); 이용인·종사자 정원 및 현원은 미확인",
       "verificationLevel": "operating_evidence",
-      "address": "서울특별시 종로구 세종대로23길 54, 세종대로 7층 7호",
-      "addressSource": "최중증 통합돌봄 제공기관 공개목록(2024.7.12.)",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%9B%90%EA%B4%91%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -542,8 +529,8 @@
       "sourceUrl": "https://www.seoil.ac.kr/bbs/sw/790/402063/artclView.do",
       "status": "주간 개별 1:1 사업 운영 근거 확인 / 2026년 운영 지속 자료 확인",
       "verificationLevel": "operating_evidence",
-      "address": "서울특별시 금천구 시흥대로101길 17",
-      "addressSource": "최중증 통합돌봄 제공기관 공개목록(2024.7.12.)",
+      "address": "서울특별시 노원구 화랑로 478",
+      "addressSource": "행정안전부 공공데이터 기반 시설 위치정보",
       "naverMapUrl": "https://map.naver.com/p/search/%EB%8B%A4%EC%9A%B4%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -563,8 +550,6 @@
       "sourceUrl": "https://www.welfare-center.or.kr/organization",
       "status": "2026년 통합돌봄센터 운영 및 주간 개별 1:1 확인",
       "verificationLevel": "operating_evidence",
-      "address": "서울특별시 관악구 남부순환로 1914",
-      "addressSource": "최중증 통합돌봄 제공기관 공개목록(2024.7.12.)",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%84%9C%EB%8C%80%EB%AC%B8%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%A2%85%ED%95%A9%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
@@ -584,8 +569,6 @@
       "sourceUrl": "https://www.yna.co.kr/view/AKR20241018107200004",
       "status": "주간 개별형 운영 근거 확인 / 대표번호 기관 기본정보 확인",
       "verificationLevel": "operating_evidence",
-      "address": "서울특별시 강서구",
-      "addressSource": "정확한 도로명주소 추가 확인 필요",
       "naverMapUrl": "https://map.naver.com/p/search/%EC%A0%95%EB%A6%BD%ED%9A%8C%EA%B4%80"
     },
     {
@@ -599,7 +582,8 @@
       "sourceUrl": "https://www.50plus.or.kr/appView.do?ANN_NO=1293&setPageIndex=1",
       "verified": "2026-11-15",
       "id": "candidate-yongsan",
-      "verificationLevel": "candidate"
+      "verificationLevel": "candidate",
+      "naverMapUrl": "https://map.naver.com/p/search/%EA%B5%AC%EB%A6%BD%EC%9A%A9%EC%82%B0%EC%9E%A5%EC%95%A0%EC%9D%B8%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
       "name": "성민복지관",
@@ -612,7 +596,8 @@
       "sourceUrl": "https://xn--o39a94xuxfdrev3b02a7il0df4ec51a07g.kr/post_file_download.cm?c=YTo1OntzOjEwOiJib2FyZF9jb2RlIjtzOjIyOiJiMjAyMDA0MDZiNTQxNmY2YzYzODVmIjtzOjk6InBvc3RfY29kZSI7czoyMjoicDIwMjUwMzI0MWY0OTJiZDMxNmIyZSI7czo5OiJmaWxlX2NvZGUiO3M6MjI6InAyMDI1MDMyNDExNjFkOGU2YTVmNjUiO3M6MTk6InBvc3RfZG93bmxvYWRfdG9rZW4iO3M6MTM6IjY5YzFjYmE2MTIwNTIiO3M6MTE6Im1lbWJlcl9jb2RlIjtOO30%3D",
       "verified": "2026-11-15",
       "id": "candidate-sungmin",
-      "verificationLevel": "candidate"
+      "verificationLevel": "candidate",
+      "naverMapUrl": "https://map.naver.com/p/search/%EC%84%B1%EB%AF%BC%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
       "id": "candidate-yangcheon-20261115",
@@ -627,14 +612,15 @@
       "source": "기관 공식 채용공고(2025-01-09) 및 현행 조직도(함께돌봄팀)",
       "sourceUrl": "https://ycsupport.or.kr/organization",
       "verified": "2026-11-15",
-      "verificationLevel": "candidate"
+      "verificationLevel": "candidate",
+      "naverMapUrl": "https://map.naver.com/p/search/%EC%96%91%EC%B2%9C%ED%95%B4%EB%88%84%EB%A6%AC%EB%B3%B5%EC%A7%80%EA%B4%80"
     },
     {
       "id": "seoul-032",
       "name": "사회복지법인 한국재활재단",
       "type": "24시간형",
       "district": "서대문구",
-      "address": "서울특별시 서대문구 신촌로 285-1 무림빌딩 4층",
+      "address": "서울특별시 서대문구 신촌로 285-1, 무림빌딩 4층",
       "phone": "02-365-5540",
       "manager": "",
       "direct": "",
@@ -646,7 +632,9 @@
       "source": "한국장애인개발원 2024-07-12 제공기관 목록 및 한국재활재단 2026-10-26 24시간 일대일 대체인력 채용 공고",
       "sourceUrl": "https://www.krfund.or.kr/sub/notice.asp?URL=%2Fsub%2Fnotice.asp&idx=1&num=394&page=1&page_code=3",
       "status": "2024년 제공기관 목록에서 서울 24시간형 기관으로 확인. 재단의 2026-10-26 공고에서 최중증 통합돌봄 24시간 일대일 KRF센터 운영 및 주·야간 대체인력 채용 확인. 2026년 신규 선정 결과 및 현행 지정기간·이용인 정원·현원은 별도 확인 필요.",
-      "verificationLevel": "operating_evidence"
+      "verificationLevel": "operating_evidence",
+      "addressSource": "2024년 최중증 통합돌봄 제공기관 공개목록",
+      "naverMapUrl": "https://map.naver.com/p/search/%EC%82%AC%ED%9A%8C%EB%B3%B5%EC%A7%80%EB%B2%95%EC%9D%B8%20%ED%95%9C%EA%B5%AD%EC%9E%AC%ED%99%9C%EC%9E%AC%EB%8B%A8"
     }
   ],
   "officialSnapshot": {
