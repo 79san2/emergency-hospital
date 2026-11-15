@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#123f3b">
-<meta name="description" content="서울지역 최중증 발달장애인 통합돌봄서비스 기관 통합현황">
+<meta name="description" content="서울지역 최중증 발달장애인 통합돌봄서비스 기관 통합현황">\n<link rel="manifest" href="./manifest.json">\n<link rel="icon" href="./icon.svg" type="image/svg+xml">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-status-bar-style" content="default">\n<meta name="apple-mobile-web-app-title" content="통합돌봄(서울)">
 <title>통합돌봄서비스(서울)</title>
 <style>
 :root{font-family:system-ui,"Noto Sans KR",sans-serif;color:#172d2a;background:#f4f7f6;font-synthesis:none;--green:#176b62;--deep:#123f3b;--mint:#e8f3f0;--line:#e4ebe8;--muted:#71817d;--shadow:0 8px 24px #153b3510}
 *{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button{cursor:pointer}
 .hero{background:linear-gradient(125deg,#123f3b,#1b7569);color:white;padding:27px max(20px,calc((100vw - 1120px)/2)) 25px}
 .hero-inner{max-width:1120px;margin:auto}.brandline{display:flex;align-items:center;gap:10px}.brandmark{width:38px;height:38px;border-radius:13px;background:#ffffff20;display:grid;place-items:center;font-size:20px}.hero h1{font-size:23px;letter-spacing:-.7px;margin:0}.hero p{margin:8px 0 0;color:#d9e9e5;font-size:13px}
-main{max-width:1120px;margin:auto;padding:20px 18px 44px}.topmeta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 0 15px}.tag{display:inline-flex;align-items:center;border-radius:30px;background:var(--mint);color:var(--green);padding:6px 11px;font-size:11px;font-weight:750}.updated{font-size:11px;color:var(--muted)}
+main{max-width:1120px;margin:auto;padding:20px 18px 44px}.topmeta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 0 15px}.install-app{border:0;border-radius:9px;background:#176b62;color:white;padding:9px 13px;font-size:12px;font-weight:750}.tag{display:inline-flex;align-items:center;border-radius:30px;background:var(--mint);color:var(--green);padding:6px 11px;font-size:11px;font-weight:750}.updated{font-size:11px;color:var(--muted)}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{background:white;border:1px solid var(--line);border-radius:17px;padding:16px 18px;box-shadow:var(--shadow)}.stat-label{font-size:12px;color:var(--muted)}.stat-value{font-size:27px;font-weight:800;letter-spacing:-1px;margin:5px 0 1px}.stat-foot{font-size:11px;color:#8b9995}
 .nav{display:flex;gap:8px;margin:19px 0 20px;padding:5px;background:#e9efed;border-radius:14px}.nav button{flex:1;border:0;background:transparent;color:#61716d;border-radius:10px;padding:11px 8px;font-size:13px;font-weight:750}.nav button.active{background:white;color:var(--deep);box-shadow:0 2px 8px #173b3512}
 .view{display:none}.view.active{display:block}.section-head{display:flex;justify-content:space-between;align-items:end;gap:10px;margin:22px 2px 12px}.section-head h2{font-size:18px;margin:0;letter-spacing:-.4px}.section-head p{font-size:11px;color:var(--muted);margin:5px 0 0}
@@ -30,7 +30,7 @@ input,select{width:100%;border:1px solid #dce5e1;background:white;border-radius:
 <body>
 <header class="hero"><div class="hero-inner"><div class="brandline"><div class="brandmark">⌂</div><h1>통합돌봄서비스(서울)</h1></div><p>서울지역 최중증 발달장애인 통합돌봄서비스 기관 정보와 운영현황</p></div></header>
 <main>
-<div class="topmeta"><span class="tag">서울 제공기관 통합현황</span><span class="updated" id="updated">자료 확인일 확인 중</span></div>
+<div class="topmeta"><span class="tag">서울 제공기관 통합현황</span><span class="updated" id="updated">자료 확인일 확인 중</span><button id="installApp" class="install-app" hidden type="button">앱 설치</button></div>
 <nav class="nav" aria-label="주요 메뉴">
  <button class="active" data-view="directory">기관 찾기</button><button data-view="statistics">통계</button>
 </nav>
