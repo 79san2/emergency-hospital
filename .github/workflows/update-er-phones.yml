@@ -1,0 +1,29 @@
+name: Monthly emergency-room direct number verification
+on:
+  schedule:
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: emergency-contact-update
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify explicit direct numbers on official hospital pages
+        run: python scripts/update_er_phones.py
+      - name: Publish verified additions
+        run: |
+          if ! git diff --quiet -- index.html; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add index.html
+            git commit -m "Update verified emergency room direct numbers"
+            git push
+          fi
