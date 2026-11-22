@@ -1,9 +1,11 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#1456a0"><meta name="description" content="강서구·양천구·영등포구 응급대응 및 응급실 안내"><link rel="manifest" href="./manifest.json"><link rel="icon" href="./icon.svg" type="image/svg+xml"><title>서남권 응급병원 안내</title><style>
 :root{font-family:system-ui,"Noto Sans KR",sans-serif;color:#172033;background:#f3f6fa}*{box-sizing:border-box}body{margin:0}header{background:#1456a0;color:white;padding:22px 18px;border-radius:0 0 22px 22px}h1{font-size:22px;margin:0 0 6px}header p{margin:0;font-size:13px}main{max-width:760px;margin:auto;padding:15px}.alert,.card{background:white;border-radius:14px;padding:14px;margin:10px 0;box-shadow:0 2px 8px #14243a12}.alert{background:#fff2f0;border:1px solid #ffc8c1}.alert strong{color:#a32118}.call119{display:block;text-align:center;background:#c62828;color:white;text-decoration:none;font-size:21px;font-weight:800;padding:14px;border-radius:12px;margin-top:10px}h2{font-size:18px;margin:21px 2px 10px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}button{border:0;border-radius:13px;background:white;padding:13px;text-align:left;font:inherit;min-height:75px;box-shadow:0 2px 8px #14243a12}button b{display:block;font-size:15px;margin-bottom:4px}button span,.muted,.note{font-size:12px;color:#667085;line-height:1.5}.detail{display:none}.detail.show{display:block}.actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}.actions a{flex:1;min-width:110px;text-align:center;padding:10px 7px;border-radius:10px;background:#e9f1fc;color:#1456a0;text-decoration:none;font-weight:700;font-size:13px}.actions a.tel{background:#1456a0;color:white}select{width:100%;padding:12px;border:1px solid #d4dbe5;border-radius:10px;background:white;font:inherit}.note{margin:14px 2px}footer{text-align:center;color:#788397;font-size:11px;padding:18px}@media(max-width:380px){.grid{grid-template-columns:1fr}}
+#reset{min-height:44px;padding:8px 14px;margin-top:8px;color:#1456a0}button[aria-pressed="true"]{outline:2px solid #1456a0;background:#e9f1fc}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #1456a0;outline-offset:3px}#results-heading{scroll-margin-top:12px}.hospital-note{margin-top:6px}
 </style></head><body><header><h1>서남권 응급병원 안내</h1><p>강서구 · 양천구 · 영등포구 | 상황별 응급대응과 병원 연락</p></header><main>
 <section class="alert"><strong>생명이 위급하거나 판단이 어려우면 즉시 119</strong><div>호흡곤란, 의식저하, 심한 출혈, 기도 막힘, 경련 지속 등은 직접 이동보다 119 신고가 우선입니다.</div><a class="call119" href="tel:119">119 바로 전화</a></section>
+<div class="actions"><a href="./" id="refresh">최신 화면 불러오기</a></div>
 <h2>상황별 응급 대응</h2><div class="grid">
-<button onclick="show('fracture')"><b>골절·낙상</b><span>변형, 심한 통증, 움직임 제한</span></button><button onclick="show('cut')"><b>열상·출혈</b><span>찢어짐, 지속되는 출혈</span></button><button onclick="show('choke')"><b>삼킴·기도 막힘</b><span>사레, 이물질, 호흡곤란</span></button><button onclick="show('fever')"><b>고열·경련</b><span>고열, 의식 변화, 경련</span></button><button onclick="show('head')"><b>머리 부딪힘</b><span>구토, 심한 두통, 졸림</span></button><button onclick="show('breath')"><b>호흡·의식 이상</b><span>숨참, 청색증, 반응 저하</span></button><button onclick="show('burn')"><b>화상</b><span>열·화학물질·전기 화상</span></button><button onclick="show('poison')"><b>중독·이물질 섭취</b><span>약물, 세제, 유해물질</span></button><button onclick="show('eye')"><b>눈·얼굴 손상</b><span>이물질, 출혈, 시력 변화</span></button></div>
+<button aria-controls="fracture" onclick="show('fracture')"><b>골절·낙상</b><span>변형, 심한 통증, 움직임 제한</span></button><button aria-controls="cut" onclick="show('cut')"><b>열상·출혈</b><span>찢어짐, 지속되는 출혈</span></button><button aria-controls="choke" onclick="show('choke')"><b>삼킴·기도 막힘</b><span>사레, 이물질, 호흡곤란</span></button><button aria-controls="fever" onclick="show('fever')"><b>고열·경련</b><span>고열, 의식 변화, 경련</span></button><button aria-controls="head" onclick="show('head')"><b>머리 부딪힘</b><span>구토, 심한 두통, 졸림</span></button><button aria-controls="breath" onclick="show('breath')"><b>호흡·의식 이상</b><span>숨참, 청색증, 반응 저하</span></button><button aria-controls="burn" onclick="show('burn')"><b>화상</b><span>열·화학물질·전기 화상</span></button><button aria-controls="poison" onclick="show('poison')"><b>중독·이물질 섭취</b><span>약물, 세제, 유해물질</span></button><button aria-controls="eye" onclick="show('eye')"><b>눈·얼굴 손상</b><span>이물질, 출혈, 시력 변화</span></button></div>
 <div id="fracture" class="card detail"><b>골절·낙상</b><p>다친 부위를 억지로 움직이거나 맞추지 말고 가능한 자세 그대로 고정하세요. 심한 변형·개방성 골절·머리나 목 손상이 의심되면 119를 부르세요.</p></div>
 <div id="cut" class="card detail"><b>열상·출혈</b><p>깨끗한 거즈나 천으로 상처를 직접 압박하세요. 출혈이 심하거나 멈추지 않으면 119에 신고하세요. 깊거나 벌어진 상처는 응급실 평가가 필요합니다.</p></div>
 <div id="choke" class="card detail"><b>삼킴·기도 막힘</b><p>말하거나 기침하거나 숨쉬기 어렵다면 즉시 119에 신고하세요. 입 안에 보이지 않는 이물질을 손가락으로 훑어 꺼내려 하지 마세요.</p></div>
@@ -13,7 +15,7 @@
 <div id="burn" class="card detail"><b>화상</b><p>흐르는 시원한 물로 20분 정도 식히세요. 얼음·연고를 바르거나 물집을 터뜨리지 마세요. 넓은 화상, 얼굴·손 화상, 전기·화학 화상은 119 또는 응급실 평가가 필요합니다.</p></div>
 <div id="poison" class="card detail"><b>중독·이물질 섭취</b><p>억지로 토하게 하지 말고 제품명·섭취량·시간을 확인하세요. 의식저하, 호흡곤란, 경련이 있으면 즉시 119에 신고하세요.</p></div>
 <div id="eye" class="card detail"><b>눈·얼굴 손상</b><p>눈을 비비거나 누르지 마세요. 화학물질이 들어갔다면 흐르는 물로 씻으면서 119 또는 응급실에 연락하세요. 시력 저하나 안구 관통 의심은 즉시 응급평가가 필요합니다.</p></div>
-<h2>응급실 병원 찾기</h2><select id="district" onchange="render()"><option value="all">전체 지역</option><option>강서구</option><option>양천구</option><option>영등포구</option></select><div id="hospitals"></div>
+<h2 id="results-heading">응급실 병원 찾기</h2><label for="district">지역 선택</label><select id="district"><option value="all">전체 지역</option><option>강서구</option><option>양천구</option><option>영등포구</option></select><button id="reset" type="button">선택 초기화</button><p id="status" class="muted" role="status"></p><div id="hospitals"></div>
 <div class="note">※ 응급실 운영 병원과 응급의료기관 지정 병원이 함께 표시됩니다. 응급실 직통번호를 확인하지 못한 곳은 대표번호만 표시했습니다. 병원별 진료 가능 분야와 수용 여부는 방문 전 전화로 확인하세요. 중증 응급상황은 119에 신고하세요.</div><div class="actions"><a href="https://www.e-gen.or.kr" target="_blank" rel="noopener">응급의료포털 E-Gen</a></div></main><footer>개인 참고용 안내 · 실제 이송 및 진료 판단은 119와 의료기관 안내를 따르세요.</footer>
 <script>
 const hs=[
@@ -23,18 +25,17 @@ const hs=[
 {d:'강서구',n:'우리들병원',a:'서울 강서구 하늘길 70',rep:'02-2660-7500',er:'02-2660-7057',source:'https://seoul.wooridul.co.kr/'},
 {d:'양천구',n:'이대목동병원 응급의료센터',a:'서울 양천구 안양천로 1071',rep:'1666-5000',er:'02-2650-5119',source:'https://mokdong.eumc.ac.kr/medical/dept/deptIntro.do?dept_cd=EM&grp_yn=N'},
 {d:'양천구',n:'홍익병원',a:'서울 양천구 목동로 225',rep:'02-2693-5555',er:'02-2600-0777',source:'https://pf.kakao.com/_lTFxoxb/posts'},
-{d:'양천구',n:'서울특별시 서남병원',a:'서울 양천구 신정이펜1로 20',rep:'1566-6688',er:'',source:'https://www.seoulnamhospital.or.kr'},
+{d:'양천구',n:'서울특별시 서남병원',a:'서울 양천구 신정이펜1로 20',rep:'1566-6688',er:'02-6300-9119',source:'https://www.seoulsnh.or.kr/comm/webzine/data/%EC%84%9C%EB%82%A8%EA%B3%B5%EA%B0%90%2051%ED%98%B8-1.pdf'},
 {d:'영등포구',n:'한림대학교 한강성심병원',a:'서울 영등포구 버드나루로7길 12',rep:'02-2639-5114',er:'02-2639-5555',source:'https://hangang.hallym.or.kr/hallymuniv_sub.asp?left_menu=left_mguide&screen=ptm310'},
-{d:'영등포구',n:'한강수병원',a:'서울 영등포구 영등포로 83',rep:'1800-7119',er:'',source:'https://www.hangangsoo.co.kr/sub/sub5.php?view=mobile'},
+{d:'영등포구',n:'한강수병원',a:'서울 영등포구 영등포로 83',rep:'1800-7119',er:'',source:'https://www.hangangsoo.co.kr/sub/sub5.php?bo_table=sub1&sca=%EC%98%A4%EC%8B%9C%EB%8A%94+%EA%B8%B8'},
 {d:'영등포구',n:'성애병원',a:'서울 영등포구 여의대방로53길 22',rep:'1811-8114',er:'02-840-7115',source:'https://www.sungae.co.kr/guide/phone.do'},
 {d:'영등포구',n:'가톨릭대학교 여의도성모병원',a:'서울 영등포구 63로 10',rep:'1661-7575',er:'02-3779-1199',source:'https://www.cmcseoul.or.kr/page/main'},
-{d:'영등포구',n:'한림대학교 강남성심병원',a:'서울 영등포구 신길로 1',rep:'02-829-5114',er:'02-829-5114',source:'https://kangnam.hallym.or.kr/'},
-{d:'영등포구',n:'명지성모병원',a:'서울 영등포구 도림로 156',rep:'1899-1475',er:'',source:'https://www.myongji-sm.co.kr/index.php/html/118'},
-{d:'영등포구',n:'대림성모병원',a:'서울 영등포구 시흥대로 657',rep:'02-829-9000',er:'',source:'https://www.drh.co.kr/'},
-{d:'영등포구',n:'씨엠병원',a:'서울 영등포구 영등포로36길 13',rep:'02-2678-0001',er:'02-2678-0001',source:'https://www.cm-hospital.co.kr/'},
-{d:'영등포구',n:'영등포병원',a:'서울 영등포구 당산로31길 10',rep:'02-2635-2809',er:'02-2635-2809',source:'https://www.ydphospital.com/'}
+{d:'영등포구',n:'한림대학교 강남성심병원',a:'서울 영등포구 신길로 1',rep:'1577-5587',er:'02-829-5119',source:'https://kangnam.hallym.or.kr/hallymuniv_sub.asp?left_menu=left_mguide&screen=ptm310'},
+{d:'영등포구',n:'명지성모병원',a:'서울 영등포구 도림로 156',rep:'1899-1475',er:'02-829-7800',source:'https://www.myongji-sm.co.kr/index.php/html/120'},
+{d:'영등포구',n:'대림성모병원',a:'서울 영등포구 시흥대로 657',rep:'02-829-9000',er:'02-829-9129',source:'https://drh.co.kr/ko/page/outpatient'},
+{d:'영등포구',n:'씨엠병원',a:'서울 영등포구 영등포로36길 13',rep:'02-2678-0001',er:'',source:'https://www.cm-hospital.co.kr/'},
+{d:'영등포구',n:'영등포병원',a:'서울 영등포구 당산로31길 10',rep:'02-2632-0013',er:'02-2632-0013',source:'https://www.ydphospital.com/'}
 ];
-function render(){let d=document.getElementById('district').value;document.getElementById('hospitals').innerHTML=hs.filter(h=>d==='all'||h.d===d).map(h=>'<div class="card"><b>'+h.n+'</b><div class="muted">'+h.d+' · '+h.a+'</div><div class="actions"><a class="tel" href="tel:'+h.rep.replace(/[^0-9]/g,'')+'">대표번호 '+h.rep+'</a>'+(h.er?'<a class="tel" href="tel:'+h.er.replace(/[^0-9]/g,'')+'">응급실 '+h.er+'</a>':'<span class="muted">응급실 직통번호 미확인 · 대표번호로 문의</span>')+'</div><div class="actions"><a href="https://map.naver.com/p/search/'+encodeURIComponent(h.n)+'" target="_blank" rel="noopener">길찾기</a><a href="'+h.source+'" target="_blank" rel="noopener">전화번호 출처 확인</a></div></div>').join('')}
 const situationHospitals={
  fracture:['이대서울병원','서울부민병원','이대목동병원','여의도성모병원','강남성심병원','성애병원'],
  cut:['이대서울병원','이대목동병원','한강성심병원','여의도성모병원','강남성심병원','성애병원'],
@@ -42,18 +43,73 @@ const situationHospitals={
  fever:['이대서울병원','이대목동병원','여의도성모병원','강남성심병원','성애병원','서울부민병원'],
  head:['이대서울병원','이대목동병원','여의도성모병원','강남성심병원','성애병원'],
  breath:['이대서울병원','이대목동병원','여의도성모병원','강남성심병원','성애병원'],
- burn:['한강성심병원','이대서울병원','이대목동병원','여의도성모병원','강남성심병원'],
+ burn:['한강수병원','한강성심병원','이대서울병원','이대목동병원','여의도성모병원','강남성심병원'],
  poison:['이대서울병원','이대목동병원','여의도성모병원','강남성심병원','성애병원'],
  eye:['이대서울병원','이대목동병원','여의도성모병원','강남성심병원','성애병원']
 };
-function renderSituationHospitals(id){
- const detail=document.getElementById(id);
- let panel=detail.querySelector('.situation-hospitals');
- if(!panel){panel=document.createElement('div');panel.className='situation-hospitals';detail.appendChild(panel)}
- const names=situationHospitals[id]||[];
- const matches=names.map(name=>hs.find(h=>h.n.includes(name))).filter(Boolean);
- panel.innerHTML='<h3 style="font-size:15px;margin:16px 0 8px">관련 병원</h3><p class="muted">증상과 진료 분야를 고려한 우선 문의 병원입니다. 응급실 수용 여부와 진료 가능 여부는 전화로 먼저 확인하세요.</p>'+matches.map(h=>'<div style="border-top:1px solid #e5e9f0;padding:9px 0"><b>'+h.n+'</b><div class="muted">'+h.d+' · '+h.a+'</div><div class="actions"><a class="tel" href="tel:'+h.rep.replace(/[^0-9]/g,'')+'">대표번호 '+h.rep+'</a>'+(h.er?'<a class="tel" href="tel:'+h.er.replace(/[^0-9]/g,'')+'">응급실 '+h.er+'</a>':'')+'<a href="https://map.naver.com/p/search/'+encodeURIComponent(h.n)+'" target="_blank" rel="noopener">길찾기</a></div></div>').join('');
+const district = document.getElementById('district');
+const heading = document.getElementById('results-heading');
+const situationButtons = [...document.querySelectorAll('.grid button')];
+let selectedSituation = null;
+
+function telephone(label, number) {
+  return '<a class="tel" href="tel:' + number.replace(/\D/g, '') + '">' +
+    label + ' ' + number + '</a>';
 }
-function show(id){document.querySelectorAll('.detail').forEach(x=>x.classList.remove('show'));let e=document.getElementById(id);e.classList.add('show');renderSituationHospitals(id);e.scrollIntoView({behavior:'smooth',block:'nearest'})}render();
-if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
+
+function hospitalCard(hospital) {
+  const sharedNumber = hospital.er && hospital.er === hospital.rep;
+  const phoneLinks = sharedNumber
+    ? telephone('대표·응급실 안내', hospital.rep)
+    : telephone('대표번호', hospital.rep) + (hospital.er ? telephone('응급실 직통', hospital.er) : '');
+  const numberNote = hospital.er ? '' :
+    '<div class="muted hospital-note">직통번호 미확인 · 대표번호로 문의</div>';
+  const mapQuery = hospital.n.replace(/ 응급의료센터$/, '') + ' ' + hospital.a;
+  return '<article class="card"><b>' + hospital.n + '</b><div class="muted">' +
+    hospital.d + ' · ' + hospital.a + '</div><div class="actions">' + phoneLinks +
+    '</div>' + numberNote + '<div class="actions">' +
+    '<a href="https://map.naver.com/p/search/' + encodeURIComponent(mapQuery) +
+    '" target="_blank" rel="noopener" aria-label="길찾기 (네이버 지도)">길찾기</a>' +
+    '<a href="' + hospital.source + '" target="_blank" rel="noopener">병원 안내 출처</a></div></article>';
+}
+
+function render() {
+  const names = selectedSituation ? situationHospitals[selectedSituation] : null;
+  const matches = hs.filter(hospital =>
+    (district.value === 'all' || hospital.d === district.value) &&
+    (!names || names.some(name => hospital.n.includes(name)))
+  );
+  document.getElementById('status').textContent = matches.length
+    ? '병원 ' + matches.length + '곳 · 방문 전 진료 및 수용 가능 여부를 전화로 확인하세요.'
+    : '이 지역에 표시할 병원이 없습니다. 전체 지역을 선택해 확인하세요.';
+  document.getElementById('hospitals').innerHTML = matches.map(hospitalCard).join('');
+}
+
+function show(id) {
+  selectedSituation = id;
+  document.querySelectorAll('.detail').forEach(detail => {
+    detail.classList.toggle('show', detail.id === id);
+  });
+  situationButtons.forEach(button => {
+    button.setAttribute('aria-pressed', String(button.getAttribute('aria-controls') === id));
+  });
+  heading.textContent = id
+    ? document.getElementById(id).querySelector('b').textContent + ' 문의 병원'
+    : '응급실 병원 찾기';
+  render();
+  if (id) document.getElementById(id).scrollIntoView({behavior: 'smooth', block: 'start'});
+}
+
+situationButtons.forEach(button => button.setAttribute('aria-pressed', 'false'));
+district.addEventListener('change', render);
+document.getElementById('reset').addEventListener('click', () => {
+  district.value = 'all';
+  show(null);
+});
+render();
+if ('serviceWorker' in navigator) {
+  addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker.js').catch(() => {});
+  });
+}
 </script></body></html>
