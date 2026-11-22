@@ -106,7 +106,44 @@ document.getElementById('reset').addEventListener('click', () => {
   district.value = 'all';
   show(null);
 });
+async function syncDirectNumbers() {
+  const pending = hs.filter(hospital => !hospital.er);
+  if (!pending.length) return;
+  try {
+    const response = await fetch(
+      'https://raw.githubusercontent.com/79san2/emergency-hospital/main/index.html',
+      {cache: 'no-cache', credentials: 'omit'}
+    );
+    if (!response.ok) return;
+
+    // The monthly check writes to this same hospital list. Read its data only.
+    const source = await response.text();
+    const list = source.match(/const hs=\[\r?\n([\s\S]*?)\r?\n\];/)?.[1];
+    if (!list) return;
+    const rows = /\{d:'([^']+)',n:'([^']+)',a:'([^']+)',rep:'([^']+)',er:'([^']*)',source:'([^']+)'\}/g;
+    const records = [...list.matchAll(rows)];
+    let updated = false;
+
+    for (const hospital of pending) {
+      const matches = records.filter(([, district, name, address, representative, , reference]) =>
+        district === hospital.d && name === hospital.n && address === hospital.a &&
+        representative === hospital.rep && reference === hospital.source
+      );
+      if (matches.length !== 1) continue;
+      const number = matches[0][5];
+      if (!/^02-\d{3,4}-\d{4}$/.test(number) || number === hospital.rep) continue;
+      hospital.er = number;
+      updated = true;
+    }
+
+    if (updated) render();
+  } catch {
+    // The bundled hospital list remains usable offline or if the check fails.
+  }
+}
+
 render();
+syncDirectNumbers();
 if ('serviceWorker' in navigator) {
   addEventListener('load', () => {
     navigator.serviceWorker.register('./service-worker.js').catch(() => {});
