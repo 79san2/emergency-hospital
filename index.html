@@ -1,9 +1,69 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#1456a0"><meta name="description" content="강서구·양천구·영등포구 응급대응 및 응급실 안내"><link rel="manifest" href="./manifest.json"><link rel="icon" href="./icon.svg" type="image/svg+xml"><title>서남권 응급병원 안내</title><style>
-:root{font-family:system-ui,"Noto Sans KR",sans-serif;color:#172033;background:#f3f6fa}*{box-sizing:border-box}body{margin:0}header{background:#1456a0;color:white;padding:22px 18px;border-radius:0 0 22px 22px}h1{font-size:22px;margin:0 0 6px}header p{margin:0;font-size:13px}main{max-width:760px;margin:auto;padding:15px}.alert,.card{background:white;border-radius:14px;padding:14px;margin:10px 0;box-shadow:0 2px 8px #14243a12}.alert{background:#fff2f0;border:1px solid #ffc8c1}.alert strong{color:#a32118}.call119{display:block;text-align:center;background:#c62828;color:white;text-decoration:none;font-size:21px;font-weight:800;padding:14px;border-radius:12px;margin-top:10px}h2{font-size:18px;margin:21px 2px 10px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}button{border:0;border-radius:13px;background:white;padding:13px;text-align:left;font:inherit;min-height:75px;box-shadow:0 2px 8px #14243a12}button b{display:block;font-size:15px;margin-bottom:4px}button span,.muted,.note{font-size:12px;color:#667085;line-height:1.5}.detail{display:none}.detail.show{display:block}.actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}.actions a{flex:1;min-width:110px;text-align:center;padding:10px 7px;border-radius:10px;background:#e9f1fc;color:#1456a0;text-decoration:none;font-weight:700;font-size:13px}.actions a.tel{background:#1456a0;color:white}select{width:100%;padding:12px;border:1px solid #d4dbe5;border-radius:10px;background:white;font:inherit}.note{margin:14px 2px}footer{text-align:center;color:#788397;font-size:11px;padding:18px}@media(max-width:380px){.grid{grid-template-columns:1fr}}
-#reset{min-height:44px;padding:8px 14px;margin-top:8px;color:#1456a0}button[aria-pressed="true"]{outline:2px solid #1456a0;background:#e9f1fc}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #1456a0;outline-offset:3px}#results-heading{scroll-margin-top:12px}.hospital-note{margin-top:6px}
-</style></head><body><header><h1>서남권 응급병원 안내</h1><p>강서구 · 양천구 · 영등포구 | 상황별 응급대응과 병원 연락</p></header><main>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#102641"><meta name="description" content="강서구·양천구·영등포구 응급대응 및 응급실 안내"><link rel="manifest" href="./manifest.json"><link rel="icon" href="./icon.svg" type="image/svg+xml"><title>서남권 응급병원 안내</title><style>
+:root {
+  font-family: system-ui, "Noto Sans KR", sans-serif;
+  color: #122339;
+  background: #eef3f8;
+  --navy: #102641;
+  --blue: #1456a0;
+  --muted: #485a70;
+  --line: #d6e0eb;
+  --width: 780px;
+}
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.55; }
+a, button, select { -webkit-tap-highlight-color: transparent; }
+button, select { font: inherit; }
+a:focus-visible, button:focus-visible, select:focus-visible {
+  outline: 3px solid #1666bb;
+  outline-offset: 3px;
+}
+header { background: var(--navy); color: white; }
+.header-inner { max-width: var(--width); margin: auto; padding: calc(22px + env(safe-area-inset-top)) 20px 22px; }
+h1 { font-size: clamp(23px, 5vw, 32px); margin: 0; letter-spacing: -.045em; }
+header p { margin: 4px 0 0; font-size: 14px; color: #d6e6f6; }
+main { max-width: var(--width); margin: auto; padding: 16px 16px 0; }
+.alert, .card, .results { border: 1px solid var(--line); border-radius: 18px; background: white; }
+.alert { padding: 16px; background: #fff6f5; border-color: #f2ceca; color: #672923; }
+.alert strong { font-size: 16px; color: #8f211b; }
+.alert div { margin-top: 4px; font-size: 13px; }
+.call119 { display: grid; place-items: center; min-height: 52px; margin-top: 12px; background: #b42222; color: white; font-size: 19px; font-weight: 800; text-decoration: none; border-radius: 12px; }
+.quick-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.quick-links a { display: inline-flex; align-items: center; min-height: 44px; padding: 6px 12px; border: 1px solid var(--line); background: white; border-radius: 10px; color: var(--blue); text-decoration: none; font-size: 13px; font-weight: 700; }
+h2 { font-size: 20px; letter-spacing: -.035em; line-height: 1.35; margin: 22px 0 10px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.grid button { background: white; color: inherit; border: 1px solid var(--line); border-radius: 12px; padding: 12px; min-height: 76px; text-align: left; cursor: pointer; }
+.grid button b { display: block; font-size: 15px; }
+.grid button[aria-pressed="true"] { border-color: var(--blue); box-shadow: inset 0 0 0 1px var(--blue); background: #e8f2ff; color: #103e75; }
+.grid button span, .muted, .note { color: var(--muted); font-size: 13px; }
+.detail { display: none; }
+.detail.show { display: block; background: #f8fbff; border-color: #b9d2eb; }
+.detail p { margin: 4px 0 0; font-size: 14px; }
+.card { margin: 10px 0; padding: 15px; scroll-margin-top: 12px; }
+.card > b { display: block; font-size: 17px; letter-spacing: -.025em; }
+.results { padding: 14px; }
+.filters { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.filters label { font-size: 13px; font-weight: 700; }
+select, #reset { min-height: 44px; border: 1px solid var(--line); border-radius: 10px; background: white; color: var(--navy); padding: 7px 9px; }
+select { flex: 1; min-width: 90px; }
+#reset { color: var(--blue); font-size: 13px; font-weight: 700; cursor: pointer; }
+#status { margin: 10px 0 0; }
+#results-heading { scroll-margin-top: 12px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 9px; }
+.actions a { display: flex; align-items: center; justify-content: center; flex: 1 1 105px; min-height: 44px; text-align: center; padding: 7px 8px; border: 1px solid #d8e6f7; border-radius: 10px; color: var(--blue); background: #f2f7fe; text-decoration: none; font-size: 13px; font-weight: 700; }
+.actions a.tel { background: #e8f2ff; }
+.actions a.primary { color: white; background: var(--blue); border-color: var(--blue); }
+.hospital-note { margin-top: 6px; }
+.note { margin: 16px 0 10px; }
+footer { text-align: center; color: var(--muted); font-size: 12px; padding: 19px 16px calc(19px + env(safe-area-inset-bottom)); }
+@media (min-width: 660px) {
+  .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  #hospitals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  #hospitals .card { margin: 0; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
+</style></head><body><header><div class="header-inner"><h1>서남권 응급병원 안내</h1><p>강서구 · 양천구 · 영등포구</p></div></header><main>
 <section class="alert"><strong>생명이 위급하거나 판단이 어려우면 즉시 119</strong><div>호흡곤란, 의식저하, 심한 출혈, 기도 막힘, 경련 지속 등은 직접 이동보다 119 신고가 우선입니다.</div><a class="call119" href="tel:119">119 바로 전화</a></section>
-<div class="actions"><a href="./" id="refresh">최신 화면 불러오기</a></div>
+<nav class="quick-links" aria-label="바로가기"><a href="#results-heading">병원 목록</a><a href="./" id="refresh">최신 화면 불러오기</a></nav>
 <h2>상황별 응급 대응</h2><div class="grid">
 <button aria-controls="fracture" onclick="show('fracture')"><b>골절·낙상</b><span>변형, 심한 통증, 움직임 제한</span></button><button aria-controls="cut" onclick="show('cut')"><b>열상·출혈</b><span>찢어짐, 지속되는 출혈</span></button><button aria-controls="choke" onclick="show('choke')"><b>삼킴·기도 막힘</b><span>사레, 이물질, 호흡곤란</span></button><button aria-controls="fever" onclick="show('fever')"><b>고열·경련</b><span>고열, 의식 변화, 경련</span></button><button aria-controls="head" onclick="show('head')"><b>머리 부딪힘</b><span>구토, 심한 두통, 졸림</span></button><button aria-controls="breath" onclick="show('breath')"><b>호흡·의식 이상</b><span>숨참, 청색증, 반응 저하</span></button><button aria-controls="burn" onclick="show('burn')"><b>화상</b><span>열·화학물질·전기 화상</span></button><button aria-controls="poison" onclick="show('poison')"><b>중독·이물질 섭취</b><span>약물, 세제, 유해물질</span></button><button aria-controls="eye" onclick="show('eye')"><b>눈·얼굴 손상</b><span>이물질, 출혈, 시력 변화</span></button></div>
 <div id="fracture" class="card detail"><b>골절·낙상</b><p>다친 부위를 억지로 움직이거나 맞추지 말고 가능한 자세 그대로 고정하세요. 심한 변형·개방성 골절·머리나 목 손상이 의심되면 119를 부르세요.</p></div>
@@ -15,7 +75,7 @@
 <div id="burn" class="card detail"><b>화상</b><p>흐르는 시원한 물로 20분 정도 식히세요. 얼음·연고를 바르거나 물집을 터뜨리지 마세요. 넓은 화상, 얼굴·손 화상, 전기·화학 화상은 119 또는 응급실 평가가 필요합니다.</p></div>
 <div id="poison" class="card detail"><b>중독·이물질 섭취</b><p>억지로 토하게 하지 말고 제품명·섭취량·시간을 확인하세요. 의식저하, 호흡곤란, 경련이 있으면 즉시 119에 신고하세요.</p></div>
 <div id="eye" class="card detail"><b>눈·얼굴 손상</b><p>눈을 비비거나 누르지 마세요. 화학물질이 들어갔다면 흐르는 물로 씻으면서 119 또는 응급실에 연락하세요. 시력 저하나 안구 관통 의심은 즉시 응급평가가 필요합니다.</p></div>
-<h2 id="results-heading">응급실 병원 찾기</h2><label for="district">지역 선택</label><select id="district"><option value="all">전체 지역</option><option>강서구</option><option>양천구</option><option>영등포구</option></select><button id="reset" type="button">선택 초기화</button><p id="status" class="muted" role="status"></p><div id="hospitals"></div>
+<h2 id="results-heading">응급실 병원 찾기</h2><div class="results"><div class="filters"><label for="district">지역 선택</label><select id="district"><option value="all">전체 지역</option><option>강서구</option><option>양천구</option><option>영등포구</option></select><button id="reset" type="button">선택 초기화</button></div><p id="status" class="muted" role="status"></p></div><div id="hospitals"></div>
 <div class="note">※ 응급실 운영 병원과 응급의료기관 지정 병원이 함께 표시됩니다. 응급실 직통번호를 확인하지 못한 곳은 대표번호만 표시했습니다. 병원별 진료 가능 분야와 수용 여부는 방문 전 전화로 확인하세요. 중증 응급상황은 119에 신고하세요.</div><div class="actions"><a href="https://www.e-gen.or.kr" target="_blank" rel="noopener">응급의료포털 E-Gen</a></div></main><footer>개인 참고용 안내 · 실제 이송 및 진료 판단은 119와 의료기관 안내를 따르세요.</footer>
 <script>
 const hs=[
@@ -52,16 +112,16 @@ const heading = document.getElementById('results-heading');
 const situationButtons = [...document.querySelectorAll('.grid button')];
 let selectedSituation = null;
 
-function telephone(label, number) {
-  return '<a class="tel" href="tel:' + number.replace(/\D/g, '') + '">' +
+function telephone(label, number, primary = false) {
+  return '<a class="tel' + (primary ? ' primary' : '') + '" href="tel:' + number.replace(/\D/g, '') + '">' +
     label + ' ' + number + '</a>';
 }
 
 function hospitalCard(hospital) {
   const sharedNumber = hospital.er && hospital.er === hospital.rep;
   const phoneLinks = sharedNumber
-    ? telephone('대표·응급실 안내', hospital.rep)
-    : telephone('대표번호', hospital.rep) + (hospital.er ? telephone('응급실 직통', hospital.er) : '');
+    ? telephone('대표·응급실 안내', hospital.rep, true)
+    : (hospital.er ? telephone('응급실 직통', hospital.er, true) : '') + telephone('대표번호', hospital.rep, !hospital.er);
   const numberNote = hospital.er ? '' :
     '<div class="muted hospital-note">직통번호 미확인 · 대표번호로 문의</div>';
   const mapQuery = hospital.n.replace(/ 응급의료센터$/, '') + ' ' + hospital.a;
@@ -97,7 +157,7 @@ function show(id) {
     ? document.getElementById(id).querySelector('b').textContent + ' 문의 병원'
     : '응급실 병원 찾기';
   render();
-  if (id) document.getElementById(id).scrollIntoView({behavior: 'smooth', block: 'start'});
+  if (id) document.getElementById(id).scrollIntoView({block: 'start'});
 }
 
 situationButtons.forEach(button => button.setAttribute('aria-pressed', 'false'));
