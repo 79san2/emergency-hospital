@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "통합돌봄 ON",
+  "short_name": "돌봄 ON",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f6f5",
+  "theme_color": "#123d38",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
