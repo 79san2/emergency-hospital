@@ -61,7 +61,7 @@ footer { text-align: center; color: var(--muted); font-size: 12px; padding: 19px
   #hospitals .card { margin: 0; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
-</style></head><body><header><div class="header-inner"><h1>서남권 응급병원 안내</h1><p>강서구 · 양천구 · 영등포구</p></div></header><main>
+.care-home{display:inline-flex;align-items:center;min-height:44px;padding:8px 15px;margin:0 0 12px;border-radius:12px;background:#e8f5ef;color:#176b5d;font-weight:750;text-decoration:none;border:1px solid #d5e8df}.fav-toggle{border:1px solid #d5e8df;background:#fff;color:#176b5d;border-radius:10px;padding:8px 12px;min-height:40px;cursor:pointer}.fav-toggle[aria-pressed="true"]{background:#e8f5ef;color:#176b5d}</style></head><body><header><div class="header-inner"><h1>서남권 응급병원 안내</h1><p>강서구 · 양천구 · 영등포구</p></div></header><main><a class="care-home" href="./care-on/">⌂ 통합돌봄 ON 홈</a>
 <section class="alert"><strong>생명이 위급하거나 판단이 어려우면 즉시 119</strong><div>호흡곤란, 의식저하, 심한 출혈, 기도 막힘, 경련 지속 등은 직접 이동보다 119 신고가 우선입니다.</div><a class="call119" href="tel:119">119 바로 전화</a></section>
 <nav class="quick-links" aria-label="바로가기"><a href="#results-heading">병원 목록</a><a href="./" id="refresh">최신 화면 불러오기</a></nav>
 <h2>상황별 응급 대응</h2><div class="grid">
@@ -111,6 +111,9 @@ const district = document.getElementById('district');
 const heading = document.getElementById('results-heading');
 const situationButtons = [...document.querySelectorAll('.grid button')];
 let selectedSituation = null;
+const favorites=new Set(JSON.parse(localStorage.getItem('careHospitalFavorites')||'[]'));
+function toggleFavorite(name){favorites.has(name)?favorites.delete(name):favorites.add(name);localStorage.setItem('careHospitalFavorites',JSON.stringify([...favorites]));render();}
+document.getElementById('hospitals').addEventListener('click',e=>{const b=e.target.closest('[data-favorite]');if(b)toggleFavorite(b.dataset.favorite);});
 
 function telephone(label, number, primary = false) {
   return '<a class="tel' + (primary ? ' primary' : '') + '" href="tel:' + number.replace(/\D/g, '') + '">' +
@@ -125,7 +128,7 @@ function hospitalCard(hospital) {
   const numberNote = hospital.er ? '' :
     '<div class="muted hospital-note">직통번호 미확인 · 대표번호로 문의</div>';
   const mapQuery = hospital.n.replace(/ 응급의료센터$/, '') + ' ' + hospital.a;
-  return '<article class="card"><b>' + hospital.n + '</b><div class="muted">' +
+  return '<article class="card"><b>' + hospital.n + '</b> <button type="button" class="fav-toggle" data-favorite="'+hospital.n+'" aria-pressed="'+favorites.has(hospital.n)+'">'+(favorites.has(hospital.n)?'★':'☆')+' 즐겨찾기</button><div class="muted">' +
     hospital.d + ' · ' + hospital.a + '</div><div class="actions">' + phoneLinks +
     '</div>' + numberNote + '<div class="actions">' +
     '<a href="https://map.naver.com/p/search/' + encodeURIComponent(mapQuery) +
@@ -142,7 +145,7 @@ function render() {
   document.getElementById('status').textContent = matches.length
     ? '병원 ' + matches.length + '곳 · 방문 전 진료 및 수용 가능 여부를 전화로 확인하세요.'
     : '이 지역에 표시할 병원이 없습니다. 전체 지역을 선택해 확인하세요.';
-  document.getElementById('hospitals').innerHTML = matches.map(hospitalCard).join('');
+  document.getElementById('hospitals').innerHTML = matches.sort((a,b)=>Number(favorites.has(b.n))-Number(favorites.has(a.n))).map(hospitalCard).join('');
 }
 
 function show(id) {
