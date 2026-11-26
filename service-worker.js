@@ -1,4 +1,4 @@
-const CACHE='emergency-hospital-v8';
+const CACHE='emergency-hospital-v9';
 const FILES=['./','./index.html','./manifest.json','./icon.svg'];
 
 self.addEventListener('install',event=>{
@@ -21,6 +21,7 @@ self.addEventListener('fetch',event=>{
   if(event.request.method!=='GET') return;
   const url=new URL(event.request.url);
   if(url.origin!==self.location.origin) return;
+  if(!['./','./index.html','./manifest.json','./icon.svg'].some(p=>new URL(p,self.registration.scope).pathname===url.pathname)) return;
   const isAppDocument=event.request.mode==='navigate'||url.pathname.endsWith('/index.html')||url.pathname.endsWith('/');
   if(isAppDocument){
     event.respondWith((async()=>{
