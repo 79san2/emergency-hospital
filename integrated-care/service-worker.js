@@ -1,4 +1,4 @@
-const CACHE='care-seoul-pwa-v2';
+const CACHE='care-seoul-pwa-v3';
 const FILES=['./','./index.html','./data.json','./manifest.json','./icon.svg'];
 self.addEventListener('install',event=>{
  event.waitUntil((async()=>{const cache=await caches.open(CACHE);await cache.addAll(FILES);await self.skipWaiting()})());
@@ -10,7 +10,7 @@ self.addEventListener('fetch',event=>{
  if(event.request.method!=='GET')return;
  const url=new URL(event.request.url);
  const inApp=url.pathname.includes('/integrated-care/');
- if(!inApp)return;
+ if(url.origin!==self.location.origin||!inApp)return;
  const isPage=event.request.mode==='navigate'||url.pathname.endsWith('/index.html')||url.pathname.endsWith('/integrated-care/');
  const isData=url.pathname.endsWith('/data.json');
  if(isPage||isData){
@@ -20,7 +20,8 @@ self.addEventListener('fetch',event=>{
     if(response.ok){const cache=await caches.open(CACHE);await cache.put(event.request,response.clone())}
     return response;
    }catch(error){
-    return (await caches.match(event.request,{ignoreSearch:true}))||(await caches.match('./index.html'))||Response.error();
+    const cache=await caches.open(CACHE);
+    return (await cache.match(event.request,{ignoreSearch:true}))||(await cache.match(isData?'./data.json':'./index.html'))||Response.error();
    }
   })());
   return;
