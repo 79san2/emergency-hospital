@@ -30,7 +30,7 @@ input,select{width:100%;border:1px solid #dce5e1;background:white;border-radius:
 .small{font-size:11px;color:var(--muted);line-height:1.65}.hidden{display:none!important}footer{text-align:center;padding:25px 10px 0;color:#899691;font-size:10px}
 @media(max-width:760px){main{padding:15px 13px 35px}.hero{padding:22px 17px}.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}.cards{grid-template-columns:1fr}.quickgrid{gap:8px}.typecard{padding:12px}.typecard strong{font-size:21px}.stat{padding:13px}.stat-value{font-size:23px}.gridstats{grid-template-columns:1fr 1fr}}
 @media(max-width:420px){.stats{gap:7px}.stat{padding:11px 9px}.stat-label{font-size:10px}.stat-value{font-size:20px}.stat-foot{font-size:9px}.nav button{font-size:11px;padding:10px 3px}.filters{grid-template-columns:1fr}.filters input{grid-column:auto}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.topmeta{align-items:start;flex-direction:column}}
-</style>
+.type-chips{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.type-chip{border:1px solid #dfe9e5;background:#fff;border-radius:100px;padding:11px 14px;min-height:44px;font-size:13px;font-weight:700;color:#547269;cursor:pointer}.type-chip.active{background:#176b5d;border-color:#176b5d;color:#fff}.filters #type{display:none}.filters{grid-template-columns:minmax(0,1.5fr) repeat(2,minmax(0,1fr))}@media(max-width:760px){.filters{grid-template-columns:1fr 1fr}.filters #search{grid-column:1/-1}.type-chip{flex:1 0 auto;padding:10px 8px;font-size:12px}}</style>
 </head>
 <body>
 <header class="hero"><div class="hero-inner"><div class="brandline"><div class="brandmark">⌂</div><h1>통합돌봄서비스(서울)</h1></div><p>서울지역 최중증 발달장애인 통합돌봄서비스 기관 정보와 운영현황</p></div></header>
@@ -42,7 +42,7 @@ input,select{width:100%;border:1px solid #dce5e1;background:white;border-radius:
 
 <section class="view active" id="directory">
  <div class="section-head"><div><h2>기관 찾기</h2><p id="resultCount">기관 정보를 검색하고 연락처와 위치를 확인합니다.</p></div></div>
- <div class="filters"><input id="search" placeholder="기관명·주소·자치구 검색"><select id="type"><option value="">전체 서비스 유형</option><option>24시간형</option><option>주간 개별 1:1</option><option>주간 그룹 1:1</option></select><select id="district"><option value="">서울 전체 자치구</option></select><select id="sort"><option value="name">기관명순</option><option value="district">자치구순</option></select></div>
+ <div class="type-chips" aria-label="서비스 유형 빠른 선택"><button type="button" class="type-chip active" data-type="" aria-pressed="true">전체</button><button type="button" class="type-chip" data-type="24시간형" aria-pressed="false">24시간형</button><button type="button" class="type-chip" data-type="주간 개별 1:1" aria-pressed="false">주간 개별 1:1</button><button type="button" class="type-chip" data-type="주간 그룹 1:1" aria-pressed="false">주간 그룹 1:1</button></div><div class="filters"><input id="search" placeholder="기관명·주소·자치구 검색"><select id="type"><option value="">전체 서비스 유형</option><option>24시간형</option><option>주간 개별 1:1</option><option>주간 그룹 1:1</option></select><select id="district"><option value="">서울 전체 자치구</option></select><select id="sort"><option value="name">기관명순</option><option value="district">자치구순</option></select></div>
  <div class="cards" id="orgList"></div>
 </section>
 <section class="view" id="statistics">
@@ -88,6 +88,7 @@ function render(){
  $('#supportContacts').innerHTML=supportContacts.map(c=>'<article class="orgcard"><h3>'+esc((c.districts||[]).join(' · '))+'</h3><div class="orgmeta">'+esc(c.role||'서울지역센터 문의')+'</div><div class="actions"><a href="tel:'+tel(c.phone)+'">'+esc(c.phone)+'</a></div></article>').join('');
 }
 ['#search','#type','#district','#sort'].forEach(s=>$(s).addEventListener('input',render));
+document.querySelectorAll('.type-chip').forEach(b=>b.addEventListener('click',()=>{ $('#type').value=b.dataset.type;document.querySelectorAll('.type-chip').forEach(c=>{const active=c===b;c.classList.toggle('active',active);c.setAttribute('aria-pressed',String(active));});render();}));
 setup();
 (async()=>{let loaded=null,lastError=null;for(const url of ['./data.json?build=20261115n','/emergency-hospital/integrated-care/data.json?build=20261115n']){try{const response=await fetch(url,{cache:'reload'});if(!response.ok)throw Error('자료 요청 실패('+response.status+')');const data=await response.json();if(!Array.isArray(data.records)||data.records.length===0)throw Error('기관자료가 비어 있습니다.');loaded=data;break}catch(e){lastError=e}}if(!loaded)throw(lastError||Error('기관자료 연결 실패'));window.datasetLastChecked=loaded.lastChecked||'';officialSnapshot=loaded.officialSnapshot||null;latestOfficialStatus=loaded.latestOfficialStatus||null;latestProviderDirectory=loaded.latestProviderDirectory||null;supportContacts=loaded.seoulSupportContacts||[];baseRecords=loaded.records.map(cleanRecord);records=baseRecords;render();})().catch(error=>{records=[];render();$('#resultCount').textContent='기관정보 연결 확인 필요';$('#orgList').innerHTML='<div class="empty">기관정보를 불러오지 못했습니다. 인터넷 연결을 확인한 뒤 새로고침해 주세요. ('+esc(error&&error.message?error.message:'자료 연결 오류')+')</div>'});
  // 앱 설치 및 오프라인 실행 지원
